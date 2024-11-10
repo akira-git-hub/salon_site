@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サロンサイト</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
+                        class="bi bi-clipboard-heart header-nav-icon" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm5 0a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z" />
+                        <path
+                            d="M3 1.5h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2" />
+                        <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.31 8 6.982" />
+                    </svg>
+                </a>
+                <!-- ハンバーガーメニューボタン -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- ハンバーガーメニュー内部 -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="https://www.google.com/">CONCEPT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.google.com/">ARTIST</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.google.com/">ART
+                                    MAKE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.google.com/">MENU
+                                    PRICE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.google.com/">FLOW</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.google.com/">QandA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.google.com/">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="https://www.google.com/">CLINIC</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 title-yoyaku">
+                            <li class="nav-item">
+                                <div class="header_nav_title">
+                                    <p class="h1">mirelle</p>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active YoyakuButon" aria-current="page"
+                                    href="https://www.google.com/">ご予約はこちら</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="block-1 ">
+            <div class="row align-items-star block-1-1">
+                <div class="col title-messege">
+                    <p class="title">mirelle</p>
+                    <p class="concept">本来の美しさを引き出す<br><span>医療アートメイク</span></p>
+                    <p class="button"><a href="https://www.google.com/">ご予約はこちら</a></p>
+                </div>
+                <div class="col block-1-2">
+                    <img class="img" src="./img/img_fv.png">
+                </div>
+            </div>
+            <!-- スライド画像 -->
+            <div class="block-2">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="https://images.unsplash.com/photo-1726610930930-0e1af5f2d038?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="https://plus.unsplash.com/premium_photo-1664382465641-997aa3b73907?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <!-- コンセプト -->
+            <div class="block-3">
+                <p class="h1 block-3-title">CONCEPT</p>
+                <div class="block-3-blok">
+                    <p class="block-3-blok-bun">
+                        mirelle(ミレル)は、mirage(ミラージュ)とelegant(エレガント)を組み合わせた<br>
+                        造語で美しさの追求を意味しています。<br>
+                        個々の魅力を最大限に引き出し<br>
+                        自然ながらも魔法のような変化をもたらします。<br>
+                        私たちはmirelleならではの
+                        繊細なタッチと洗練された技術で<br>
+                        お客様のお顔に美を生み出し<br>
+                        お客様の魅力を新たな次元に引き上げます。
+                    </p>
+                </div>
+                <div class="block-3-img">
+                    <img src="./img/img_concept_sample.jpeg" alt="" class="block-3-img-concept">
+                </div>
+            </div>
+            <!-- 代表 -->
+            <div class="block-4">
+                <div class="block-4-block">
+                    <div class="block-4-block-img">
+                        <img src="./img/img_nakatanimikako.png" alt="">
+                    </div>
+                    <div class="block-4-block-setumei">
+                        <p class="block-4-block-setumei-sikaku">
+                            アートメイク事業女経営者<br>
+                            アートメイク教育事業<br>
+                            mocci認定講師・認定アーティスト
+                        </p>
+                        <p class="block-4-block-setumei-msg">
+                            Mirelleで受けるアートメイクは<br>
+                            自の美しさを再発見するための魔法の鍵です。
+                        </p>
+                    </div>
+                </div>
+                <div class="block-4-block-daihyo">
+                    <p class="block-4-block-daihyo-name">
+                        代表<br>
+                        Nakatani Mikako
+                    </p>
+                    <p class="block-4-block-daihyo-accent">
+                        representative
+                    </p>
+                </div>
+            </div>
+            <!-- アーティスト -->
+            <div class="block-5">
+                <p class="block-5-title h2">ARTIST</p>
+                <div class="block-5-imgs">
+                    <img src="./img/img_1.png" class="block-5-imgs-img1" alt="">
+                    <img src="./img/img_1.png" class="block-5-imgs-img2" alt="">
+                    <img src="./img/img_1.png" class="block-5-imgs-img3" alt="">
+                    <img src="./img/img_1.png" class="block-5-imgs-img4" alt="">
+                </div>
+                <p class="block-5-btn">
+                    <a href="">VIEW ALL</a>
+                </p>
+            </div>
+
+            <!-- アートメイク -->
+            <div class="block-6">
+                <p class="block-6-title h2">ART MAKE</p>
+                <div class="block-6-imgs">
+                    <img src="./img/artmake_1.png" class="block-6-imgs-img1" alt="">
+                    <img src="./img/artmake_2.png" class="block-6-imgs-img2" alt="">
+                    <img src="./img/artmake_3.png" class="block-6-imgs-img3" alt="">
+                </div>
+                <p class="block-6-btn">
+                    <a href="">VIEW ALL</a>
+                </p>
+            </div>
+
+            <!-- メニュー -->
+            <div class="block-7">
+                <p class="block-7-title h2">MENU PRICE</p>
+                <div class="block-7-subtitle">
+                    <p class="block-7-subtitle-arttitle h2">ART MAKE</p>
+                    <p class="block-7-subtitle-zeikomi">※全て税込の金額です。</p>
+                </div>
+                <div class="block-7-block1">
+                    <div class="block-7-block1-triangle"></div>
+                    <p class="block-7-block1-title h2">アイブロウ</p>
+                    <div class="block-7-block1-ibrou">
+                        <div class="block-7-block1-ibrou-title h3">
+                            <div class="block-7-block1-ibrou-title-line"></div>
+                            <span class="block-7-block1-ibrou-title-text-1">3D</span>
+                            <div class="block-7-block1-ibrou-title-line"></div>
+                        </div>
+                        <p class="block-7-block1-ibrou-setumei block-7-block1-ibrou-setumei1">
+                            今主流の毛並み眉本物の眉毛を再現
+                        </p>
+                        <div class="block-7-block1-ibrou-img">
+                            <img src="./img/img_3d.png" alt="">
+                        </div>
+                    </div>
+                    <div class="block-7-block1-ibrou">
+                        <div class="block-7-block1-ibrou-title h3">
+                            <div class="block-7-block1-ibrou-title-line"></div>
+                            <span class="block-7-block1-ibrou-title-text-1">4D</span>
+                            <div class="block-7-block1-ibrou-title-line"></div>
+                        </div>
+                        <p class="block-7-block1-ibrou-setumei block-7-block1-ibrou-setumei2">
+                            毛並みのみよりメイク感が出て、<br>
+                            より自眉毛と馴染んだ仕上がり
+                        </p>
+                        <div class="block-7-block1-ibrou-img">
+                            <img src="./img/img_4d.png" alt="">
+                        </div>
+                    </div>
+                    <div class="block-7-block1-ibrou">
+                        <div class="block-7-block1-ibrou-title h3">
+                            <div class="block-7-block1-ibrou-title-line"></div>
+                            <span class="block-7-block1-ibrou-title-text-2">パウダー</span>
+                            <div class="block-7-block1-ibrou-title-line"></div>
+                        </div>
+                        <p class="block-7-block1-ibrou-setumei block-7-block1-ibrou-setumei3">
+                            メイクで描いたような仕上がり
+                        </p>
+                        <div class="block-7-block1-ibrou-img">
+                            <img src="./img/img_p.png" alt="">
+                        </div>
+                    </div>
+                    <div class="block-7-block1-money">
+                        <table class="block-7-block1-money-table">
+                            <thead>
+                                <tr class="block-7-block1-money-table-tr">
+                                    <th class="block-7-block1-money-table-tr-rowname"></th>
+                                    <th class="block-7-block1-money-table-tr-colname">Jr Artist</th>
+                                    <th class="block-7-block1-money-table-tr-colname">Top Artist</th>
+                                    <th class="block-7-block1-money-table-tr-colname">代表</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="block-7-block1-money-table-tr">
+                                    <td class="block-7-block1-money-table-tr-rowname">1回目</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥38,500</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥55,000</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥77,000</td>
+                                </tr>
+                                <tr class="block-7-block1-money-table-tr">
+                                    <td class="block-7-block1-money-table-tr-rowname">2回セット</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥66,000</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥99,000</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥121,000</td>
+                                </tr>
+                                <tr class="block-7-block1-money-table-tr">
+                                    <td class="block-7-block1-money-table-tr-rowname">3回目以降</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥27,500</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥38,500</td>
+                                    <td class="block-7-block1-money-table-tr-cash">¥55,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="block-7-block1-chui">
+                        ※3D,4D,パウダーは同一料金です。
+                    </div>
+                </div>
+                <div class="block-7-block">
+                    <p class="block-7-block-title h2">
+                        アイライン
+                        <span class="block-7-block-title-sub">極細アイライン対応可能</span>
+                    </p>
+                    <div class="block-7-block-triangle"></div>
+                    <div class="block-7-block-img">
+                        <img src="./img/img_i.png" alt="">
+                    </div>
+                    <div class="block-7-block-money">
+                        <table class="block-7-block-money-table">
+                            <thead>
+                                <tr class="block-7-block-money-table-tr">
+                                    <th class="block-7-block-money-table-tr-rowname"></th>
+                                    <th class="block-7-block-money-table-tr-colname">Jr Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname">Top Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname">代表</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">1回目</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥29,800</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥55,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥21,000</td>
+                                </tr>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">2回セット</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥44,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥79,200</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥33,000</td>
+                                </tr>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">3回目以降</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥55,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥99,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥38,500</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="block-7-block">
+                    <p class="block-7-block-title h2">
+                        リップ
+                    </p>
+                    <div class="block-7-block-triangle"></div>
+                    <div class="block-7-block-img">
+                        <img src="./img/img_rip.png" alt="">
+                    </div>
+                    <div class="block-7-block-money">
+                        <table class="block-7-block-money-table">
+                            <thead>
+                                <tr class="block-7-block-money-table-tr">
+                                    <th class="block-7-block-money-table-tr-rowname"></th>
+                                    <th class="block-7-block-money-table-tr-colname">Jr Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname">Top Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname">代表</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">1回目</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥38,500</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥66,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥27,500</td>
+                                </tr>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">2回セット</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥55,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥99,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥38,500</td>
+                                </tr>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">3回目以降</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥77,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥121,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥55,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="block-7-block">
+                    <p class="block-7-block-title h2">
+                        ホクロ
+                    </p>
+                    <div class="block-7-block-triangle"></div>
+                    <div class="block-7-block-img">
+                        <img src="./img/img_hokuro.png" alt="">
+                    </div>
+                    <div class="block-7-block-money">
+                        <table class="block-7-block-money-table">
+                            <thead>
+                                <tr class="block-7-block-money-table-tr">
+                                    <th class="block-7-block-money-table-tr-rowname"></th>
+                                    <th class="block-7-block-money-table-tr-colname">Jr Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname">Top Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname">代表</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">1箇所</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥5,500</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥11,000</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥22,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="block-7-block">
+                    <p class="block-7-block-title h2">
+                        スカルプ（SMP）
+                    </p>
+                    <div class="block-7-block-triangle"></div>
+                    <div class="block-7-block-img">
+                        <img src="./img/img_s.png" alt="">
+                    </div>
+                    <div class="block-7-block-money">
+                        <table class="block-7-block-money-table">
+                            <thead>
+                                <tr class="block-7-block-money-table-tr">
+                                    <th class="block-7-block-money-table-tr-rowname"></th>
+                                    <th class="block-7-block-money-table-tr-colname">Jr Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname">Top Artist</th>
+                                    <th class="block-7-block-money-table-tr-colname"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="block-7-block-money-table-tr">
+                                    <td class="block-7-block-money-table-tr-rowname">1部位</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥39,800</td>
+                                    <td class="block-7-block-money-table-tr-cash">¥39,800</td>
+                                    <td class="block-7-block-money-table-tr-cash"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="block-7-others">
+                    <p class="block-7-others-title h2">OTHERS</p>
+                    <p class="block-7-others-memo h3">※全て税込の金額です。</p>
+                    <div class="block-7-others-menu">
+                        <div class="block-7-others-menu-medication">
+                            <p class="block-7-others-menu-medication-title h4">
+                                内服　Oral medication
+                                <span class="block-7-others-menu-medication-title-triangle"></span>
+                            </p>
+                            <div class="block-7-others-menu-medication-money">
+                                <table class="block-7-others-menu-medication-money-table">
+                                    <tbody>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-rowname">
+                                                基本セット（30日分）</td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash">¥3,500</td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-subname">シナール　ユベラ90
+                                            </td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash"></td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-subname">トラネキサム酸60
+                                            </td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash"></td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-blank"></td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-blank"></td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-rowname">美白セット</td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash">¥4,500</td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-subname">ハイチオール
+                                            </td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash"></td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-blank"></td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-blank"></td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-rowname">
+                                                リベルサス（30日分）</td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash"></td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-rowname">3mg</td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash">¥9,900</td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-rowname">7mg</td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash">¥16,900</td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-rowname">14mg</td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash">¥22,900</td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-blank"></td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-blank"></td>
+                                        </tr>
+                                        <tr class="block-7-others-menu-medication-money-table-tr">
+                                            <td class="block-7-others-menu-medication-money-table-tr-rowname">ビマトプロスト
+                                            </td>
+                                            <td class="block-7-others-menu-medication-money-table-tr-cash">¥5,000</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="block-7-others-menu-medication-dr_max">
+                            <div class="block-7-others-menu-medication">
+                                <p class="block-7-others-menu-medication-title h4">
+                                    Dr.SUPPLEMENTS
+                                    <span class="block-7-others-menu-medication-title-triangle"></span>
+                                </p>
+                                <div class="block-7-others-menu-medication-money">
+                                    <table class="block-7-others-menu-medication-money-table">
+                                        <tbody>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">
+                                                    CV-Base</td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥6,400
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">Vit D
+                                                </td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥2,500
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">
+                                                    PQQ+L-Camitine
+                                                </td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥6,900
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">
+                                                    L-Arginine3000mg</td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥7,800
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">
+                                                    L-Camitine1100mg</td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥5,800
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">Zinc
+                                                </td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥4,000
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">R＆F
+                                                    for men
+                                                </td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥8,000
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">Fem
+                                                    Support
+                                                </td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥3,600
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="block-7-others-menu-medication">
+                                <p class="block-7-others-menu-medication-title h4">
+                                    眉WAX
+                                    <span class="block-7-others-menu-medication-title-triangle"></span>
+                                </p>
+                                <div class="block-7-others-menu-medication-money">
+                                    <table class="block-7-others-menu-medication-money-table">
+                                        <tbody>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">単品
+                                                </td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥5,500
+                                                </td>
+                                            </tr>
+                                            <tr class="block-7-others-menu-medication-money-table-tr">
+                                                <td class="block-7-others-menu-medication-money-table-tr-rowname">セット
+                                                </td>
+                                                <td class="block-7-others-menu-medication-money-table-tr-cash">¥3,000
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+</body>
+
+</html>

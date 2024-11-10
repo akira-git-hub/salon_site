@@ -1,0 +1,628 @@
+header {
+
+    .fixed-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    // アイコンの位置調整
+    .container-fluid {
+        margin-left: 32px;
+    }
+
+    // ハンバーガーメニューアイコン
+    .navbar-toggler {
+        border: none;
+    }
+
+    // ハンバーガーメニュー内部
+    .offcanvas {
+        // 背景
+        background-color: #EEE4DA;
+
+        //❌の移動 
+        .offcanvas-header {
+            padding: 40px;
+
+            .btn-close {
+                transform: scale(1.5);
+            }
+        }
+
+        //  メニュー
+        .active {
+            color: #544136 !important;
+            font-size: 1.4em;
+            width: 50%;
+            margin-left: 20%;
+        }
+
+        .title-yoyaku {
+            margin-top: 20%;
+
+            //  店名
+            .header_nav_title {
+                width: 50%;
+                margin-left: 20%;
+            }
+
+            //  ご予約はこちら
+            .YoyakuButon {
+                background: white;
+                text-align: center;
+                font-size: 1em;
+                width: 37%;
+            }
+
+        }
+
+    }
+}
+
+main {
+    margin-top: 60px;
+
+    // ご予約はこちら
+    .block-1 {
+        .block-1-1 {
+            background: #EEE4DA;
+            // padding-bottom: 5vw;
+
+            .title-messege {
+
+                margin-top: 5vw;
+            }
+
+            .col {
+                padding-left: 0;
+                height: 38vw;
+            }
+
+            p {
+                padding-left: 0;
+                margin-bottom: 0;
+
+                &.title {
+                    font-size: 8vw;
+                    margin-left: 11vw;
+                    color: #333333;
+                }
+
+                &.concept {
+                    font-size: 3vw;
+                    margin-left: 11vw;
+                    color: #2A1103;
+                }
+
+                &.button {
+                    background: #fff;
+                    width: 30vw;
+                    padding: 1.2vw;
+                    margin-left: 11vw;
+                    margin-top: 3vw;
+
+                    a {
+                        text-decoration: none;
+                        color: #2A1103;
+                        font-size: 3.8vw;
+                    }
+                }
+
+            }
+
+            .block-1-2 {
+                height: 43vw;
+                position: relative;
+
+                .img {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .block-2 {
+        margin-top: 10px;
+    }
+
+    .block-3 {
+        margin-top: 8vw;
+
+        &-title {
+            color: #544037;
+            opacity: 34.84%;
+            margin-bottom: 0;
+            margin-left: 6vw;
+            font-size: 10vw;
+            position: absolute;
+            margin-top: -6vw;
+        }
+
+        &-blok {
+            top: -6vw;
+            z-index: -1;
+
+            &-bun {
+                font-size: 2.3vw;
+                margin-bottom: 0;
+                padding: 7vw;
+                background: #EEE4DA;
+            }
+        }
+
+        &-img {
+            &-concept {
+                border-radius: 100% 100% 0% 0%;
+                width: 25vw;
+                position: absolute;
+                margin-top: -17vw;
+                margin-left: 72vw;
+            }
+        }
+    }
+
+    .block-4 {
+        // background: #FCFAF4;
+        background-image: url(../img/img_bg.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        margin-top: -2.2vh;
+        padding-bottom: 9vw;
+
+        &-block {
+            display: flex;
+
+            &-img {
+                display: inline-block;
+                padding-top: 12vw;
+                padding-left: 16vw;
+
+                >img {
+                    width: 34vw;
+                }
+            }
+
+            &-setumei {
+                display: inline-block;
+                font-size: 1.5vw;
+                padding-left: 5vw;
+                padding-top: 25vw;
+                color: #544136;
+
+                &-sikaku {
+                    font-size: 1.5vw;
+                }
+
+                &-msg {
+                    font-size: 1.7vw;
+                }
+            }
+
+            &-daihyo {
+                background: #F23;
+                width: 24vw;
+                margin-left: 26vw;
+                margin-top: -9.7vw;
+                position: relative;
+                height: 8.57vw;
+
+                &::after {
+                    content: "";
+                    border: 1px solid #707070;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: -1vw;
+                    left: 1vw;
+                    padding: 4.7vw 3vw;
+                }
+
+                &-name {
+                    color: #2A1103;
+                    font-size: 2.1vw;
+                    padding: 1.7vw 3vw;
+                    background: #fff;
+                }
+
+                &-accent {
+                    position: absolute;
+                    top: 1vw;
+                    font-size: 2vw;
+                    left: 4vw;
+                    color: #9A9085;
+                    opacity: 50.2%;
+                    transform: rotate(-6deg);
+                }
+            }
+
+        }
+    }
+
+    .block-5 {
+        padding-top: 9vw;
+        padding-bottom: 8vw;
+
+        &-title {
+            padding-left: 8vw;
+            font-size: 4vw;
+        }
+
+        &-imgs {
+            padding-top: 3vw;
+            padding-left: 6vw;
+            width: 100vw;
+
+            img {
+                width: 21vw;
+                padding-left: 2vw;
+            }
+        }
+
+        &-btn {
+            display: flex;
+            margin-top: 7vw;
+
+            a {
+                text-decoration: none;
+                color: #2A1204;
+                background: #EEE4DA;
+                padding: 0.5vw 4.0vw;
+                font-size: 1.6vw;
+                text-align: right;
+                margin-left: auto;
+                margin-right: 12vw;
+            }
+        }
+
+    }
+
+    .block-6 {
+        padding-top: 4vw;
+        padding-bottom: 8vw;
+
+        &-title {
+            padding-left: 8vw;
+            font-size: 4vw;
+        }
+
+        &-imgs {
+            padding-top: 3vw;
+            padding-left: 6vw;
+            width: 100vw;
+
+            img {
+                width: 28vw;
+                padding-left: 1vw;
+            }
+        }
+
+        &-btn {
+            display: flex;
+            margin-top: 7vw;
+
+            a {
+                text-decoration: none;
+                color: #2A1204;
+                background: #EEE4DA;
+                padding: 0.5vw 4.0vw;
+                font-size: 1.6vw;
+                text-align: right;
+                margin-left: auto;
+                margin-right: 12vw;
+            }
+        }
+
+    }
+
+    .block-7 {
+        background-color: #EEE4DA;
+        padding-top: 5vw;
+
+        &-title {
+            text-align: center;
+            font-size: 4vw;
+            color: #2A1103;
+        }
+
+        &-subtitle {
+            padding-top: 3vw;
+            position: relative;
+            z-index: 1;
+
+            &-arttitle {
+                display: inline-block;
+                color: #FFFFFF;
+                opacity: 0.6039;
+                margin-left: 9vw;
+                margin-bottom: 0;
+                font-size: 8vw;
+            }
+
+            &-zeikomi {
+                display: inline-block;
+                color: #2A1103;
+                margin-bottom: 0;
+                margin-left: 27.5vw;
+                font-size: 1.5vw;
+            }
+        }
+
+        &-block1 {
+            width: 81vw;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            padding: 2vw 4vw;
+            margin-bottom: 6em;
+
+            &-triangle {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 8vw solid #9A9084;
+                border-bottom: 18vw solid transparent;
+                left: 14vw;
+                margin-top: -5vw;
+            }
+
+            &-title {
+                padding-left: 7vw;
+                font-size: 2.5vw;
+                color: #2A1103;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
+            }
+
+            &-ibrou {
+                display: inline-block;
+                width: 24vw;
+                padding-left: 0.5vw;
+                padding-right: 0.5vw;
+
+                &-title {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+
+                    &-line {
+                        flex-grow: 1;
+                        height: 1px;
+                        background-color: #000;
+                    }
+
+                    &-text {
+                        &-1 {
+                            margin: 0px 3vw;
+                            color: #2A1103;
+                            font-size: 2.7vw;
+                        }
+
+                        &-2 {
+                            margin: 0px 1vw;
+                            color: #2A1103;
+                            font-size: 2.7vw;
+                        }
+                    }
+                }
+
+                // 説明文の高さ調整
+                &-setumei1,
+                &-setumei3 {
+                    padding-bottom: 2.1vw;
+                }
+
+                &-setumei {
+                    font-size: 1.3vw;
+                    text-align: center;
+                    color: #2A1103;
+                }
+
+                &-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-money {
+                margin-top: 2vw;
+
+                &-table {
+                    width: 72.7vw;
+
+                    &-tr {
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(2),
+                        &:nth-of-type(3) {
+                            border-top: 1px solid white;
+                        }
+
+                        &-rowname,
+                        &-colname,
+                        &-cash {
+                            color: #2a1103;
+                            background: #EEE4DA;
+                            padding: 1vw;
+                            font-size: 1.74vw;
+                            padding-left: 3vw;
+                        }
+
+                        &-rowname {
+                            border-right: 1px solid white;
+                        }
+
+                        &-colname {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+
+            &-chui {
+                font-size: 1.4vw;
+                color: #2A1103;
+                padding-top: 2vw;
+            }
+
+        }
+
+        &-block {
+            width: 81vw;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            padding: 2vw 4vw;
+            margin-bottom: 4em;
+
+            &-triangle {
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-left: 8vw solid #9A9084;
+                border-bottom: 18vw solid transparent;
+                left: 14vw;
+                margin-top: -12vw;
+            }
+
+            &-title {
+                padding-left: 7vw;
+                font-size: 2.5vw;
+                color: #2A1103;
+                padding-top: 2vw;
+                padding-bottom: 2vw;
+
+                &-sub {
+                    margin-left: 3vw;
+                    font-size: 1.3vw;
+                }
+            }
+
+            &-img {
+                text-align: center;
+
+                img {
+                    width: 43vw;
+                }
+            }
+
+            &-money {
+                margin-top: 2vw;
+
+                &-table {
+                    width: 72.7vw;
+
+                    &-tr {
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(2),
+                        &:nth-of-type(3) {
+                            border-top: 1px solid white;
+                        }
+
+                        &-rowname,
+                        &-colname,
+                        &-cash {
+                            color: #2a1103;
+                            background: #EEE4DA;
+                            padding: 1vw;
+                            font-size: 1.74vw;
+                            padding-left: 3vw;
+                        }
+
+                        &-rowname {
+                            border-right: 1px solid white;
+                        }
+
+                        &-colname {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-others {
+            &-title {
+                display: inline-block;
+                color: #FFFFFF;
+                opacity: 0.6039;
+                margin-left: 9vw;
+                margin-bottom: 0;
+                font-size: 8vw;
+            }
+
+            &-memo {
+                color: #2A1103;
+                font-size: 1.87vw;
+                margin-left: 9vw;
+                font-size: 1.5vw;
+            }
+
+            &-menu {
+                width: 81vw;
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+
+                &-medication {
+
+                    &-title {
+                        font-size: 1.8vw;
+                        font-weight: normal;
+                        color: #2A1103;
+                        margin-left: 2vw;
+                        margin-top: 1vw;
+
+                        &-triangle {
+                            border-left: 0.5vw solid transparent;
+                            border-right: 0.5vw solid transparent;
+                            border-top: 0.5vw solid white;
+                            position: relative;
+                            bottom: -1.5vw;
+                            left: 0.3vw;
+                        }
+                    }
+
+                    &-money {
+                        background: white;
+                        padding: 2vw;
+                        width: 40vw;
+                        width: 39vw;
+                        margin: 0 0.5vw;
+
+                        &-table-tr {
+
+                            &-rowname,
+                            &-cash,
+                            &-subname {
+                                font-size: 1.74vw;
+                                color: #2A1103;
+                                padding: 0.5vw;
+                            }
+
+                            &-cash {
+                                padding-left: 7vw;
+                            }
+
+                            &-subname {
+                                font-size: 1.4vw;
+                                color: #2A1103;
+                                padding: 1vw;
+                            }
+
+                            &-blank {
+                                padding: 1vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
