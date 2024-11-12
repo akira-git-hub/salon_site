@@ -321,6 +321,7 @@ main {
     .block-7 {
         background-color: #EEE4DA;
         padding-top: 5vw;
+        padding-bottom: 6vw;
 
         &-title {
             text-align: center;
@@ -379,7 +380,7 @@ main {
 
             &-ibrou {
                 display: inline-block;
-                width: 24vw;
+                width: 23.5vw;
                 padding-left: 0.5vw;
                 padding-right: 0.5vw;
 
@@ -624,5 +625,218 @@ main {
             }
         }
 
+    }
+
+    .block-8 {
+        width: 81vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 9vw;
+
+        &-title {
+            font-size: 4vw;
+            color: #544136;
+            margin-top: 8vw;
+            margin-bottom: 8vw;
+            text-align: center;
+        }
+
+        &-block {
+            display: flex;
+            &-box {
+                width: 40vw;
+
+                &-msg {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 2vw;
+
+                    &-num,
+                    &-name,
+                    &-eng {
+                        position: absolute;
+                        color: white;
+                    }
+
+                    &-num {
+                        margin-top: -4vw;
+                        margin-left: 2vw;
+                        font-size: 3.7vw;
+                    }
+
+                    &-name {
+                        margin-top: 2.5vw;
+                        margin-left: 1.2vw;
+                        font-size: 3.0vw;
+                        &-2{
+                            margin-top: 3vw;
+                            margin-left: 0.2vw;
+                            font-size: 1.75vw;
+                            line-height: 2vw;
+                            span{
+                                margin-left: 3vw;
+                            }
+                        }
+                        &-5{
+                            margin-left: 0vw;
+                            font-size: 2vw;
+                        }
+                        &-6{
+                            margin-left: 0vw;
+                            font-size: 1.7vw;
+                        }
+                        &-7{
+                            margin-left: 0.8vw;
+                            font-size: 2.6vw;
+                        }
+                        &-8{
+                            margin-left: 0.8vw;
+                            font-size: 2vw;
+                            line-height: 2vw;
+                            margin-top: 3.2vw;
+                            span{
+                                margin-left: 3vw;
+                            }
+                        }
+                        &-9{
+                            margin-top: 3.5vw;
+                        }
+                    }
+
+                    &-eng {
+                        margin-top: 7.6vw;
+                        margin-left: 4.3vw;
+                        font-size: 1.9vw;
+                        &-2{
+                            margin-top: 9vw;
+                            margin-left: 3vw;
+                        }
+                        &-3{
+                            margin-left: 4vw;
+                        }
+                        &-5{
+                            margin-left: 2vw;
+                        }
+                        &-6{
+                            margin-left: 1.2vw;
+                        }
+                        &-7{
+                            margin-left: 1.2vw;
+                        }
+                        &-8{
+                            margin-left: 2.5vw;
+                            margin-top: 9vw;
+                        }
+                        &-9{
+                            margin-top: 8.1vw;
+                            margin-left: 2.3vw;
+                        }
+                    }
+
+                    &-icon {
+                        background: #9A9085;
+                        width: 12vw;
+                        height: 12vw;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 1vw;
+
+                        &::before {
+                            content: "";
+                            width: 11vw;
+                            height: 11vw;
+                            border-radius: 50%;
+                            border: 0.1vw solid white;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                &-button {
+                    text-align: left;
+                    padding-bottom: 2vw;
+                    margin-left: 7vw;
+                    a {
+                        text-decoration: none;
+                        background-color: white;
+                        color: #2A1103;
+                        border: none;
+                        padding: 1.1vw 8vw;
+                        font-size: 1.8vw;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                        margin-top: 2vw;
+                        margin-bottom: 2vw;
+                        box-shadow: 0 0.5px 1.5vw rgba(0, 0, 0, 0.1);
+                    }
+                }
+
+                &-exp {
+                    color: #544136;
+                    font-size: 1.8vw;
+                    p{
+                        margin-left: 7vw;
+                    }
+                }
+            }
+
+            &-img {
+                width: 41vw;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-downicon {
+            margin-top: 3vw;
+            margin-bottom: 3vw;
+            &-triangle {
+                width: 0;
+                height: 0;
+                border-left: 4vw solid transparent;
+                border-right: 4vw solid transparent;
+                border-top: 4vw solid #EEE4DA;
+                display: block;
+                margin: -0.5vw 0;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 0.5961;
+            }
+        }
+    }
+    .block-9{
+        width: 81vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 9vw;
+
+        &-title {
+            font-size: 4vw;
+            color: #544136;
+            margin-top: 8vw;
+            margin-bottom: 8vw;
+            text-align: center;
+        }
+        .accordion-button,.accordion-body{
+            padding-left: 5vw;
+            font-size: 2.25vw;
+        }
+        .accordion-button > span{
+            position: absolute;
+            top: 2vw;
+            left: 1vw;
+        }
+        .accordion-body > span{
+            position: absolute;
+            left: 11vw;
+        }
+        .accordion-button:not(.collapsed) {
+            color: #fff;
+            background-color: #9A9085;
+          }
     }
 }
