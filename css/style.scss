@@ -166,7 +166,6 @@ main {
     }
 
     .block-4 {
-        // background: #FCFAF4;
         background-image: url(../img/img_bg.png);
         background-repeat: no-repeat;
         background-position: center bottom;
@@ -643,6 +642,7 @@ main {
 
         &-block {
             display: flex;
+
             &-box {
                 width: 40vw;
 
@@ -669,37 +669,45 @@ main {
                         margin-top: 2.5vw;
                         margin-left: 1.2vw;
                         font-size: 3.0vw;
-                        &-2{
+
+                        &-2 {
                             margin-top: 3vw;
                             margin-left: 0.2vw;
                             font-size: 1.75vw;
                             line-height: 2vw;
-                            span{
+
+                            span {
                                 margin-left: 3vw;
                             }
                         }
-                        &-5{
+
+                        &-5 {
                             margin-left: 0vw;
                             font-size: 2vw;
                         }
-                        &-6{
+
+                        &-6 {
                             margin-left: 0vw;
                             font-size: 1.7vw;
                         }
-                        &-7{
+
+                        &-7 {
                             margin-left: 0.8vw;
                             font-size: 2.6vw;
                         }
-                        &-8{
+
+                        &-8 {
                             margin-left: 0.8vw;
                             font-size: 2vw;
                             line-height: 2vw;
                             margin-top: 3.2vw;
-                            span{
+
+                            span {
                                 margin-left: 3vw;
                             }
                         }
-                        &-9{
+
+                        &-9 {
                             margin-top: 3.5vw;
                         }
                     }
@@ -708,27 +716,34 @@ main {
                         margin-top: 7.6vw;
                         margin-left: 4.3vw;
                         font-size: 1.9vw;
-                        &-2{
+
+                        &-2 {
                             margin-top: 9vw;
                             margin-left: 3vw;
                         }
-                        &-3{
+
+                        &-3 {
                             margin-left: 4vw;
                         }
-                        &-5{
+
+                        &-5 {
                             margin-left: 2vw;
                         }
-                        &-6{
+
+                        &-6 {
                             margin-left: 1.2vw;
                         }
-                        &-7{
+
+                        &-7 {
                             margin-left: 1.2vw;
                         }
-                        &-8{
+
+                        &-8 {
                             margin-left: 2.5vw;
                             margin-top: 9vw;
                         }
-                        &-9{
+
+                        &-9 {
                             margin-top: 8.1vw;
                             margin-left: 2.3vw;
                         }
@@ -759,6 +774,7 @@ main {
                     text-align: left;
                     padding-bottom: 2vw;
                     margin-left: 7vw;
+
                     a {
                         text-decoration: none;
                         background-color: white;
@@ -776,7 +792,8 @@ main {
                 &-exp {
                     color: #544136;
                     font-size: 1.8vw;
-                    p{
+
+                    p {
                         margin-left: 7vw;
                     }
                 }
@@ -794,6 +811,7 @@ main {
         &-downicon {
             margin-top: 3vw;
             margin-bottom: 3vw;
+
             &-triangle {
                 width: 0;
                 height: 0;
@@ -808,7 +826,8 @@ main {
             }
         }
     }
-    .block-9{
+
+    .block-9 {
         width: 81vw;
         margin-left: auto;
         margin-right: auto;
@@ -821,22 +840,249 @@ main {
             margin-bottom: 8vw;
             text-align: center;
         }
-        .accordion-button,.accordion-body{
+
+        .accordion-button,
+        .accordion-body {
             padding-left: 5vw;
             font-size: 2.25vw;
         }
-        .accordion-button > span{
+
+        .accordion-button>span {
             position: absolute;
             top: 2vw;
             left: 1vw;
         }
-        .accordion-body > span{
+
+        .accordion-body>span {
             position: absolute;
             left: 11vw;
         }
+
         .accordion-button:not(.collapsed) {
             color: #fff;
             background-color: #9A9085;
-          }
+        }
+    }
+
+    .block-10 {
+        padding-bottom: 6vw;
+        background: #ECE6E3;
+
+        &-title {
+            color: #2A1103;
+            font-size: 4vw;
+            padding-top: 6vw;
+            padding-bottom: 6vw;
+            text-align: center;
+        }
+
+        &-comment {
+            padding-left: 29vw;
+
+            &-text {
+                padding-bottom: 2vw;
+                font-size: 2.2vw;
+
+                a {
+                    color: #2A1103
+                }
+            }
+        }
+    }
+
+    .block-11 {
+        width: 81vw;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 7vw;
+
+        &-title {
+            color: #2A1103;
+            font-size: 4vw;
+            padding-top: 6vw;
+            padding-bottom: 6vw;
+            text-align: center;
+        }
+
+        &-block {
+            p{
+                margin-bottom: 0;
+            }
+            &-block1 {
+                width: 40.2vw;
+                display: inline-block;
+
+                &-row1{
+                    margin-bottom: 1.5vw;
+                }
+                &-row2{
+                    margin-bottom: 1.5vw;
+                }
+
+                &-jusho {
+                    width: 25vw;
+                    font-size: 1.4vw;
+                    display: inline-block;
+                    color: #2A1103;
+                    >span{
+                        color: #A98A80;
+                    }
+                }
+
+                &-eigyo {
+                    width: 14vw;
+                    font-size: 1.3vw;
+                    display: inline-block;
+                    vertical-align: top;
+                    color: #2A1103;
+                    >span{
+                        color: #A98A80;
+                    }
+                }
+
+                &-address {
+                    font-size: 1.4vw;
+                    width: 11vw;
+                    display: inline-block;
+                    color: #2A1103;
+                    >span{
+                        color: #A98A80;
+                    }
+                }
+
+                &-closed {
+                    font-size: 1.4vw;
+                    display: inline-block;
+                    width: 6vw;
+                    color: #2A1103;
+                    >span{
+                        color: #A98A80;
+                    }
+                }
+
+                &-money {
+                    width: 17vw;
+                    display: inline-block;
+                    font-size: 1.4vw;
+                    color: #2A1103;
+                    >span{
+                        color: #A98A80;
+                    }
+                }
+
+                &-train{
+                    font-size: 1.4vw;
+                    color: #2A1103;
+                }
+            }
+
+            &-block2 {
+                width: 38vw;
+                display: inline-block;
+                vertical-align: top;
+
+                &-iframe {
+                    width: 39vw;
+                    height: 23vw;
+                    vertical-align: top;
+                }
+
+                &-box {
+                    margin-top: 2vw;
+                    text-align: left;
+                    text-align: center;
+                    &-button{
+                        text-decoration: none;
+                        background-color: white;
+                        color: #2A1103;
+                        border: none;
+                        padding: 1.1vw 8vw;
+                        font-size: 1.8vw;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+                        margin-top: 2vw;
+                        margin-bottom: 2vw;
+                    }
+                }
+            }
+
+            &-block3{
+                margin-top: -2vw;
+                &-car{
+                    color: #2A1103;
+                    font-size: 1.4vw;
+                    width: 81vw;
+                    >span{
+                        color: #A98A80;
+                    }
+                }
+            }
+        }
+    }
+}
+.footter{
+    background-image: url(../img/img_footer.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    &-block{
+        width: 81vw;
+        margin-left: auto;
+        margin-right: auto;
+        height: 26vw;
+        &-block1{
+            width: 39vw;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 6vw;
+            &-title{
+                font-size: 3.4vw;
+                color: #2A1103;
+            }
+            &-snsicon{
+                &-line{
+                    >img{
+                        width: 5vw;
+                        margin-left: -1vw;
+                    }
+                }
+                &-insta{
+                    >img{
+                        width: 5vw;
+                        margin-left: -1vw;
+                    }
+                }
+            }
+
+        }
+        &-block2{
+            width: 40vw;
+            margin-top: 3vw;
+            display: inline-block;
+            &-lick1{
+                display: inline-block;
+                font-size: 1.8vw;
+                width: 19vw;
+                &-p{
+                    margin-bottom: 2vw;
+                    >a{
+                        text-decoration:none;
+                        color: #2A1103;
+                    }
+                }
+            }
+            &-lick2{
+                display: inline-block;
+                vertical-align: top;
+                font-size: 1.8vw;
+                width: 19vw;
+                padding-left: 2vw;
+                &-p{
+                    margin-bottom: 2vw;
+                    >a{
+                        text-decoration:none;
+                        color: #2A1103;
+                    }   
+                }            
+            }
+        }
     }
 }

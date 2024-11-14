@@ -655,7 +655,8 @@ main .block-9-title {
   margin-bottom: 8vw;
   text-align: center;
 }
-main .block-9 .accordion-button, main .block-9 .accordion-body {
+main .block-9 .accordion-button,
+main .block-9 .accordion-body {
   padding-left: 5vw;
   font-size: 2.25vw;
 }
@@ -671,4 +672,199 @@ main .block-9 .accordion-body > span {
 main .block-9 .accordion-button:not(.collapsed) {
   color: #fff;
   background-color: #9A9085;
+}
+main .block-10 {
+  padding-bottom: 6vw;
+  background: #ECE6E3;
+}
+main .block-10-title {
+  color: #2A1103;
+  font-size: 4vw;
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+  text-align: center;
+}
+main .block-10-comment {
+  padding-left: 29vw;
+}
+main .block-10-comment-text {
+  padding-bottom: 2vw;
+  font-size: 2.2vw;
+}
+main .block-10-comment-text a {
+  color: #2A1103;
+}
+main .block-11 {
+  width: 81vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 7vw;
+}
+main .block-11-title {
+  color: #2A1103;
+  font-size: 4vw;
+  padding-top: 6vw;
+  padding-bottom: 6vw;
+  text-align: center;
+}
+main .block-11-block p {
+  margin-bottom: 0;
+}
+main .block-11-block-block1 {
+  width: 40.2vw;
+  display: inline-block;
+}
+main .block-11-block-block1-row1 {
+  margin-bottom: 1.5vw;
+}
+main .block-11-block-block1-row2 {
+  margin-bottom: 1.5vw;
+}
+main .block-11-block-block1-jusho {
+  width: 25vw;
+  font-size: 1.4vw;
+  display: inline-block;
+  color: #2A1103;
+}
+main .block-11-block-block1-jusho > span {
+  color: #A98A80;
+}
+main .block-11-block-block1-eigyo {
+  width: 14vw;
+  font-size: 1.3vw;
+  display: inline-block;
+  vertical-align: top;
+  color: #2A1103;
+}
+main .block-11-block-block1-eigyo > span {
+  color: #A98A80;
+}
+main .block-11-block-block1-address {
+  font-size: 1.4vw;
+  width: 11vw;
+  display: inline-block;
+  color: #2A1103;
+}
+main .block-11-block-block1-address > span {
+  color: #A98A80;
+}
+main .block-11-block-block1-closed {
+  font-size: 1.4vw;
+  display: inline-block;
+  width: 6vw;
+  color: #2A1103;
+}
+main .block-11-block-block1-closed > span {
+  color: #A98A80;
+}
+main .block-11-block-block1-money {
+  width: 17vw;
+  display: inline-block;
+  font-size: 1.4vw;
+  color: #2A1103;
+}
+main .block-11-block-block1-money > span {
+  color: #A98A80;
+}
+main .block-11-block-block1-train {
+  font-size: 1.4vw;
+  color: #2A1103;
+}
+main .block-11-block-block2 {
+  width: 38vw;
+  display: inline-block;
+  vertical-align: top;
+}
+main .block-11-block-block2-iframe {
+  width: 39vw;
+  height: 23vw;
+  vertical-align: top;
+}
+main .block-11-block-block2-box {
+  margin-top: 2vw;
+  text-align: left;
+  text-align: center;
+}
+main .block-11-block-block2-box-button {
+  text-decoration: none;
+  background-color: white;
+  color: #2A1103;
+  border: none;
+  padding: 1.1vw 8vw;
+  font-size: 1.8vw;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+main .block-11-block-block3 {
+  margin-top: -2vw;
+}
+main .block-11-block-block3-car {
+  color: #2A1103;
+  font-size: 1.4vw;
+  width: 81vw;
+}
+main .block-11-block-block3-car > span {
+  color: #A98A80;
+}
+
+.footter {
+  background-image: url(../img/img_footer.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.footter-block {
+  width: 81vw;
+  margin-left: auto;
+  margin-right: auto;
+  height: 26vw;
+}
+.footter-block-block1 {
+  width: 39vw;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 6vw;
+}
+.footter-block-block1-title {
+  font-size: 3.4vw;
+  color: #2A1103;
+}
+.footter-block-block1-snsicon-line > img {
+  width: 5vw;
+  margin-left: -1vw;
+}
+.footter-block-block1-snsicon-insta > img {
+  width: 5vw;
+  margin-left: -1vw;
+}
+.footter-block-block2 {
+  width: 40vw;
+  margin-top: 3vw;
+  display: inline-block;
+}
+.footter-block-block2-lick1 {
+  display: inline-block;
+  font-size: 1.8vw;
+  width: 19vw;
+}
+.footter-block-block2-lick1-p {
+  margin-bottom: 2vw;
+}
+.footter-block-block2-lick1-p > a {
+  text-decoration: none;
+  color: #2A1103;
+}
+.footter-block-block2-lick2 {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.8vw;
+  width: 19vw;
+  padding-left: 2vw;
+}
+.footter-block-block2-lick2-p {
+  margin-bottom: 2vw;
+}
+.footter-block-block2-lick2-p > a {
+  text-decoration: none;
+  color: #2A1103;
 }/*# sourceMappingURL=style.css.map */
