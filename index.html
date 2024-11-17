@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>サロンサイト</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="./js/jquery-3.7.1.min.js"></script>
@@ -20,14 +21,7 @@
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor"
-                        class="bi bi-clipboard-heart header-nav-icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M5 1.5A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm5 0a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z" />
-                        <path
-                            d="M3 1.5h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2" />
-                        <path d="M8 6.982C9.664 5.309 13.825 8.236 8 12 2.175 8.236 6.336 5.31 8 6.982" />
-                    </svg>
+                    <img src="./img/logo.png" alt="">
                 </a>
                 <!-- ハンバーガーメニューボタン -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -102,42 +96,31 @@
         </div>
         <!-- スライド画像 -->
         <div class="block-2">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="https://images.unsplash.com/photo-1726610930930-0e1af5f2d038?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="https://plus.unsplash.com/premium_photo-1664382465641-997aa3b73907?q=80&w=2971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            class="d-block w-100" alt="...">
-                    </div>
+            <div class="block-2-block">
+                <div class="block-2-block-img">
+                    <img src="./img/banner2.png" alt="" srcset="">
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="block-2-block-img">
+                    <img src="./img/banner1.png" alt="" srcset="">
+                </div>
+                <div class="block-2-block-img">
+                    <img src="./img/banner2.png" alt="" srcset="">
+                </div>
+                <div class="block-2-block-img">
+                    <img src="./img/banner1.png" alt="" srcset="">
+                </div>
             </div>
         </div>
         <!-- コンセプト -->
         <div class="block-3" id="CONCEPT">
-            <p class="h1 block-3-title" >CONCEPT</p>
+            <p class="h1 block-3-title">CONCEPT</p>
             <div class="block-3-blok">
                 <p class="block-3-blok-bun">
                     mirelle(ミレル)は、mirage(ミラージュ)とelegant(エレガント)を組み合わせた<br>
-                    造語で美しさの追求を意味しています。<br>
-                    個々の魅力を最大限に引き出し<br>
-                    自然ながらも魔法のような変化をもたらします。<br>
-                    私たちはmirelleならではの
-                    繊細なタッチと洗練された技術で<br>
-                    お客様のお顔に美を生み出し<br>
-                    お客様の魅力を新たな次元に引き上げます。
+                    造語で美しさの追求を意味しています。<br><br>
+                    個々の魅力を最大限に引き出し自然ながらも魔法のような変化をもたらします。<br><br>
+                    私たちはmirelleならではの繊細なタッチと洗練された技術で<br>
+                    お客様のお顔に美を生み出しお客様の魅力を新たな次元に引き上げます。
                 </p>
             </div>
             <div class="block-3-img">
@@ -163,23 +146,18 @@
                 </div>
             </div>
             <div class="block-4-block-daihyo">
-                <p class="block-4-block-daihyo-name">
-                    代表<br>
-                    Nakatani Mikako
-                </p>
-                <p class="block-4-block-daihyo-accent">
-                    representative
-                </p>
+                <img src="./img/img_name.png" alt="" srcset="">
             </div>
         </div>
         <!-- アーティスト -->
         <div class="block-5" id="ARTIST">
-            <p class="block-5-title h2" >ARTIST</p>
+            <p class="block-5-title h2">ARTIST</p>
             <div class="block-5-imgs">
-                <img src="./img/img_1.png" class="block-5-imgs-img1" alt="">
-                <img src="./img/img_1.png" class="block-5-imgs-img2" alt="">
-                <img src="./img/img_1.png" class="block-5-imgs-img3" alt="">
-                <img src="./img/img_1.png" class="block-5-imgs-img4" alt="">
+                <img src="./img/img_1.png" class="block-5-imgs-img" alt="">
+                <img src="./img/img_1.png" class="block-5-imgs-img" alt="">
+                <img src="./img/img_1.png" class="block-5-imgs-img" alt="">
+                <img src="./img/img_1.png" class="block-5-imgs-img" alt="">
+                <img src="./img/img_1.png" class="block-5-imgs-img" alt="">
             </div>
             <p class="block-5-btn">
                 <a href="">VIEW ALL</a>
@@ -430,6 +408,7 @@
                 <p class="block-7-others-memo h3">※全て税込の金額です。</p>
                 <div class="block-7-others-menu">
                     <div class="block-7-others-menu-medication">
+                        
                         <p class="block-7-others-menu-medication-title h4">
                             内服　Oral medication
                             <span class="block-7-others-menu-medication-title-triangle"></span>

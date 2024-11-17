@@ -1,3 +1,17 @@
+@font-face {
+    font-family: "optima";
+    src: url("../font/optima.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Hiragino";
+    src: url("../font/ヒラギノ明朝\ ProN.ttc") format("truetype");
+}
+
+* {
+    font-family: 'Hiragino';
+}
+
 header {
 
     .fixed-top {
@@ -9,12 +23,24 @@ header {
 
     // アイコンの位置調整
     .container-fluid {
-        margin-left: 32px;
+        margin-left: 2.22vw;
+        height: 7.99vw;
+
+        .navbar-brand {
+            img {
+                width: 5.42vw;
+            }
+        }
     }
 
     // ハンバーガーメニューアイコン
     .navbar-toggler {
+        margin-right: 9.81vw;
         border: none;
+
+        .navbar-toggler-icon {
+            width: 2.43vw;
+        }
     }
 
     // ハンバーガーメニュー内部
@@ -62,13 +88,13 @@ header {
 }
 
 main {
-    margin-top: 60px;
+
+    margin-top: 8.5vw;
 
     // ご予約はこちら
     .block-1 {
         .block-1-1 {
             background: #EEE4DA;
-            // padding-bottom: 5vw;
 
             .title-messege {
 
@@ -86,13 +112,14 @@ main {
 
                 &.title {
                     font-size: 8vw;
-                    margin-left: 11vw;
+                    margin-left: 9.72vw;
                     color: #333333;
+                    font-family: 'optima';
                 }
 
                 &.concept {
                     font-size: 3vw;
-                    margin-left: 11vw;
+                    margin-left: 9.72vw;
                     color: #2A1103;
                 }
 
@@ -100,7 +127,7 @@ main {
                     background: #fff;
                     width: 30vw;
                     padding: 1.2vw;
-                    margin-left: 11vw;
+                    margin-left: 9.72vw;
                     margin-top: 3vw;
 
                     a {
@@ -119,27 +146,45 @@ main {
                 .img {
                     position: absolute;
                     bottom: 0;
-                    width: 100%;
+                    width: 78%;
                 }
             }
         }
     }
 
     .block-2 {
-        margin-top: 10px;
+        margin-top: 4.65vw;
+
+        &-block {
+            display: flex;
+            overflow-X: scroll;
+            margin-left: 12.41vw;
+            margin-right: 12.41vw;
+            width: 75.18vw;
+
+            &-img {
+                width: 37.54vw;
+                margin-right: 3.75vw;
+
+                >img {
+                    width: 33.86vw;
+                }
+            }
+        }
     }
 
     .block-3 {
-        margin-top: 8vw;
+        margin-top: 12.5vw;
 
         &-title {
             color: #544037;
             opacity: 34.84%;
             margin-bottom: 0;
-            margin-left: 6vw;
-            font-size: 10vw;
+            margin-left: 9.72vw;
+            font-size: 6.94vw;
             position: absolute;
-            margin-top: -6vw;
+            margin-top: -4vw;
+            font-family: "optima";
         }
 
         &-blok {
@@ -147,20 +192,25 @@ main {
             z-index: -1;
 
             &-bun {
-                font-size: 2.3vw;
+                font-size: 1.25vw;
                 margin-bottom: 0;
-                padding: 7vw;
+                padding-left: 9.72vw;
+                padding-top: 7.57vw;
+                padding-bottom: 3.13vw;
                 background: #EEE4DA;
             }
         }
 
         &-img {
+            text-align: right;
+            margin-right: 9.72vw;
+            margin-right: 19.72vw;
+            margin-top: -20vw;
+            margin-left: 0vw;
+
             &-concept {
                 border-radius: 100% 100% 0% 0%;
-                width: 25vw;
-                position: absolute;
-                margin-top: -17vw;
-                margin-left: 72vw;
+                width: 24.31vw;
             }
         }
     }
@@ -169,72 +219,48 @@ main {
         background-image: url(../img/img_bg.png);
         background-repeat: no-repeat;
         background-position: center bottom;
-        margin-top: -2.2vh;
-        padding-bottom: 9vw;
+        padding-bottom: 7vw;
+        margin-top: -5vw;
 
         &-block {
             display: flex;
 
             &-img {
                 display: inline-block;
-                padding-top: 12vw;
-                padding-left: 16vw;
+                padding-top: 12.57vw;
+                padding-left: 17.85vw;
 
                 >img {
-                    width: 34vw;
+                    width: 26.85vw;
                 }
             }
 
             &-setumei {
                 display: inline-block;
-                font-size: 1.5vw;
+                font-size: 1.25vw;
                 padding-left: 5vw;
-                padding-top: 25vw;
+                padding-top: 22.36vw;
                 color: #544136;
 
                 &-sikaku {
-                    font-size: 1.5vw;
+                    font-size: 1.25vw;
+                    margin-bottom: 0.9vw;
                 }
 
                 &-msg {
-                    font-size: 1.7vw;
+                    font-size: 1.67vw;
                 }
             }
 
             &-daihyo {
-                background: #F23;
-                width: 24vw;
+                width: 18.75vw;
                 margin-left: 26vw;
-                margin-top: -9.7vw;
+                margin-top: -6.7vw;
                 position: relative;
                 height: 8.57vw;
 
-                &::after {
-                    content: "";
-                    border: 1px solid #707070;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    top: -1vw;
-                    left: 1vw;
-                    padding: 4.7vw 3vw;
-                }
-
-                &-name {
-                    color: #2A1103;
-                    font-size: 2.1vw;
-                    padding: 1.7vw 3vw;
-                    background: #fff;
-                }
-
-                &-accent {
-                    position: absolute;
-                    top: 1vw;
-                    font-size: 2vw;
-                    left: 4vw;
-                    color: #9A9085;
-                    opacity: 50.2%;
-                    transform: rotate(-6deg);
+                img {
+                    width: 18.75vw;
                 }
             }
 
@@ -242,22 +268,26 @@ main {
     }
 
     .block-5 {
-        padding-top: 9vw;
+        padding-top: 10.56vw;
         padding-bottom: 8vw;
 
         &-title {
-            padding-left: 8vw;
-            font-size: 4vw;
+            padding-left: 9.72vw;
+            font-size: 4.03vw;
+            font-family: "optima";
         }
 
         &-imgs {
-            padding-top: 3vw;
-            padding-left: 6vw;
-            width: 100vw;
+            margin-top: 4.03vw;
+            margin-left: 9.72vw;
+            margin-right: 9.72vw;
+            display: flex;
+            overflow-x: scroll;
+            width: 80.56vw;
 
-            img {
-                width: 21vw;
-                padding-left: 2vw;
+            >img {
+                width: 19.7vw;
+                padding-right: 2vw;
             }
         }
 
@@ -270,32 +300,35 @@ main {
                 color: #2A1204;
                 background: #EEE4DA;
                 padding: 0.5vw 4.0vw;
-                font-size: 1.6vw;
+                font-size: 1.25vw;
                 text-align: right;
                 margin-left: auto;
                 margin-right: 12vw;
+                font-family: "optima";
             }
         }
 
     }
 
     .block-6 {
-        padding-top: 4vw;
-        padding-bottom: 8vw;
+        padding-top: 8vw;
+        padding-bottom: 17.78vw;
 
         &-title {
-            padding-left: 8vw;
-            font-size: 4vw;
+            padding-left: 9.72vw;
+            font-size: 4.03vw;
+            font-family: "optima";
         }
 
         &-imgs {
             padding-top: 3vw;
-            padding-left: 6vw;
             width: 100vw;
+            margin-left: 9.72vw;
+            margin-right: 9.72vw;
 
             img {
-                width: 28vw;
-                padding-left: 1vw;
+                width: 26vw;
+                padding-right: 1vw;
             }
         }
 
@@ -308,10 +341,11 @@ main {
                 color: #2A1204;
                 background: #EEE4DA;
                 padding: 0.5vw 4.0vw;
-                font-size: 1.6vw;
+                font-size: 1.25vw;
                 text-align: right;
                 margin-left: auto;
                 margin-right: 12vw;
+                font-family: "optima";
             }
         }
 
@@ -319,17 +353,19 @@ main {
 
     .block-7 {
         background-color: #EEE4DA;
-        padding-top: 5vw;
+        padding-top: 5.76vw;
         padding-bottom: 6vw;
 
         &-title {
             text-align: center;
-            font-size: 4vw;
+            font-size: 4.03vw;
             color: #2A1103;
+            font-family: "optima";
+            margin-bottom: 0;
         }
 
         &-subtitle {
-            padding-top: 3vw;
+            padding-top: 9.58vw;
             position: relative;
             z-index: 1;
 
@@ -339,22 +375,24 @@ main {
                 opacity: 0.6039;
                 margin-left: 9vw;
                 margin-bottom: 0;
-                font-size: 8vw;
+                font-size: 6.94vw;
+                font-family: "optima";
             }
 
             &-zeikomi {
                 display: inline-block;
                 color: #2A1103;
                 margin-bottom: 0;
-                margin-left: 27.5vw;
-                font-size: 1.5vw;
+                margin-left: 33.5vw;
+                font-size: 1.39vw;
+                position: absolute;
+                top: 16vw;
             }
         }
 
         &-block1 {
-            width: 81vw;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 9.72vw;
+            margin-right: 9.72vw;
             background: white;
             padding: 2vw 4vw;
             margin-bottom: 6em;
@@ -365,13 +403,13 @@ main {
                 height: 0;
                 border-left: 8vw solid #9A9084;
                 border-bottom: 18vw solid transparent;
-                left: 14vw;
-                margin-top: -5vw;
+                left: 9.7vw;
+                margin-top: -2vw;
             }
 
             &-title {
                 padding-left: 7vw;
-                font-size: 2.5vw;
+                font-size: 2.64vw;
                 color: #2A1103;
                 padding-top: 2vw;
                 padding-bottom: 2vw;
@@ -398,13 +436,13 @@ main {
                         &-1 {
                             margin: 0px 3vw;
                             color: #2A1103;
-                            font-size: 2.7vw;
+                            font-size: 1.94vw;
                         }
 
                         &-2 {
                             margin: 0px 1vw;
                             color: #2A1103;
-                            font-size: 2.7vw;
+                            font-size: 1.94vw;
                         }
                     }
                 }
@@ -416,7 +454,7 @@ main {
                 }
 
                 &-setumei {
-                    font-size: 1.3vw;
+                    font-size: 1.25vw;
                     text-align: center;
                     color: #2A1103;
                 }
@@ -448,7 +486,7 @@ main {
                             color: #2a1103;
                             background: #EEE4DA;
                             padding: 1vw;
-                            font-size: 1.74vw;
+                            font-size: 1.94vw;
                             padding-left: 3vw;
                         }
 
@@ -464,7 +502,7 @@ main {
             }
 
             &-chui {
-                font-size: 1.4vw;
+                font-size: 1.39vw;
                 color: #2A1103;
                 padding-top: 2vw;
             }
@@ -472,9 +510,8 @@ main {
         }
 
         &-block {
-            width: 81vw;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 9.72vw;
+            margin-right: 9.72vw;
             background: white;
             padding: 2vw 4vw;
             margin-bottom: 4em;
@@ -485,20 +522,20 @@ main {
                 height: 0;
                 border-left: 8vw solid #9A9084;
                 border-bottom: 18vw solid transparent;
-                left: 14vw;
-                margin-top: -12vw;
+                left: 9.7vw;
+                margin-top: -9.72vw;
             }
 
             &-title {
                 padding-left: 7vw;
-                font-size: 2.5vw;
+                font-size: 2.64vw;
                 color: #2A1103;
                 padding-top: 2vw;
                 padding-bottom: 2vw;
 
                 &-sub {
                     margin-left: 3vw;
-                    font-size: 1.3vw;
+                    font-size: 1.39vw;
                 }
             }
 
@@ -553,7 +590,8 @@ main {
                 opacity: 0.6039;
                 margin-left: 9vw;
                 margin-bottom: 0;
-                font-size: 8vw;
+                font-size: 6.94vw;
+                font-family: "optima";
             }
 
             &-memo {
@@ -564,6 +602,7 @@ main {
             }
 
             &-menu {
+                margin-top: 3vw;
                 width: 81vw;
                 margin-left: auto;
                 margin-right: auto;
@@ -577,15 +616,6 @@ main {
                         color: #2A1103;
                         margin-left: 2vw;
                         margin-top: 1vw;
-
-                        &-triangle {
-                            border-left: 0.5vw solid transparent;
-                            border-right: 0.5vw solid transparent;
-                            border-top: 0.5vw solid white;
-                            position: relative;
-                            bottom: -1.5vw;
-                            left: 0.3vw;
-                        }
                     }
 
                     &-money {
@@ -627,9 +657,8 @@ main {
     }
 
     .block-8 {
-        width: 81vw;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 9.72vw;
+        margin-right: 9.72vw;
         padding-bottom: 9vw;
 
         &-title {
@@ -905,17 +934,19 @@ main {
         }
 
         &-block {
-            p{
+            p {
                 margin-bottom: 0;
             }
+
             &-block1 {
                 width: 40.2vw;
                 display: inline-block;
 
-                &-row1{
+                &-row1 {
                     margin-bottom: 1.5vw;
                 }
-                &-row2{
+
+                &-row2 {
                     margin-bottom: 1.5vw;
                 }
 
@@ -924,7 +955,8 @@ main {
                     font-size: 1.4vw;
                     display: inline-block;
                     color: #2A1103;
-                    >span{
+
+                    >span {
                         color: #A98A80;
                     }
                 }
@@ -935,7 +967,8 @@ main {
                     display: inline-block;
                     vertical-align: top;
                     color: #2A1103;
-                    >span{
+
+                    >span {
                         color: #A98A80;
                     }
                 }
@@ -945,7 +978,8 @@ main {
                     width: 11vw;
                     display: inline-block;
                     color: #2A1103;
-                    >span{
+
+                    >span {
                         color: #A98A80;
                     }
                 }
@@ -955,7 +989,8 @@ main {
                     display: inline-block;
                     width: 6vw;
                     color: #2A1103;
-                    >span{
+
+                    >span {
                         color: #A98A80;
                     }
                 }
@@ -965,12 +1000,13 @@ main {
                     display: inline-block;
                     font-size: 1.4vw;
                     color: #2A1103;
-                    >span{
+
+                    >span {
                         color: #A98A80;
                     }
                 }
 
-                &-train{
+                &-train {
                     font-size: 1.4vw;
                     color: #2A1103;
                 }
@@ -991,7 +1027,8 @@ main {
                     margin-top: 2vw;
                     text-align: left;
                     text-align: center;
-                    &-button{
+
+                    &-button {
                         text-decoration: none;
                         background-color: white;
                         color: #2A1103;
@@ -1005,13 +1042,15 @@ main {
                 }
             }
 
-            &-block3{
+            &-block3 {
                 margin-top: -2vw;
-                &-car{
+
+                &-car {
                     color: #2A1103;
                     font-size: 1.4vw;
                     width: 81vw;
-                    >span{
+
+                    >span {
                         color: #A98A80;
                     }
                 }
@@ -1019,33 +1058,39 @@ main {
         }
     }
 }
-.footter{
+
+.footter {
     background-image: url(../img/img_footer.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    &-block{
+
+    &-block {
         width: 81vw;
         margin-left: auto;
         margin-right: auto;
         height: 26vw;
-        &-block1{
+
+        &-block1 {
             width: 39vw;
             display: inline-block;
             vertical-align: top;
             padding-top: 6vw;
-            &-title{
+
+            &-title {
                 font-size: 3.4vw;
                 color: #2A1103;
             }
-            &-snsicon{
-                &-line{
-                    >img{
+
+            &-snsicon {
+                &-line {
+                    >img {
                         width: 5vw;
                         margin-left: -1vw;
                     }
                 }
-                &-insta{
-                    >img{
+
+                &-insta {
+                    >img {
                         width: 5vw;
                         margin-left: -1vw;
                     }
@@ -1053,35 +1098,42 @@ main {
             }
 
         }
-        &-block2{
+
+        &-block2 {
             width: 40vw;
             margin-top: 3vw;
             display: inline-block;
-            &-lick1{
+
+            &-lick1 {
                 display: inline-block;
                 font-size: 1.8vw;
                 width: 19vw;
-                &-p{
+
+                &-p {
                     margin-bottom: 2vw;
-                    >a{
-                        text-decoration:none;
+
+                    >a {
+                        text-decoration: none;
                         color: #2A1103;
                     }
                 }
             }
-            &-lick2{
+
+            &-lick2 {
                 display: inline-block;
                 vertical-align: top;
                 font-size: 1.8vw;
                 width: 19vw;
                 padding-left: 2vw;
-                &-p{
+
+                &-p {
                     margin-bottom: 2vw;
-                    >a{
-                        text-decoration:none;
+
+                    >a {
+                        text-decoration: none;
                         color: #2A1103;
-                    }   
-                }            
+                    }
+                }
             }
         }
     }

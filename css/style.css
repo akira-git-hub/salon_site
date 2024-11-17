@@ -1,3 +1,16 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "optima";
+  src: url("../font/optima.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Hiragino";
+  src: url("../font/ヒラギノ明朝 ProN.ttc") format("truetype");
+}
+* {
+  font-family: "Hiragino";
+}
+
 header .fixed-top {
   position: fixed;
   top: 0;
@@ -5,10 +18,18 @@ header .fixed-top {
   width: 100%;
 }
 header .container-fluid {
-  margin-left: 32px;
+  margin-left: 2.22vw;
+  height: 7.99vw;
+}
+header .container-fluid .navbar-brand img {
+  width: 5.42vw;
 }
 header .navbar-toggler {
+  margin-right: 9.81vw;
   border: none;
+}
+header .navbar-toggler .navbar-toggler-icon {
+  width: 2.43vw;
 }
 header .offcanvas {
   background-color: #EEE4DA;
@@ -40,7 +61,7 @@ header .offcanvas .title-yoyaku .YoyakuButon {
 }
 
 main {
-  margin-top: 60px;
+  margin-top: 8.5vw;
 }
 main .block-1 .block-1-1 {
   background: #EEE4DA;
@@ -58,19 +79,20 @@ main .block-1 .block-1-1 p {
 }
 main .block-1 .block-1-1 p.title {
   font-size: 8vw;
-  margin-left: 11vw;
+  margin-left: 9.72vw;
   color: #333333;
+  font-family: "optima";
 }
 main .block-1 .block-1-1 p.concept {
   font-size: 3vw;
-  margin-left: 11vw;
+  margin-left: 9.72vw;
   color: #2A1103;
 }
 main .block-1 .block-1-1 p.button {
   background: #fff;
   width: 30vw;
   padding: 1.2vw;
-  margin-left: 11vw;
+  margin-left: 9.72vw;
   margin-top: 3vw;
 }
 main .block-1 .block-1-1 p.button a {
@@ -85,120 +107,123 @@ main .block-1 .block-1-1 .block-1-2 {
 main .block-1 .block-1-1 .block-1-2 .img {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  width: 78%;
 }
 main .block-2 {
-  margin-top: 10px;
+  margin-top: 4.65vw;
+}
+main .block-2-block {
+  display: flex;
+  overflow-X: scroll;
+  margin-left: 12.41vw;
+  margin-right: 12.41vw;
+  width: 75.18vw;
+}
+main .block-2-block-img {
+  width: 37.54vw;
+  margin-right: 3.75vw;
+}
+main .block-2-block-img > img {
+  width: 33.86vw;
 }
 main .block-3 {
-  margin-top: 8vw;
+  margin-top: 12.5vw;
 }
 main .block-3-title {
   color: #544037;
   opacity: 34.84%;
   margin-bottom: 0;
-  margin-left: 6vw;
-  font-size: 10vw;
+  margin-left: 9.72vw;
+  font-size: 6.94vw;
   position: absolute;
-  margin-top: -6vw;
+  margin-top: -4vw;
+  font-family: "optima";
 }
 main .block-3-blok {
   top: -6vw;
   z-index: -1;
 }
 main .block-3-blok-bun {
-  font-size: 2.3vw;
+  font-size: 1.25vw;
   margin-bottom: 0;
-  padding: 7vw;
+  padding-left: 9.72vw;
+  padding-top: 7.57vw;
+  padding-bottom: 3.13vw;
   background: #EEE4DA;
+}
+main .block-3-img {
+  text-align: right;
+  margin-right: 9.72vw;
+  margin-right: 19.72vw;
+  margin-top: -20vw;
+  margin-left: 0vw;
 }
 main .block-3-img-concept {
   border-radius: 100% 100% 0% 0%;
-  width: 25vw;
-  position: absolute;
-  margin-top: -17vw;
-  margin-left: 72vw;
+  width: 24.31vw;
 }
 main .block-4 {
   background-image: url(../img/img_bg.png);
   background-repeat: no-repeat;
   background-position: center bottom;
-  margin-top: -2.2vh;
-  padding-bottom: 9vw;
+  padding-bottom: 7vw;
+  margin-top: -5vw;
 }
 main .block-4-block {
   display: flex;
 }
 main .block-4-block-img {
   display: inline-block;
-  padding-top: 12vw;
-  padding-left: 16vw;
+  padding-top: 12.57vw;
+  padding-left: 17.85vw;
 }
 main .block-4-block-img > img {
-  width: 34vw;
+  width: 26.85vw;
 }
 main .block-4-block-setumei {
   display: inline-block;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   padding-left: 5vw;
-  padding-top: 25vw;
+  padding-top: 22.36vw;
   color: #544136;
 }
 main .block-4-block-setumei-sikaku {
-  font-size: 1.5vw;
+  font-size: 1.25vw;
+  margin-bottom: 0.9vw;
 }
 main .block-4-block-setumei-msg {
-  font-size: 1.7vw;
+  font-size: 1.67vw;
 }
 main .block-4-block-daihyo {
-  background: #F23;
-  width: 24vw;
+  width: 18.75vw;
   margin-left: 26vw;
-  margin-top: -9.7vw;
+  margin-top: -6.7vw;
   position: relative;
   height: 8.57vw;
 }
-main .block-4-block-daihyo::after {
-  content: "";
-  border: 1px solid #707070;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -1vw;
-  left: 1vw;
-  padding: 4.7vw 3vw;
-}
-main .block-4-block-daihyo-name {
-  color: #2A1103;
-  font-size: 2.1vw;
-  padding: 1.7vw 3vw;
-  background: #fff;
-}
-main .block-4-block-daihyo-accent {
-  position: absolute;
-  top: 1vw;
-  font-size: 2vw;
-  left: 4vw;
-  color: #9A9085;
-  opacity: 50.2%;
-  transform: rotate(-6deg);
+main .block-4-block-daihyo img {
+  width: 18.75vw;
 }
 main .block-5 {
-  padding-top: 9vw;
+  padding-top: 10.56vw;
   padding-bottom: 8vw;
 }
 main .block-5-title {
-  padding-left: 8vw;
-  font-size: 4vw;
+  padding-left: 9.72vw;
+  font-size: 4.03vw;
+  font-family: "optima";
 }
 main .block-5-imgs {
-  padding-top: 3vw;
-  padding-left: 6vw;
-  width: 100vw;
+  margin-top: 4.03vw;
+  margin-left: 9.72vw;
+  margin-right: 9.72vw;
+  display: flex;
+  overflow-x: scroll;
+  width: 80.56vw;
 }
-main .block-5-imgs img {
-  width: 21vw;
-  padding-left: 2vw;
+main .block-5-imgs > img {
+  width: 19.7vw;
+  padding-right: 2vw;
 }
 main .block-5-btn {
   display: flex;
@@ -209,27 +234,30 @@ main .block-5-btn a {
   color: #2A1204;
   background: #EEE4DA;
   padding: 0.5vw 4vw;
-  font-size: 1.6vw;
+  font-size: 1.25vw;
   text-align: right;
   margin-left: auto;
   margin-right: 12vw;
+  font-family: "optima";
 }
 main .block-6 {
-  padding-top: 4vw;
-  padding-bottom: 8vw;
+  padding-top: 8vw;
+  padding-bottom: 17.78vw;
 }
 main .block-6-title {
-  padding-left: 8vw;
-  font-size: 4vw;
+  padding-left: 9.72vw;
+  font-size: 4.03vw;
+  font-family: "optima";
 }
 main .block-6-imgs {
   padding-top: 3vw;
-  padding-left: 6vw;
   width: 100vw;
+  margin-left: 9.72vw;
+  margin-right: 9.72vw;
 }
 main .block-6-imgs img {
-  width: 28vw;
-  padding-left: 1vw;
+  width: 26vw;
+  padding-right: 1vw;
 }
 main .block-6-btn {
   display: flex;
@@ -240,23 +268,26 @@ main .block-6-btn a {
   color: #2A1204;
   background: #EEE4DA;
   padding: 0.5vw 4vw;
-  font-size: 1.6vw;
+  font-size: 1.25vw;
   text-align: right;
   margin-left: auto;
   margin-right: 12vw;
+  font-family: "optima";
 }
 main .block-7 {
   background-color: #EEE4DA;
-  padding-top: 5vw;
+  padding-top: 5.76vw;
   padding-bottom: 6vw;
 }
 main .block-7-title {
   text-align: center;
-  font-size: 4vw;
+  font-size: 4.03vw;
   color: #2A1103;
+  font-family: "optima";
+  margin-bottom: 0;
 }
 main .block-7-subtitle {
-  padding-top: 3vw;
+  padding-top: 9.58vw;
   position: relative;
   z-index: 1;
 }
@@ -266,19 +297,21 @@ main .block-7-subtitle-arttitle {
   opacity: 0.6039;
   margin-left: 9vw;
   margin-bottom: 0;
-  font-size: 8vw;
+  font-size: 6.94vw;
+  font-family: "optima";
 }
 main .block-7-subtitle-zeikomi {
   display: inline-block;
   color: #2A1103;
   margin-bottom: 0;
-  margin-left: 27.5vw;
-  font-size: 1.5vw;
+  margin-left: 33.5vw;
+  font-size: 1.39vw;
+  position: absolute;
+  top: 16vw;
 }
 main .block-7-block1 {
-  width: 81vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 9.72vw;
+  margin-right: 9.72vw;
   background: white;
   padding: 2vw 4vw;
   margin-bottom: 6em;
@@ -289,12 +322,12 @@ main .block-7-block1-triangle {
   height: 0;
   border-left: 8vw solid #9A9084;
   border-bottom: 18vw solid transparent;
-  left: 14vw;
-  margin-top: -5vw;
+  left: 9.7vw;
+  margin-top: -2vw;
 }
 main .block-7-block1-title {
   padding-left: 7vw;
-  font-size: 2.5vw;
+  font-size: 2.64vw;
   color: #2A1103;
   padding-top: 2vw;
   padding-bottom: 2vw;
@@ -318,18 +351,18 @@ main .block-7-block1-ibrou-title-line {
 main .block-7-block1-ibrou-title-text-1 {
   margin: 0px 3vw;
   color: #2A1103;
-  font-size: 2.7vw;
+  font-size: 1.94vw;
 }
 main .block-7-block1-ibrou-title-text-2 {
   margin: 0px 1vw;
   color: #2A1103;
-  font-size: 2.7vw;
+  font-size: 1.94vw;
 }
 main .block-7-block1-ibrou-setumei1, main .block-7-block1-ibrou-setumei3 {
   padding-bottom: 2.1vw;
 }
 main .block-7-block1-ibrou-setumei {
-  font-size: 1.3vw;
+  font-size: 1.25vw;
   text-align: center;
   color: #2A1103;
 }
@@ -349,7 +382,7 @@ main .block-7-block1-money-table-tr-rowname, main .block-7-block1-money-table-tr
   color: #2a1103;
   background: #EEE4DA;
   padding: 1vw;
-  font-size: 1.74vw;
+  font-size: 1.94vw;
   padding-left: 3vw;
 }
 main .block-7-block1-money-table-tr-rowname {
@@ -359,14 +392,13 @@ main .block-7-block1-money-table-tr-colname {
   font-weight: normal;
 }
 main .block-7-block1-chui {
-  font-size: 1.4vw;
+  font-size: 1.39vw;
   color: #2A1103;
   padding-top: 2vw;
 }
 main .block-7-block {
-  width: 81vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 9.72vw;
+  margin-right: 9.72vw;
   background: white;
   padding: 2vw 4vw;
   margin-bottom: 4em;
@@ -377,19 +409,19 @@ main .block-7-block-triangle {
   height: 0;
   border-left: 8vw solid #9A9084;
   border-bottom: 18vw solid transparent;
-  left: 14vw;
-  margin-top: -12vw;
+  left: 9.7vw;
+  margin-top: -9.72vw;
 }
 main .block-7-block-title {
   padding-left: 7vw;
-  font-size: 2.5vw;
+  font-size: 2.64vw;
   color: #2A1103;
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
 main .block-7-block-title-sub {
   margin-left: 3vw;
-  font-size: 1.3vw;
+  font-size: 1.39vw;
 }
 main .block-7-block-img {
   text-align: center;
@@ -425,7 +457,8 @@ main .block-7-others-title {
   opacity: 0.6039;
   margin-left: 9vw;
   margin-bottom: 0;
-  font-size: 8vw;
+  font-size: 6.94vw;
+  font-family: "optima";
 }
 main .block-7-others-memo {
   color: #2A1103;
@@ -434,6 +467,7 @@ main .block-7-others-memo {
   font-size: 1.5vw;
 }
 main .block-7-others-menu {
+  margin-top: 3vw;
   width: 81vw;
   margin-left: auto;
   margin-right: auto;
@@ -445,14 +479,6 @@ main .block-7-others-menu-medication-title {
   color: #2A1103;
   margin-left: 2vw;
   margin-top: 1vw;
-}
-main .block-7-others-menu-medication-title-triangle {
-  border-left: 0.5vw solid transparent;
-  border-right: 0.5vw solid transparent;
-  border-top: 0.5vw solid white;
-  position: relative;
-  bottom: -1.5vw;
-  left: 0.3vw;
 }
 main .block-7-others-menu-medication-money {
   background: white;
@@ -478,9 +504,8 @@ main .block-7-others-menu-medication-money-table-tr-blank {
   padding: 1vw;
 }
 main .block-8 {
-  width: 81vw;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 9.72vw;
+  margin-right: 9.72vw;
   padding-bottom: 9vw;
 }
 main .block-8-title {
