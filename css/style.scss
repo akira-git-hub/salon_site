@@ -63,6 +63,7 @@ header {
             font-size: 1.4em;
             width: 50%;
             margin-left: 20%;
+            font-family:'optima';
         }
 
         .title-yoyaku {
@@ -72,6 +73,10 @@ header {
             .header_nav_title {
                 width: 50%;
                 margin-left: 20%;
+                img{
+                    width: 10vw;
+                    margin-bottom: 1vw;
+                }
             }
 
             //  ご予約はこちら
@@ -115,17 +120,23 @@ main {
                     margin-left: 9.72vw;
                     color: #333333;
                     font-family: 'optima';
+                    &>img{
+                        width: 20vw;
+                    }
                 }
 
                 &.concept {
-                    font-size: 3vw;
+                    font-size: 1.94vw;
                     margin-left: 9.72vw;
                     color: #2A1103;
+                    >span{
+                        font-size: 2.64vw;
+                    }
                 }
 
                 &.button {
                     background: #fff;
-                    width: 30vw;
+                    width: 16vw;
                     padding: 1.2vw;
                     margin-left: 9.72vw;
                     margin-top: 3vw;
@@ -133,7 +144,7 @@ main {
                     a {
                         text-decoration: none;
                         color: #2A1103;
-                        font-size: 3.8vw;
+                        font-size: 1.94vw;
                     }
                 }
 
@@ -603,10 +614,14 @@ main {
 
             &-menu {
                 margin-top: 3vw;
-                width: 81vw;
-                margin-left: auto;
-                margin-right: auto;
+                margin-left: 9.72vw;
+                margin-right: 9.72vw;
                 display: flex;
+
+                &-button {
+                    background-color: #EEE4DA;
+                    width: 40vw;
+                }
 
                 &-medication {
 
@@ -664,9 +679,10 @@ main {
         &-title {
             font-size: 4vw;
             color: #544136;
-            margin-top: 8vw;
-            margin-bottom: 8vw;
+            margin-top: 12.15vw;
+            margin-bottom: 13.54vw;
             text-align: center;
+            font-family: "optima";
         }
 
         &-block {
@@ -680,123 +696,10 @@ main {
                     justify-content: center;
                     align-items: center;
                     padding-bottom: 2vw;
-
-                    &-num,
-                    &-name,
-                    &-eng {
-                        position: absolute;
-                        color: white;
+                    >img{
+                        width: 12.5vw;
                     }
 
-                    &-num {
-                        margin-top: -4vw;
-                        margin-left: 2vw;
-                        font-size: 3.7vw;
-                    }
-
-                    &-name {
-                        margin-top: 2.5vw;
-                        margin-left: 1.2vw;
-                        font-size: 3.0vw;
-
-                        &-2 {
-                            margin-top: 3vw;
-                            margin-left: 0.2vw;
-                            font-size: 1.75vw;
-                            line-height: 2vw;
-
-                            span {
-                                margin-left: 3vw;
-                            }
-                        }
-
-                        &-5 {
-                            margin-left: 0vw;
-                            font-size: 2vw;
-                        }
-
-                        &-6 {
-                            margin-left: 0vw;
-                            font-size: 1.7vw;
-                        }
-
-                        &-7 {
-                            margin-left: 0.8vw;
-                            font-size: 2.6vw;
-                        }
-
-                        &-8 {
-                            margin-left: 0.8vw;
-                            font-size: 2vw;
-                            line-height: 2vw;
-                            margin-top: 3.2vw;
-
-                            span {
-                                margin-left: 3vw;
-                            }
-                        }
-
-                        &-9 {
-                            margin-top: 3.5vw;
-                        }
-                    }
-
-                    &-eng {
-                        margin-top: 7.6vw;
-                        margin-left: 4.3vw;
-                        font-size: 1.9vw;
-
-                        &-2 {
-                            margin-top: 9vw;
-                            margin-left: 3vw;
-                        }
-
-                        &-3 {
-                            margin-left: 4vw;
-                        }
-
-                        &-5 {
-                            margin-left: 2vw;
-                        }
-
-                        &-6 {
-                            margin-left: 1.2vw;
-                        }
-
-                        &-7 {
-                            margin-left: 1.2vw;
-                        }
-
-                        &-8 {
-                            margin-left: 2.5vw;
-                            margin-top: 9vw;
-                        }
-
-                        &-9 {
-                            margin-top: 8.1vw;
-                            margin-left: 2.3vw;
-                        }
-                    }
-
-                    &-icon {
-                        background: #9A9085;
-                        width: 12vw;
-                        height: 12vw;
-                        border-radius: 50%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-top: 1vw;
-
-                        &::before {
-                            content: "";
-                            width: 11vw;
-                            height: 11vw;
-                            border-radius: 50%;
-                            border: 0.1vw solid white;
-                            position: absolute;
-                        }
-                    }
                 }
 
                 &-button {
@@ -810,7 +713,7 @@ main {
                         color: #2A1103;
                         border: none;
                         padding: 1.1vw 8vw;
-                        font-size: 1.8vw;
+                        font-size: 1.94vw;
                         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
                         margin-top: 2vw;
                         margin-bottom: 2vw;
@@ -820,7 +723,7 @@ main {
 
                 &-exp {
                     color: #544136;
-                    font-size: 1.8vw;
+                    font-size: 1.67vw;
 
                     p {
                         margin-left: 7vw;
@@ -857,29 +760,32 @@ main {
     }
 
     .block-9 {
-        width: 81vw;
-        margin-left: auto;
-        margin-right: auto;
-        padding-bottom: 9vw;
+        margin-left: 9.72vw;
+        margin-right: 9.72vw;
+        padding-bottom: 12.57vw;
 
         &-title {
             font-size: 4vw;
             color: #544136;
-            margin-top: 8vw;
-            margin-bottom: 8vw;
+            margin-top: 1.76vw;
+            margin-bottom: 7.78vw;
             text-align: center;
+            font-family: "optima";
         }
 
         .accordion-button,
         .accordion-body {
             padding-left: 5vw;
-            font-size: 2.25vw;
+            font-size: 1.94vw;
+        }
+
+        .accordion-body {
+            color: #544136;
         }
 
         .accordion-button>span {
-            position: absolute;
-            top: 2vw;
-            left: 1vw;
+            padding-right: 2vw;
+            margin-left: -3.4vw;
         }
 
         .accordion-body>span {
@@ -894,15 +800,16 @@ main {
     }
 
     .block-10 {
-        padding-bottom: 6vw;
+        padding-bottom: 5.49vw;
         background: #ECE6E3;
 
         &-title {
             color: #2A1103;
-            font-size: 4vw;
-            padding-top: 6vw;
-            padding-bottom: 6vw;
+            font-size: 4.03vw;
+            padding-top: 3.82vw;
+            padding-bottom: 7.5vw;
             text-align: center;
+            font-family: "optima";
         }
 
         &-comment {
@@ -910,7 +817,7 @@ main {
 
             &-text {
                 padding-bottom: 2vw;
-                font-size: 2.2vw;
+                font-size: 1.94vw;
 
                 a {
                     color: #2A1103
@@ -920,17 +827,17 @@ main {
     }
 
     .block-11 {
-        width: 81vw;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 9.72vw;
+        margin-right: 9.72vw;
         padding-bottom: 7vw;
 
         &-title {
             color: #2A1103;
-            font-size: 4vw;
-            padding-top: 6vw;
-            padding-bottom: 6vw;
+            font-size: 4.03vw;
+            padding-top: 12.15vw;
+            padding-bottom: 8.19vw;
             text-align: center;
+            font-family: "optima";
         }
 
         &-block {
@@ -952,7 +859,7 @@ main {
 
                 &-jusho {
                     width: 25vw;
-                    font-size: 1.4vw;
+                    font-size: 1.25vw;
                     display: inline-block;
                     color: #2A1103;
 
@@ -1079,6 +986,9 @@ main {
             &-title {
                 font-size: 3.4vw;
                 color: #2A1103;
+                >img{
+                    width: 10vw;
+                }
             }
 
             &-snsicon {
@@ -1111,7 +1021,7 @@ main {
 
                 &-p {
                     margin-bottom: 2vw;
-
+                    font-family: 'optima';
                     >a {
                         text-decoration: none;
                         color: #2A1103;
