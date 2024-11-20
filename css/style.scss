@@ -24,11 +24,13 @@ header {
     // アイコンの位置調整
     .container-fluid {
         margin-left: 2.22vw;
-        height: 7.99vw;
+        height: 4vw;
 
         .navbar-brand {
             img {
                 width: 5.42vw;
+                margin-top: -1vw;
+
             }
         }
     }
@@ -63,7 +65,7 @@ header {
             font-size: 1.4em;
             width: 50%;
             margin-left: 20%;
-            font-family:'optima';
+            font-family: 'optima';
         }
 
         .title-yoyaku {
@@ -73,7 +75,8 @@ header {
             .header_nav_title {
                 width: 50%;
                 margin-left: 20%;
-                img{
+
+                img {
                     width: 10vw;
                     margin-bottom: 1vw;
                 }
@@ -94,7 +97,7 @@ header {
 
 main {
 
-    margin-top: 8.5vw;
+    margin-top: 4.5vw;
 
     // ご予約はこちら
     .block-1 {
@@ -120,7 +123,8 @@ main {
                     margin-left: 9.72vw;
                     color: #333333;
                     font-family: 'optima';
-                    &>img{
+
+                    &>img {
                         width: 20vw;
                     }
                 }
@@ -129,7 +133,8 @@ main {
                     font-size: 1.94vw;
                     margin-left: 9.72vw;
                     color: #2A1103;
-                    >span{
+
+                    >span {
                         font-size: 2.64vw;
                     }
                 }
@@ -333,7 +338,7 @@ main {
 
         &-imgs {
             padding-top: 3vw;
-            width: 100vw;
+            width: 80vw;
             margin-left: 9.72vw;
             margin-right: 9.72vw;
 
@@ -534,7 +539,7 @@ main {
                 border-left: 8vw solid #9A9084;
                 border-bottom: 18vw solid transparent;
                 left: 9.7vw;
-                margin-top: -9.72vw;
+                margin-top: -2vw;
             }
 
             &-title {
@@ -624,6 +629,26 @@ main {
                 }
 
                 &-medication {
+                    &>.accordion{
+                        &>.accordion-item{
+                            &>.accordion-header{
+                                &>.accordion-button{
+                                    padding-bottom: 0;
+                                    padding-top: 0;
+                                    &:not(.collapsed) {
+                                        color: #2A1103;
+                                        background-color: #FFF;
+                                    }
+                                }
+                            }
+                            &>.accordion-collapse{
+                                padding-bottom: 2vw;
+                            }
+                        }
+                    }
+                    &-dr_max{
+                        margin-left: 1vw;
+                    }
 
                     &-title {
                         font-size: 1.8vw;
@@ -639,31 +664,35 @@ main {
                         width: 40vw;
                         width: 39vw;
                         margin: 0 0.5vw;
+                        &-table{
+                            margin-left: 3.47vw;
+                            margin-top: 2vw;
+                            &-tr {
 
-                        &-table-tr {
-
-                            &-rowname,
-                            &-cash,
-                            &-subname {
-                                font-size: 1.74vw;
-                                color: #2A1103;
-                                padding: 0.5vw;
-                            }
-
-                            &-cash {
-                                padding-left: 7vw;
-                            }
-
-                            &-subname {
-                                font-size: 1.4vw;
-                                color: #2A1103;
-                                padding: 1vw;
-                            }
-
-                            &-blank {
-                                padding: 1vw;
+                                &-rowname,
+                                &-cash,
+                                &-subname {
+                                    font-size: 1.74vw;
+                                    color: #2A1103;
+                                    padding: 0.5vw;
+                                }
+    
+                                &-cash {
+                                    padding-left: 7vw;
+                                }
+    
+                                &-subname {
+                                    font-size: 1.4vw;
+                                    color: #2A1103;
+                                    padding: 1vw;
+                                }
+    
+                                &-blank {
+                                    padding: 1vw;
+                                }
                             }
                         }
+
                     }
                 }
             }
@@ -696,7 +725,8 @@ main {
                     justify-content: center;
                     align-items: center;
                     padding-bottom: 2vw;
-                    >img{
+
+                    >img {
                         width: 12.5vw;
                     }
 
@@ -796,6 +826,16 @@ main {
         .accordion-button:not(.collapsed) {
             color: #fff;
             background-color: #9A9085;
+        }
+
+        .accordion-header ,.accordion-button{
+            color: #fff;
+            background-color: #9A9085;
+        }
+
+        .accordion-header{
+            margin-bottom: 0.2vw;
+
         }
     }
 
@@ -986,7 +1026,8 @@ main {
             &-title {
                 font-size: 3.4vw;
                 color: #2A1103;
-                >img{
+
+                >img {
                     width: 10vw;
                 }
             }
@@ -1022,6 +1063,7 @@ main {
                 &-p {
                     margin-bottom: 2vw;
                     font-family: 'optima';
+
                     >a {
                         text-decoration: none;
                         color: #2A1103;

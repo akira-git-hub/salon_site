@@ -19,10 +19,11 @@ header .fixed-top {
 }
 header .container-fluid {
   margin-left: 2.22vw;
-  height: 7.99vw;
+  height: 4vw;
 }
 header .container-fluid .navbar-brand img {
   width: 5.42vw;
+  margin-top: -1vw;
 }
 header .navbar-toggler {
   margin-right: 9.81vw;
@@ -66,7 +67,7 @@ header .offcanvas .title-yoyaku .YoyakuButon {
 }
 
 main {
-  margin-top: 8.5vw;
+  margin-top: 4.5vw;
 }
 main .block-1 .block-1-1 {
   background: #EEE4DA;
@@ -262,7 +263,7 @@ main .block-6-title {
 }
 main .block-6-imgs {
   padding-top: 3vw;
-  width: 100vw;
+  width: 80vw;
   margin-left: 9.72vw;
   margin-right: 9.72vw;
 }
@@ -421,7 +422,7 @@ main .block-7-block-triangle {
   border-left: 8vw solid #9A9084;
   border-bottom: 18vw solid transparent;
   left: 9.7vw;
-  margin-top: -9.72vw;
+  margin-top: -2vw;
 }
 main .block-7-block-title {
   padding-left: 7vw;
@@ -487,6 +488,20 @@ main .block-7-others-menu-button {
   background-color: #EEE4DA;
   width: 40vw;
 }
+main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button:not(.collapsed) {
+  color: #2A1103;
+  background-color: #FFF;
+}
+main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-collapse {
+  padding-bottom: 2vw;
+}
+main .block-7-others-menu-medication-dr_max {
+  margin-left: 1vw;
+}
 main .block-7-others-menu-medication-title {
   font-size: 1.8vw;
   font-weight: normal;
@@ -500,6 +515,10 @@ main .block-7-others-menu-medication-money {
   width: 40vw;
   width: 39vw;
   margin: 0 0.5vw;
+}
+main .block-7-others-menu-medication-money-table {
+  margin-left: 3.47vw;
+  margin-top: 2vw;
 }
 main .block-7-others-menu-medication-money-table-tr-rowname, main .block-7-others-menu-medication-money-table-tr-cash, main .block-7-others-menu-medication-money-table-tr-subname {
   font-size: 1.74vw;
@@ -623,6 +642,13 @@ main .block-9 .accordion-body > span {
 main .block-9 .accordion-button:not(.collapsed) {
   color: #fff;
   background-color: #9A9085;
+}
+main .block-9 .accordion-header, main .block-9 .accordion-button {
+  color: #fff;
+  background-color: #9A9085;
+}
+main .block-9 .accordion-header {
+  margin-bottom: 0.2vw;
 }
 main .block-10 {
   padding-bottom: 5.49vw;
