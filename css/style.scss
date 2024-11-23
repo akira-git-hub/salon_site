@@ -190,7 +190,7 @@ main {
     }
 
     .block-3 {
-        margin-top: 12.5vw;
+        padding-top: 12.5vw;
 
         &-title {
             color: #544037;
@@ -703,12 +703,12 @@ main {
     .block-8 {
         margin-left: 9.72vw;
         margin-right: 9.72vw;
-        padding-bottom: 9vw;
+        padding-bottom: 3vw;
+        padding-top: 12.5vw;
 
         &-title {
             font-size: 4vw;
             color: #544136;
-            margin-top: 12.15vw;
             margin-bottom: 13.54vw;
             text-align: center;
             font-family: "optima";
@@ -793,11 +793,11 @@ main {
         margin-left: 9.72vw;
         margin-right: 9.72vw;
         padding-bottom: 12.57vw;
+        padding-top: 7.76vw;
 
         &-title {
             font-size: 4vw;
             color: #544136;
-            margin-top: 1.76vw;
             margin-bottom: 7.78vw;
             text-align: center;
             font-family: "optima";
@@ -842,11 +842,11 @@ main {
     .block-10 {
         padding-bottom: 5.49vw;
         background: #ECE6E3;
+        padding-top: 3.82vw;
 
         &-title {
             color: #2A1103;
             font-size: 4.03vw;
-            padding-top: 3.82vw;
             padding-bottom: 7.5vw;
             text-align: center;
             font-family: "optima";
