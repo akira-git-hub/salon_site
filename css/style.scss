@@ -12,36 +12,41 @@
     font-family: 'Hiragino';
 }
 
+*:focus {
+    box-shadow: none !important;
+}
+
 header {
 
     .fixed-top {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+        padding: 0;
+        background-color: white;
     }
 
-    // アイコンの位置調整
-    .container-fluid {
-        margin-left: 2.22vw;
-        height: 4vw;
-
-        .navbar-brand {
-            img {
-                width: 5.42vw;
-                margin-top: -1vw;
-
-            }
-        }
-    }
-
-    // ハンバーガーメニューアイコン
     .navbar-toggler {
-        margin-right: 9.81vw;
+        width: 3em;
         border: none;
+        margin-right: 6.5vw;
+    }
 
-        .navbar-toggler-icon {
-            width: 2.43vw;
+    .container-fluid {
+        background: white;
+        padding-top: 0.62em;
+        padding-bottom: 0.62em;
+    }
+
+    .navbar-toggler-icon {
+        width: 100%;
+        display: block;
+    }
+
+    .navbar-brand {
+
+        >img {
+            position: absolute;
+            top: -0.6em;
+            width: 4.078em;
+            margin-left: 4vw;
         }
     }
 
@@ -77,7 +82,7 @@ header {
                 margin-left: 20%;
 
                 img {
-                    width: 10vw;
+                    width: 3em;
                     margin-bottom: 1vw;
                 }
             }
@@ -93,21 +98,59 @@ header {
         }
 
     }
+
+    /* ----------------------------------------
+ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
+------------------------------------------*/
+    .header-hight {
+        height: 4.96em;
+    }
+
+    .header-rogo {
+        width: 8vw;
+        position: fixed !important;
+        top: inherit !important;
+        margin-left: 7.9vw !important;
+    }
+
+    .pankuzu {
+        margin-top: 5em;
+        background: #EDE4DA;
+        padding-left: 9vw;
+        padding-top: 0.5vw;
+        display: flex;
+
+        &-top,
+        &-bar,
+        &-name{
+            font-size: 1.94vw;
+            font-family: "optima";
+            >a{
+                text-decoration:none;
+                color: inherit;
+            }
+        }
+
+        &-bar,
+        &-name{
+            padding-left: 0.1vw;
+        }
+
+    }
+
+
 }
 
 main {
 
-    margin-top: 4.5vw;
+    margin-top: 5vw;
 
     // ご予約はこちら
     .block-1 {
         .block-1-1 {
+            margin-top: -1em;
             background: #EEE4DA;
-
-            .title-messege {
-
-                margin-top: 5vw;
-            }
+            display: flex;
 
             .col {
                 padding-left: 0;
@@ -156,20 +199,19 @@ main {
             }
 
             .block-1-2 {
-                height: 43vw;
-                position: relative;
+                width: 32.3vw;
+                margin-left: 21.28vw;
 
-                .img {
-                    position: absolute;
-                    bottom: 0;
-                    width: 78%;
+                >img {
+                    display: block;
+                    width: 100%;
                 }
             }
         }
     }
 
     .block-2 {
-        margin-top: 4.65vw;
+        margin-top: 3.65vw;
 
         &-block {
             display: flex;
@@ -629,24 +671,27 @@ main {
                 }
 
                 &-medication {
-                    &>.accordion{
-                        &>.accordion-item{
-                            &>.accordion-header{
-                                &>.accordion-button{
+                    &>.accordion {
+                        &>.accordion-item {
+                            &>.accordion-header {
+                                &>.accordion-button {
                                     padding-bottom: 0;
                                     padding-top: 0;
+
                                     &:not(.collapsed) {
                                         color: #2A1103;
                                         background-color: #FFF;
                                     }
                                 }
                             }
-                            &>.accordion-collapse{
+
+                            &>.accordion-collapse {
                                 padding-bottom: 2vw;
                             }
                         }
                     }
-                    &-dr_max{
+
+                    &-dr_max {
                         margin-left: 1vw;
                     }
 
@@ -664,9 +709,11 @@ main {
                         width: 40vw;
                         width: 39vw;
                         margin: 0 0.5vw;
-                        &-table{
+
+                        &-table {
                             margin-left: 3.47vw;
                             margin-top: 2vw;
+
                             &-tr {
 
                                 &-rowname,
@@ -676,17 +723,17 @@ main {
                                     color: #2A1103;
                                     padding: 0.5vw;
                                 }
-    
+
                                 &-cash {
                                     padding-left: 7vw;
                                 }
-    
+
                                 &-subname {
                                     font-size: 1.4vw;
                                     color: #2A1103;
                                     padding: 1vw;
                                 }
-    
+
                                 &-blank {
                                     padding: 1vw;
                                 }
@@ -828,12 +875,13 @@ main {
             background-color: #9A9085;
         }
 
-        .accordion-header ,.accordion-button{
+        .accordion-header,
+        .accordion-button {
             color: #fff;
             background-color: #9A9085;
         }
 
-        .accordion-header{
+        .accordion-header {
             margin-bottom: 0.2vw;
 
         }
@@ -1067,6 +1115,7 @@ main {
                     >a {
                         text-decoration: none;
                         color: #2A1103;
+                        font-family: "optima";
                     }
                 }
             }
@@ -1084,6 +1133,180 @@ main {
                     >a {
                         text-decoration: none;
                         color: #2A1103;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+ARTIST.html
+*/
+
+.ARTIST {
+    margin-top: 8.26vw;
+    margin-bottom: 10.42vw;
+
+    &-row {
+        margin:5.97vw 9.7vw;
+        display: flex;
+
+        &-block {
+            padding-left: 4vw;
+            padding-right: 4vw;
+
+            &-img {
+                >img {
+                    width: 20.42vw;
+                }
+            }
+
+            &-data {
+                display: flex;
+
+                &-post {
+                    width: 9.04vw;
+                    font-size: 1.94vw;
+                    font-family: "optima";
+                }
+
+                &-name {
+                    width: 8vw;
+                    font-size: 1.94vw;
+                    font-family: "optima";
+                }
+
+                &-icon {
+                    >a {
+                        >img {
+                            width: 2.85vw;
+                        }
+                    }
+                }
+            }
+
+            &-text {
+                font-size: 1.25vw;
+                color: #544136;
+                font-family: "optima";
+            }
+
+            &-sait {
+                margin-top: 0.5vw;
+                height: 3.19vw;
+                display: flex;
+
+                &-money,
+                &-reservation {
+                    color: inherit;
+                    text-decoration: none;
+                    font-size: 1.25vw;
+                    height: 100%;
+                    display: block;
+                    display: grid;
+                    place-items: center;
+                    color: #544136;
+                }
+
+                &-money {
+                    background: #EEE4DA;
+                    width: 8.06vw;
+                }
+
+                &-reservation {
+                    background-color: #DAEEDD;
+                    width: 11.67vw;
+                    margin-left: 0.5vw;
+                }
+            }
+        }
+
+    }
+}
+
+/*
+ARTMAKE.html
+*/
+
+.ARTMAKE {
+    margin-top: 8.26vw;
+    margin-bottom: 10.42vw;
+    &-row {
+        margin:5.97vw 9.7vw;
+        display:flex;
+        &-block {     
+            margin-left: 1.18vw;
+            margin-right: 1.18vw;
+            &-makeimg {
+                >img {
+                    width: 25.28vw;
+                }
+            }
+            &-artist {
+                display: flex;
+
+                >img {
+                    width: 7.99vw;
+                }
+
+                &-block {
+                    width: 15.67vw;
+                    margin-left: 1vw;
+                    &-title {
+                        font-size: 1.94vw;
+                        text-align: center;
+                        position: relative;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 1vw;
+                            left: 0;
+                            width: 100%;
+                            height: 2px;
+                            background-color: #9A9085;
+                        }
+                    }
+                    &-data{
+                        display: flex;
+                        &-post{
+                            width: 7vw;
+                            font-size: 1.25vw;
+                            font-family: "optima";
+                        }
+                        &-name{
+                            width: 9.3vw;
+                            font-size: 1.25vw;
+                            font-family: "optima";
+                        }
+                    }
+                    &-sait{
+                        margin-top: 0.5vw;
+                        height: 3.19vw;
+                        display: flex;
+                        &-money,
+                        &-reservation {
+                            color: inherit;
+                            text-decoration: none;
+                            font-size: 1.25vw;
+                            height: 100%;
+                            display: block;
+                            display: grid;
+                            place-items: center;
+                            color: #544136;
+                        }
+        
+                        &-money {
+                            background: #EEE4DA;
+                            width: 8.06vw;
+                        }
+        
+                        &-reservation {
+                            background-color: #DAEEDD;
+                            width: 11.67vw;
+                            margin-left: 0.5vw;
+                        }
                     }
                 }
             }

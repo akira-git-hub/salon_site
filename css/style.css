@@ -11,26 +11,38 @@
   font-family: "Hiragino";
 }
 
+*:focus {
+  box-shadow: none !important;
+}
+
+header {
+  /* ----------------------------------------
+  ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
+  ------------------------------------------*/
+}
 header .fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-header .container-fluid {
-  margin-left: 2.22vw;
-  height: 4vw;
-}
-header .container-fluid .navbar-brand img {
-  width: 5.42vw;
-  margin-top: -1vw;
+  padding: 0;
+  background-color: white;
 }
 header .navbar-toggler {
-  margin-right: 9.81vw;
+  width: 3em;
   border: none;
+  margin-right: 6.5vw;
 }
-header .navbar-toggler .navbar-toggler-icon {
-  width: 2.43vw;
+header .container-fluid {
+  background: white;
+  padding-top: 0.62em;
+  padding-bottom: 0.62em;
+}
+header .navbar-toggler-icon {
+  width: 100%;
+  display: block;
+}
+header .navbar-brand > img {
+  position: absolute;
+  top: -0.6em;
+  width: 4.078em;
+  margin-left: 4vw;
 }
 header .offcanvas {
   background-color: #EEE4DA;
@@ -56,7 +68,7 @@ header .offcanvas .title-yoyaku .header_nav_title {
   margin-left: 20%;
 }
 header .offcanvas .title-yoyaku .header_nav_title img {
-  width: 10vw;
+  width: 3em;
   margin-bottom: 1vw;
 }
 header .offcanvas .title-yoyaku .YoyakuButon {
@@ -65,15 +77,41 @@ header .offcanvas .title-yoyaku .YoyakuButon {
   font-size: 1em;
   width: 37%;
 }
+header .header-hight {
+  height: 4.96em;
+}
+header .header-rogo {
+  width: 8vw;
+  position: fixed !important;
+  top: inherit !important;
+  margin-left: 7.9vw !important;
+}
+header .pankuzu {
+  margin-top: 5em;
+  background: #EDE4DA;
+  padding-left: 9vw;
+  padding-top: 0.5vw;
+  display: flex;
+}
+header .pankuzu-top, header .pankuzu-bar, header .pankuzu-name {
+  font-size: 1.94vw;
+  font-family: "optima";
+}
+header .pankuzu-top > a, header .pankuzu-bar > a, header .pankuzu-name > a {
+  text-decoration: none;
+  color: inherit;
+}
+header .pankuzu-bar, header .pankuzu-name {
+  padding-left: 0.1vw;
+}
 
 main {
-  margin-top: 4.5vw;
+  margin-top: 5vw;
 }
 main .block-1 .block-1-1 {
+  margin-top: -1em;
   background: #EEE4DA;
-}
-main .block-1 .block-1-1 .title-messege {
-  margin-top: 5vw;
+  display: flex;
 }
 main .block-1 .block-1-1 .col {
   padding-left: 0;
@@ -113,16 +151,15 @@ main .block-1 .block-1-1 p.button a {
   font-size: 1.94vw;
 }
 main .block-1 .block-1-1 .block-1-2 {
-  height: 43vw;
-  position: relative;
+  width: 32.3vw;
+  margin-left: 21.28vw;
 }
-main .block-1 .block-1-1 .block-1-2 .img {
-  position: absolute;
-  bottom: 0;
-  width: 78%;
+main .block-1 .block-1-1 .block-1-2 > img {
+  display: block;
+  width: 100%;
 }
 main .block-2 {
-  margin-top: 4.65vw;
+  margin-top: 3.65vw;
 }
 main .block-2-block {
   display: flex;
@@ -643,7 +680,8 @@ main .block-9 .accordion-button:not(.collapsed) {
   color: #fff;
   background-color: #9A9085;
 }
-main .block-9 .accordion-header, main .block-9 .accordion-button {
+main .block-9 .accordion-header,
+main .block-9 .accordion-button {
   color: #fff;
   background-color: #9A9085;
 }
@@ -835,6 +873,7 @@ main .block-11-block-block3-car > span {
 .footter-block-block2-lick1-p > a {
   text-decoration: none;
   color: #2A1103;
+  font-family: "optima";
 }
 .footter-block-block2-lick2 {
   display: inline-block;
@@ -849,4 +888,148 @@ main .block-11-block-block3-car > span {
 .footter-block-block2-lick2-p > a {
   text-decoration: none;
   color: #2A1103;
+}
+
+/*
+ARTIST.html
+*/
+.ARTIST {
+  margin-top: 8.26vw;
+  margin-bottom: 10.42vw;
+}
+.ARTIST-row {
+  margin: 5.97vw 9.7vw;
+  display: flex;
+}
+.ARTIST-row-block {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.ARTIST-row-block-img > img {
+  width: 20.42vw;
+}
+.ARTIST-row-block-data {
+  display: flex;
+}
+.ARTIST-row-block-data-post {
+  width: 9.04vw;
+  font-size: 1.94vw;
+  font-family: "optima";
+}
+.ARTIST-row-block-data-name {
+  width: 8vw;
+  font-size: 1.94vw;
+  font-family: "optima";
+}
+.ARTIST-row-block-data-icon > a > img {
+  width: 2.85vw;
+}
+.ARTIST-row-block-text {
+  font-size: 1.25vw;
+  color: #544136;
+  font-family: "optima";
+}
+.ARTIST-row-block-sait {
+  margin-top: 0.5vw;
+  height: 3.19vw;
+  display: flex;
+}
+.ARTIST-row-block-sait-money, .ARTIST-row-block-sait-reservation {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.25vw;
+  height: 100%;
+  display: block;
+  display: grid;
+  place-items: center;
+  color: #544136;
+}
+.ARTIST-row-block-sait-money {
+  background: #EEE4DA;
+  width: 8.06vw;
+}
+.ARTIST-row-block-sait-reservation {
+  background-color: #DAEEDD;
+  width: 11.67vw;
+  margin-left: 0.5vw;
+}
+
+/*
+ARTMAKE.html
+*/
+.ARTMAKE {
+  margin-top: 8.26vw;
+  margin-bottom: 10.42vw;
+}
+.ARTMAKE-row {
+  margin: 5.97vw 9.7vw;
+  display: flex;
+}
+.ARTMAKE-row-block {
+  margin-left: 1.18vw;
+  margin-right: 1.18vw;
+}
+.ARTMAKE-row-block-makeimg > img {
+  width: 25.28vw;
+}
+.ARTMAKE-row-block-artist {
+  display: flex;
+}
+.ARTMAKE-row-block-artist > img {
+  width: 7.99vw;
+}
+.ARTMAKE-row-block-artist-block {
+  width: 15.67vw;
+  margin-left: 1vw;
+}
+.ARTMAKE-row-block-artist-block-title {
+  font-size: 1.94vw;
+  text-align: center;
+  position: relative;
+}
+.ARTMAKE-row-block-artist-block-title::after {
+  content: "";
+  position: absolute;
+  bottom: 1vw;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #9A9085;
+}
+.ARTMAKE-row-block-artist-block-data {
+  display: flex;
+}
+.ARTMAKE-row-block-artist-block-data-post {
+  width: 7vw;
+  font-size: 1.25vw;
+  font-family: "optima";
+}
+.ARTMAKE-row-block-artist-block-data-name {
+  width: 9.3vw;
+  font-size: 1.25vw;
+  font-family: "optima";
+}
+.ARTMAKE-row-block-artist-block-sait {
+  margin-top: 0.5vw;
+  height: 3.19vw;
+  display: flex;
+}
+.ARTMAKE-row-block-artist-block-sait-money, .ARTMAKE-row-block-artist-block-sait-reservation {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.25vw;
+  height: 100%;
+  display: block;
+  display: grid;
+  place-items: center;
+  color: #544136;
+}
+.ARTMAKE-row-block-artist-block-sait-money {
+  background: #EEE4DA;
+  width: 8.06vw;
+}
+.ARTMAKE-row-block-artist-block-sait-reservation {
+  background-color: #DAEEDD;
+  width: 11.67vw;
+  margin-left: 0.5vw;
 }/*# sourceMappingURL=style.css.map */
