@@ -76,6 +76,10 @@ header .offcanvas .title-yoyaku .YoyakuButon {
   text-align: center;
   font-size: 1em;
   width: 37%;
+  box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
+}
+header .offcanvas .title-yoyaku .YoyakuButon > span {
+  font-size: 0.9em;
 }
 header .header-hight {
   height: 4.96em;
@@ -106,7 +110,7 @@ header .pankuzu-bar, header .pankuzu-name {
 }
 
 main {
-  margin-top: 5vw;
+  margin-top: 4.7em;
 }
 main .block-1 .block-1-1 {
   margin-top: -1em;
@@ -142,6 +146,7 @@ main .block-1 .block-1-1 p.concept > span {
   font-size: 2.64vw;
 }
 main .block-1 .block-1-1 p.button {
+  box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
   background: #fff;
   width: 16vw;
   padding: 0.5vw;
@@ -151,7 +156,10 @@ main .block-1 .block-1-1 p.button {
 main .block-1 .block-1-1 p.button a {
   text-decoration: none;
   color: #2A1103;
-  font-size: 1.94vw;
+  font-size: 1.9vw;
+}
+main .block-1 .block-1-1 p.button a > span {
+  font-size: 1.75vw;
 }
 main .block-1 .block-1-1 .block-1-2 {
   width: 32.3vw;
@@ -532,9 +540,12 @@ main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion
   padding-bottom: 0;
   padding-top: 0;
 }
+main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button::after {
+  background-image: url("../svg/money_icon.svg");
+}
 main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button:not(.collapsed) {
   color: #2A1103;
-  background-color: #FFF;
+  background-color: #EEE4DA;
 }
 main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-collapse {
   padding-bottom: 2vw;
@@ -670,10 +681,13 @@ main .block-9 .accordion-body {
 }
 main .block-9 .accordion-body {
   color: #544136;
+  border: 2px solid #9A9085;
+  margin-bottom: 0.5vw;
 }
 main .block-9 .accordion-button > span {
   padding-right: 2vw;
   margin-left: -3.4vw;
+  margin-right: 1vw;
 }
 main .block-9 .accordion-body > span {
   position: absolute;
@@ -689,7 +703,15 @@ main .block-9 .accordion-button {
   background-color: #9A9085;
 }
 main .block-9 .accordion-header {
-  margin-bottom: 0.2vw;
+  margin-bottom: 0.5vw;
+}
+main .block-9 .accordion-button {
+  border-bottom: 1px solid #9A9085;
+  padding-top: 3.4vw;
+  padding-bottom: 3.4vw;
+}
+main .block-9 .accordion-button::after {
+  background-image: url("../svg/QandAicon.svg");
 }
 main .block-10 {
   padding-bottom: 5.49vw;
@@ -870,13 +892,14 @@ main .block-11-block-block3-car > span {
   width: 19vw;
 }
 .footter-block-block2-lick1-p {
-  margin-bottom: 2vw;
+  margin-bottom: 0.9vw;
   font-family: "optima";
 }
 .footter-block-block2-lick1-p > a {
   text-decoration: none;
   color: #2A1103;
   font-family: "optima";
+  font-size: 1.39vw;
 }
 .footter-block-block2-lick2 {
   display: inline-block;

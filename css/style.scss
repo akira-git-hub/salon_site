@@ -93,6 +93,10 @@ header {
                 text-align: center;
                 font-size: 1em;
                 width: 37%;
+                box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
+                >span{
+                    font-size:0.9em;
+                }
             }
 
         }
@@ -143,7 +147,7 @@ ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
 
 main {
 
-    margin-top: 5vw;
+    margin-top: 4.7em;
 
     // ご予約はこちら
     .block-1 {
@@ -186,6 +190,7 @@ main {
                 }
 
                 &.button {
+                    box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
                     background: #fff;
                     width: 16vw;
                     padding: 0.5vw;
@@ -195,7 +200,10 @@ main {
                     a {
                         text-decoration: none;
                         color: #2A1103;
-                        font-size: 1.94vw;
+                        font-size: 1.9vw;
+                        >span{
+                            font-size: 1.75vw;
+                        }
                     }
                 }
 
@@ -680,10 +688,13 @@ main {
                                 &>.accordion-button {
                                     padding-bottom: 0;
                                     padding-top: 0;
+                                    &::after{
+                                        background-image: url("../svg/money_icon.svg");
+                                    }
 
                                     &:not(.collapsed) {
                                         color: #2A1103;
-                                        background-color: #FFF;
+                                        background-color: #EEE4DA;
                                     }
                                 }
                             }
@@ -861,11 +872,14 @@ main {
 
         .accordion-body {
             color: #544136;
+            border: 2px solid #9A9085;
+            margin-bottom: 0.5vw;
         }
 
         .accordion-button>span {
             padding-right: 2vw;
             margin-left: -3.4vw;
+            margin-right: 1vw;
         }
 
         .accordion-body>span {
@@ -882,11 +896,20 @@ main {
         .accordion-button {
             color: #fff;
             background-color: #9A9085;
+            
         }
 
         .accordion-header {
-            margin-bottom: 0.2vw;
+            margin-bottom: 0.5vw;
 
+        }
+        .accordion-button {
+            border-bottom: 1px  solid #9A9085;
+            padding-top: 3.4vw;
+            padding-bottom: 3.4vw;
+            &::after{
+                background-image: url("../svg/QandAicon.svg");
+            }
         }
     }
 
@@ -1112,13 +1135,14 @@ main {
                 width: 19vw;
 
                 &-p {
-                    margin-bottom: 2vw;
+                    margin-bottom: 0.9vw;
                     font-family: 'optima';
 
                     >a {
                         text-decoration: none;
                         color: #2A1103;
                         font-family: "optima";
+                        font-size: 1.39vw;
                     }
                 }
             }
