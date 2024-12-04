@@ -15,11 +15,6 @@
   box-shadow: none !important;
 }
 
-header {
-  /* ----------------------------------------
-  ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
-  ------------------------------------------*/
-}
 header .fixed-top {
   padding: 0;
   background-color: white;
@@ -44,88 +39,99 @@ header .navbar-brand > img {
   width: 4.078em;
   margin-left: 4vw;
 }
-header .offcanvas {
+
+.offcanvas {
   background-color: #EEE4DA;
 }
-header .offcanvas .offcanvas-header {
+.offcanvas .offcanvas-header {
   padding: 40px;
 }
-header .offcanvas .offcanvas-header .btn-close {
+.offcanvas .offcanvas-header .btn-close {
   transform: scale(1.5);
 }
-header .offcanvas .active {
+.offcanvas .active {
   color: #544136 !important;
   font-size: 1.4em;
   width: 50%;
   margin-left: 20%;
   font-family: "optima";
 }
-header .offcanvas .title-yoyaku {
+.offcanvas .title-yoyaku {
   margin-top: 20%;
 }
-header .offcanvas .title-yoyaku .header_nav_title {
+.offcanvas .title-yoyaku .header_nav_title {
   width: 50%;
   margin-left: 20%;
 }
-header .offcanvas .title-yoyaku .header_nav_title img {
+.offcanvas .title-yoyaku .header_nav_title img {
   width: 3em;
   margin-bottom: 1vw;
 }
-header .offcanvas .title-yoyaku .YoyakuButon {
+.offcanvas .title-yoyaku .YoyakuButon {
   background: white;
   text-align: center;
   font-size: 1em;
   width: 37%;
   box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
+  font-family: "Hiragino";
 }
-header .offcanvas .title-yoyaku .YoyakuButon > span {
+.offcanvas .title-yoyaku .YoyakuButon > span {
   font-size: 0.9em;
 }
-header .header-hight {
-  height: 4.96em;
+
+/* ----------------------------------------
+ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
+------------------------------------------*/
+.header-hight {
+  height: 9em;
 }
-header .header-rogo {
-  width: 8vw;
-  position: fixed !important;
+
+.header-rogo {
   top: inherit !important;
   margin-left: 7.9vw !important;
+  position: absolute;
+  top: -0.6em;
+  width: 8.078em !important;
+  margin-left: 4vw;
+  margin-top: -1vw;
 }
-header .pankuzu {
-  margin-top: 5em;
+
+.pankuzu {
+  margin-top: 9em;
   background: #EDE4DA;
   padding-left: 9vw;
   padding-top: 0.5vw;
   display: flex;
 }
-header .pankuzu-top, header .pankuzu-bar, header .pankuzu-name {
+.pankuzu-top, .pankuzu-bar, .pankuzu-name {
   font-size: 1.94vw;
   font-family: "optima";
 }
-header .pankuzu-top > a, header .pankuzu-bar > a, header .pankuzu-name > a {
+.pankuzu-top > a, .pankuzu-bar > a, .pankuzu-name > a {
   text-decoration: none;
   color: inherit;
 }
-header .pankuzu-bar, header .pankuzu-name {
+.pankuzu-bar, .pankuzu-name {
   padding-left: 0.1vw;
 }
 
 main {
   margin-top: 4.7em;
 }
-main .block-1 .block-1-1 {
+main .block-1-1 {
   margin-top: -1em;
   background: #EEE4DA;
   display: flex;
 }
-main .block-1 .block-1-1 .col {
+main .block-1-1 .col {
   padding-left: 0;
   height: 38vw;
 }
-main .block-1 .block-1-1 p {
+main .block-1-1 p {
   padding-left: 0;
   margin-bottom: 0;
 }
-main .block-1 .block-1-1 p.title {
+main .block-1-1 p.title {
   font-size: 8vw;
   margin-left: 14.58vw;
   color: #333333;
@@ -133,39 +139,40 @@ main .block-1 .block-1-1 p.title {
   position: absolute;
   margin-top: 4vw;
 }
-main .block-1 .block-1-1 p.title > img {
+main .block-1-1 p.title > img {
   width: 15.83vw;
 }
-main .block-1 .block-1-1 p.concept {
+main .block-1-1 p.concept {
   font-size: 2.22vw;
   margin-left: 14.58vw;
   color: #2A1103;
   margin-top: 14vw;
 }
-main .block-1 .block-1-1 p.concept > span {
+main .block-1-1 p.concept > span {
   font-size: 2.64vw;
 }
-main .block-1 .block-1-1 p.button {
+main .block-1-1 p.button {
   box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
   background: #fff;
   width: 16vw;
   padding: 0.5vw;
   margin-left: 14.58vw;
   text-align: center;
+  margin-top: 0.97vw;
 }
-main .block-1 .block-1-1 p.button a {
+main .block-1-1 p.button a {
   text-decoration: none;
   color: #2A1103;
   font-size: 1.9vw;
 }
-main .block-1 .block-1-1 p.button a > span {
+main .block-1-1 p.button a > span {
   font-size: 1.75vw;
 }
-main .block-1 .block-1-1 .block-1-2 {
+main .block-1-2 {
   width: 32.3vw;
   margin-left: 17.28vw;
 }
-main .block-1 .block-1-1 .block-1-2 > img {
+main .block-1-2 > img {
   display: block;
   width: 117%;
 }
@@ -206,15 +213,14 @@ main .block-3-blok {
 main .block-3-blok-bun {
   font-size: 1.25vw;
   margin-bottom: 0;
-  padding-left: 9.72vw;
+  padding-left: 15.28vw;
   padding-top: 7.57vw;
   padding-bottom: 3.13vw;
   background: #EEE4DA;
 }
 main .block-3-img {
   text-align: right;
-  margin-right: 9.72vw;
-  margin-right: 19.72vw;
+  margin-right: 15.28vw;
   margin-top: -20vw;
   margin-left: 0vw;
 }
@@ -235,7 +241,7 @@ main .block-4-block {
 main .block-4-block-img {
   display: inline-block;
   padding-top: 12.57vw;
-  padding-left: 17.85vw;
+  padding-left: 15.28vw;
 }
 main .block-4-block-img > img {
   width: 26.85vw;
@@ -355,7 +361,7 @@ main .block-7-subtitle-arttitle {
   display: inline-block;
   color: #FFFFFF;
   opacity: 0.6039;
-  margin-left: 9vw;
+  margin-left: 15vw;
   margin-bottom: 0;
   font-size: 6.94vw;
   font-family: "optima";
@@ -364,17 +370,18 @@ main .block-7-subtitle-zeikomi {
   display: inline-block;
   color: #2A1103;
   margin-bottom: 0;
-  margin-left: 33.5vw;
+  margin-left: 22.5vw;
   font-size: 1.39vw;
   position: absolute;
   top: 16vw;
 }
 main .block-7-block1 {
-  margin-left: 9.72vw;
-  margin-right: 9.72vw;
+  margin-left: 15.28vw;
+  margin-right: 15.28vw;
   background: white;
-  padding: 2vw 4vw;
+  padding: 2vw 2vw;
   margin-bottom: 6em;
+  padding-left: 3vw;
 }
 main .block-7-block1-triangle {
   position: absolute;
@@ -382,7 +389,7 @@ main .block-7-block1-triangle {
   height: 0;
   border-left: 8vw solid #9A9084;
   border-bottom: 18vw solid transparent;
-  left: 9.7vw;
+  left: 15.3vw;
   margin-top: -2vw;
 }
 main .block-7-block1-title {
@@ -394,7 +401,7 @@ main .block-7-block1-title {
 }
 main .block-7-block1-ibrou {
   display: inline-block;
-  width: 23.5vw;
+  width: 21vw;
   padding-left: 0.5vw;
   padding-right: 0.5vw;
 }
@@ -419,7 +426,7 @@ main .block-7-block1-ibrou-title-text-2 {
   font-size: 1.94vw;
 }
 main .block-7-block1-ibrou-setumei1, main .block-7-block1-ibrou-setumei3 {
-  padding-bottom: 2.1vw;
+  padding-bottom: 1.9vw;
 }
 main .block-7-block1-ibrou-setumei {
   font-size: 1.25vw;
@@ -431,9 +438,10 @@ main .block-7-block1-ibrou-img img {
 }
 main .block-7-block1-money {
   margin-top: 2vw;
+  margin-left: 0.8vw;
 }
 main .block-7-block1-money-table {
-  width: 72.7vw;
+  width: 62.5vw;
 }
 main .block-7-block1-money-table-tr:nth-of-type(1), main .block-7-block1-money-table-tr:nth-of-type(2), main .block-7-block1-money-table-tr:nth-of-type(3) {
   border-top: 1px solid white;
@@ -457,10 +465,10 @@ main .block-7-block1-chui {
   padding-top: 2vw;
 }
 main .block-7-block {
-  margin-left: 9.72vw;
-  margin-right: 9.72vw;
+  margin-left: 15.28vw;
+  margin-right: 15.28vw;
   background: white;
-  padding: 2vw 4vw;
+  padding: 2vw 2vw;
   margin-bottom: 4em;
 }
 main .block-7-block-triangle {
@@ -469,7 +477,7 @@ main .block-7-block-triangle {
   height: 0;
   border-left: 8vw solid #9A9084;
   border-bottom: 18vw solid transparent;
-  left: 9.7vw;
+  left: 15.3vw;
   margin-top: -2vw;
 }
 main .block-7-block-title {
@@ -487,13 +495,14 @@ main .block-7-block-img {
   text-align: center;
 }
 main .block-7-block-img img {
-  width: 43vw;
+  width: 62.5vw;
+  margin-left: -3vw;
 }
 main .block-7-block-money {
   margin-top: 2vw;
 }
 main .block-7-block-money-table {
-  width: 72.7vw;
+  width: 62.5vw;
 }
 main .block-7-block-money-table-tr:nth-of-type(1), main .block-7-block-money-table-tr:nth-of-type(2), main .block-7-block-money-table-tr:nth-of-type(3) {
   border-top: 1px solid white;
@@ -515,26 +524,28 @@ main .block-7-others-title {
   display: inline-block;
   color: #FFFFFF;
   opacity: 0.6039;
-  margin-left: 9vw;
+  margin-left: 15.28vw;
   margin-bottom: 0;
   font-size: 6.94vw;
   font-family: "optima";
 }
 main .block-7-others-memo {
   color: #2A1103;
-  font-size: 1.87vw;
-  margin-left: 9vw;
+  margin-left: 15.28vw;
   font-size: 1.5vw;
 }
 main .block-7-others-menu {
   margin-top: 3vw;
-  margin-left: 9.72vw;
-  margin-right: 9.72vw;
+  margin-left: 15.28vw;
+  margin-right: 15.28vw;
   display: flex;
 }
 main .block-7-others-menu-button {
   background-color: #EEE4DA;
-  width: 40vw;
+  width: 34.72vw;
+}
+main .block-7-others-menu-medication {
+  width: 34.72vw;
 }
 main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button {
   padding-bottom: 0;
@@ -557,7 +568,6 @@ main .block-7-others-menu-medication-title {
   font-size: 1.8vw;
   font-weight: normal;
   color: #2A1103;
-  margin-left: 2vw;
   margin-top: 1vw;
 }
 main .block-7-others-menu-medication-money {
@@ -568,16 +578,22 @@ main .block-7-others-menu-medication-money {
   margin: 0 0.5vw;
 }
 main .block-7-others-menu-medication-money-table {
-  margin-left: 3.47vw;
+  margin-left: 2.99vw;
   margin-top: 2vw;
 }
 main .block-7-others-menu-medication-money-table-tr-rowname, main .block-7-others-menu-medication-money-table-tr-cash, main .block-7-others-menu-medication-money-table-tr-subname {
-  font-size: 1.74vw;
+  font-size: 1.67vw;
   color: #2A1103;
   padding: 0.5vw;
 }
-main .block-7-others-menu-medication-money-table-tr-cash {
-  padding-left: 7vw;
+main .block-7-others-menu-medication-money-table-tr-cash1 {
+  padding-left: 2.08vw;
+}
+main .block-7-others-menu-medication-money-table-tr-cash2 {
+  padding-left: 7.08vw;
+}
+main .block-7-others-menu-medication-money-table-tr-cash3 {
+  padding-left: 12.08vw;
 }
 main .block-7-others-menu-medication-money-table-tr-subname {
   font-size: 1.4vw;
@@ -588,8 +604,8 @@ main .block-7-others-menu-medication-money-table-tr-blank {
   padding: 1vw;
 }
 main .block-8 {
-  margin-left: 9.72vw;
-  margin-right: 9.72vw;
+  margin-left: 15.28vw;
+  margin-right: 15.28vw;
   padding-bottom: 3vw;
   padding-top: 12.5vw;
 }
@@ -604,7 +620,7 @@ main .block-8-block {
   display: flex;
 }
 main .block-8-block-box {
-  width: 40vw;
+  width: 34.72vw;
 }
 main .block-8-block-box-msg {
   display: flex;
@@ -625,7 +641,7 @@ main .block-8-block-box-button a {
   background-color: white;
   color: #2A1103;
   border: none;
-  padding: 1.1vw 8vw;
+  padding: 1.1vw 6vw;
   font-size: 1.94vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 2vw;
@@ -634,13 +650,13 @@ main .block-8-block-box-button a {
 }
 main .block-8-block-box-exp {
   color: #544136;
-  font-size: 1.67vw;
+  font-size: 1.5vw;
 }
 main .block-8-block-box-exp p {
   margin-left: 7vw;
 }
 main .block-8-block-img {
-  width: 41vw;
+  width: 34.72vw;
 }
 main .block-8-block-img img {
   width: 100%;
@@ -662,8 +678,8 @@ main .block-8-downicon-triangle {
   opacity: 0.5961;
 }
 main .block-9 {
-  margin-left: 9.72vw;
-  margin-right: 9.72vw;
+  margin-left: 15.28vw;
+  margin-right: 15.28vw;
   padding-bottom: 12.57vw;
   padding-top: 7.76vw;
 }
@@ -691,7 +707,7 @@ main .block-9 .accordion-button > span {
 }
 main .block-9 .accordion-body > span {
   position: absolute;
-  left: 11vw;
+  left: 17vw;
 }
 main .block-9 .accordion-button:not(.collapsed) {
   color: #fff;
@@ -736,8 +752,8 @@ main .block-10-comment-text a {
   color: #2A1103;
 }
 main .block-11 {
-  margin-left: 9.72vw;
-  margin-right: 9.72vw;
+  margin-left: 15.28vw;
+  margin-right: 15.28vw;
   padding-bottom: 7vw;
 }
 main .block-11-title {
@@ -812,12 +828,12 @@ main .block-11-block-block1-train {
   color: #2A1103;
 }
 main .block-11-block-block2 {
-  width: 38vw;
+  width: 25.76vw;
   display: inline-block;
   vertical-align: top;
 }
 main .block-11-block-block2-iframe {
-  width: 39vw;
+  width: 29vw;
   height: 23vw;
   vertical-align: top;
 }
@@ -831,7 +847,7 @@ main .block-11-block-block2-box-button {
   background-color: white;
   color: #2A1103;
   border: none;
-  padding: 1.1vw 8vw;
+  padding: 1.1vw 6vw;
   font-size: 1.8vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 2vw;
@@ -855,13 +871,13 @@ main .block-11-block-block3-car > span {
   background-size: 100% auto;
 }
 .footter-block {
-  width: 81vw;
+  width: 69.44vw;
   margin-left: auto;
   margin-right: auto;
   height: 26vw;
 }
 .footter-block-block1 {
-  width: 39vw;
+  width: 29vw;
   display: inline-block;
   vertical-align: top;
   padding-top: 6vw;
@@ -882,7 +898,7 @@ main .block-11-block-block3-car > span {
   margin-left: -1vw;
 }
 .footter-block-block2 {
-  width: 40vw;
+  width: 39vw;
   margin-top: 3vw;
   display: inline-block;
 }
@@ -894,6 +910,7 @@ main .block-11-block-block3-car > span {
 .footter-block-block2-lick1-p {
   margin-bottom: 0.9vw;
   font-family: "optima";
+  padding-left: 10vw;
 }
 .footter-block-block2-lick1-p > a {
   text-decoration: none;
@@ -973,9 +990,12 @@ ARTIST.html
 .ARTIST-row-block-sait-money {
   background: #EEE4DA;
   width: 8.06vw;
+  box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25) !important;
+  border: none;
 }
 .ARTIST-row-block-sait-reservation {
   background-color: #DAEEDD;
+  box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
   width: 11.67vw;
   margin-left: 0.5vw;
 }
@@ -1054,9 +1074,102 @@ ARTMAKE.html
 .ARTMAKE-row-block-artist-block-sait-money {
   background: #EEE4DA;
   width: 7.36vw;
+  box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
 }
 .ARTMAKE-row-block-artist-block-sait-reservation {
   background-color: #DAEEDD;
   width: 7.36vw;
   margin-left: 0.5vw;
+  box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/*
+モーダル機能
+*/
+.modal-body {
+  padding: 0;
+  background: #EEE4DA;
+}
+.modal-body-header {
+  background: #9A9085;
+  display: flex;
+  padding-top: 1vw;
+}
+.modal-body-header-h3 {
+  font-size: 2.64vw;
+  color: white;
+  font-family: "optima";
+  width: 40.71vw;
+  margin-left: 2.33vw;
+}
+.modal-body-header-coment {
+  width: 20.83vw;
+}
+.modal-body-header-coment-1 {
+  margin-bottom: 0;
+  color: white;
+}
+.modal-body-header-coment-2 {
+  margin-bottom: 0;
+  color: white;
+}
+.modal-body-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.modal-body-table-tr {
+  height: 4.4vw;
+}
+.modal-body-table-tr-th, .modal-body-table-tr-td {
+  color: #2A1103;
+  font-size: 1.94vw;
+  width: 13.75vw;
+  border-bottom: 1px solid #fff;
+}
+.modal-body-table-tr-th:first-child, .modal-body-table-tr-td:first-child {
+  border-right: 1px solid #fff;
+}
+.modal-body-table-tr-th:not(:first-child), .modal-body-table-tr-td:not(:first-child) {
+  padding-left: 1.32vw;
+}
+.modal-body-table-tr-th {
+  font-weight: normal;
+}
+.modal-body-table-tr-td:first-child {
+  text-align: center;
+}
+.modal-body-table-tr-td > span {
+  font-size: 1.39vw;
+}
+.modal-body-table-end {
+  display: flex;
+  height: 4.4vw;
+  padding-bottom: 0.5vw;
+}
+.modal-body-table-end-other-1 {
+  border-right: 1px solid #fff;
+  width: 21.83vw;
+  font-size: 1.94vw;
+  vertical-align: bottom;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 3vw;
+}
+.modal-body-table-end-other-1 > span {
+  font-size: 1.39vw;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+}
+.modal-body-table-end-other-2 {
+  width: 33.86vw;
+  font-size: 1.94vw;
+  vertical-align: bottom;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 2vw;
+}
+.modal-body-table-end-other-2 > span {
+  font-size: 1.39vw;
+  padding-left: 0.5vw;
+  padding-right: 1vw;
 }/*# sourceMappingURL=style.css.map */

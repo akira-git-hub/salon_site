@@ -1,0 +1,37 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+  main .block-1-1 {
+    height: 100.39vw;
+  }
+  main .block-1-1 .title-messege {
+    z-index: 1;
+    position: relative;
+  }
+  main .block-1-1 .title-messege p.title {
+    width: 86.33vw;
+    margin-left: 0;
+  }
+  main .block-1-1 .title-messege p.title > img {
+    width: 86.33vw;
+  }
+  main .block-1-2 {
+    position: absolute;
+    margin-left: 0;
+    margin-top: 3vw;
+    width: 100vw;
+  }
+  main .block-1-2 > img {
+    width: 97.01vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main .block-1::after {
+    content: "";
+    width: 100vw;
+    padding: 23vw 50vw;
+    margin-top: -46vw;
+    position: absolute;
+    background: linear-gradient(to top, rgb(255, 255, 255) 39%, rgba(255, 255, 255, 0) 100%);
+  }
+}/*# sourceMappingURL=style.sp.css.map */
