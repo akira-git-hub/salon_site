@@ -1388,6 +1388,33 @@ ARTMAKE.html
 モーダル機能
 */
 
+// 既存の機能を廃止
+@media (min-width: 992px) {
+    .modal-lg, .modal-xl {
+        --bs-modal-width: unset; /* これで値を削除できます */
+    }
+}
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: unset;  /* 'max-width' をリセット */
+        margin-right: unset;  /* 'margin-right' をリセット */
+        margin-left: unset;   /* 'margin-left' をリセット */
+    }
+}
+
+.modal-content{
+    margin-right: 37vw;
+    margin-left: 24vw;
+}
+.modal-header{
+    height: 3vw;
+    padding: 0;
+    >button{
+        font-size: 1.25vw;
+        margin-right: 1vw !important;
+    }
+}
+
 .modal-body {
     padding: 0;
     background: #EEE4DA;
@@ -1401,7 +1428,7 @@ ARTMAKE.html
             font-size: 2.64vw;
             color: white;
             font-family: "optima";
-            width: 40.71vw;
+            width: 32.71vw;
             margin-left: 2.33vw;
         }
 
@@ -1411,11 +1438,13 @@ ARTMAKE.html
             &-1 {
                 margin-bottom: 0;
                 color: white;
+                font-size: 1.25vw;
             }
 
             &-2 {
                 margin-bottom: 0;
                 color: white;
+                font-size: 1.25vw;
             }
 
         }
