@@ -111,8 +111,12 @@ ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
   text-decoration: none;
   color: inherit;
 }
-.pankuzu-bar, .pankuzu-name {
+.pankuzu-name {
   padding-left: 0.1vw;
+}
+.pankuzu-bar {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
 }
 
 main {
@@ -1159,6 +1163,7 @@ ARTMAKE.html
 }
 .modal-body-table-tr-th:not(:first-child), .modal-body-table-tr-td:not(:first-child) {
   padding-left: 1.32vw;
+  text-align: center;
 }
 .modal-body-table-tr-th {
   font-weight: normal;
