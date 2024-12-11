@@ -501,6 +501,8 @@ main .block-7-block-img {
 main .block-7-block-img img {
   width: 62.5vw;
   margin-left: -3vw;
+  position: relative;
+  z-index: 1;
 }
 main .block-7-block-money {
   margin-top: 2vw;
@@ -517,6 +519,10 @@ main .block-7-block-money-table-tr-rowname, main .block-7-block-money-table-tr-c
   padding: 1vw;
   font-size: 1.74vw;
   padding-left: 3vw;
+}
+main .block-7-block-money-table-tr-colname, main .block-7-block-money-table-tr-cash {
+  padding-left: 0;
+  text-align: center;
 }
 main .block-7-block-money-table-tr-rowname {
   border-right: 1px solid white;

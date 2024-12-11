@@ -625,6 +625,8 @@ main {
                 img {
                     width: 62.5vw;
                     margin-left: -3vw;
+                    position: relative;
+                    z-index: 1;
                 }
             }
 
@@ -650,6 +652,12 @@ main {
                             padding: 1vw;
                             font-size: 1.74vw;
                             padding-left: 3vw;
+                        }
+
+                        &-colname,
+                        &-cash {
+                            padding-left: 0;
+                            text-align: center;
                         }
 
                         &-rowname {
