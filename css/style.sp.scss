@@ -13,11 +13,22 @@
                     position: relative;
                     p {
                         &.title {
-                            width: 86.33vw;
-                            margin-left: 0;
                             >img{
-                                width: 86.33vw;
+                                width: 73.29vw;
+                                margin-top: 62vw;
                             }
+                        }
+                        &.concept{
+                            margin-top: 91vw;
+                            text-align: center;
+                            font-size: 5vw;
+                            margin-left: 17vw;
+                            >span{
+                                font-size: 9vw;
+                            }
+                        }
+                        &.button{
+                            display: none;
                         }
                     }
                 }
@@ -41,6 +52,35 @@
                 margin-top: -46vw;
                 position: absolute;
                 background: linear-gradient(to top, rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
+        .block-2{
+            margin-top: 16vw;
+            margin-left: 6.665vw;
+            margin-right: 6.665vw;
+            &-block{
+                width: 100%;
+                display: block;
+                margin-left: 0;
+                margin-right: 0;
+                &-img{
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 3vw;
+                    >img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .block-3{
+            &-title{
+                font-size: 13.33vw;
+                margin-top: -8vw;
+                margin-left: 21.72vw;
+            }
+            &-img{
+                display: none;
             }
         }
     }

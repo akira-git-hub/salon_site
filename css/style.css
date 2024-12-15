@@ -383,9 +383,11 @@ main .block-7-block1 {
   margin-left: 15.28vw;
   margin-right: 15.28vw;
   background: white;
-  padding: 2vw 2vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   margin-bottom: 6em;
-  padding-left: 3vw;
+  width: 69.38vw;
+  text-align: center;
 }
 main .block-7-block1-triangle {
   position: absolute;
@@ -442,10 +444,10 @@ main .block-7-block1-ibrou-img img {
 }
 main .block-7-block1-money {
   margin-top: 2vw;
-  margin-left: 0.8vw;
+  margin-left: 2vw;
 }
 main .block-7-block1-money-table {
-  width: 62.5vw;
+  width: 65vw;
 }
 main .block-7-block1-money-table-tr:nth-of-type(1), main .block-7-block1-money-table-tr:nth-of-type(2), main .block-7-block1-money-table-tr:nth-of-type(3) {
   border-top: 1px solid white;
@@ -467,6 +469,8 @@ main .block-7-block1-chui {
   font-size: 1.39vw;
   color: #2A1103;
   padding-top: 2vw;
+  text-align: left;
+  margin-left: 2vw;
 }
 main .block-7-block {
   margin-left: 15.28vw;
@@ -1097,15 +1101,20 @@ ARTMAKE.html
 モーダル機能
 */
 @media (min-width: 992px) {
-  .modal-lg, .modal-xl {
-    --bs-modal-width: unset; /* これで値を削除できます */
+  .modal-lg,
+  .modal-xl {
+    --bs-modal-width: unset;
+    /* これで値を削除できます */
   }
 }
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: unset; /* 'max-width' をリセット */
-    margin-right: unset; /* 'margin-right' をリセット */
-    margin-left: unset; /* 'margin-left' をリセット */
+    max-width: unset;
+    /* 'max-width' をリセット */
+    margin-right: unset;
+    /* 'margin-right' をリセット */
+    margin-left: unset;
+    /* 'margin-left' をリセット */
   }
 }
 .modal-content {

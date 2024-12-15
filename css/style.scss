@@ -145,7 +145,8 @@ ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
     &-name {
         padding-left: 0.1vw;
     }
-    &-bar{
+
+    &-bar {
         padding-left: 0.5vw;
         padding-right: 0.5vw;
     }
@@ -472,9 +473,11 @@ main {
             margin-left: 15.28vw;
             margin-right: 15.28vw;
             background: white;
-            padding: 2vw 2vw;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
             margin-bottom: 6em;
-            padding-left: 3vw;
+            width: 69.38vw;
+            text-align: center;
 
             &-triangle {
                 position: absolute;
@@ -547,10 +550,10 @@ main {
 
             &-money {
                 margin-top: 2vw;
-                margin-left: 0.8vw;
+                margin-left: 2vw;
 
                 &-table {
-                    width: 62.5vw;
+                    width: 65vw;
 
                     &-tr {
 
@@ -585,6 +588,8 @@ main {
                 font-size: 1.39vw;
                 color: #2A1103;
                 padding-top: 2vw;
+                text-align: left;
+                margin-left: 2vw;
             }
 
         }
@@ -1401,26 +1406,35 @@ ARTMAKE.html
 
 // 既存の機能を廃止
 @media (min-width: 992px) {
-    .modal-lg, .modal-xl {
-        --bs-modal-width: unset; /* これで値を削除できます */
-    }
-}
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: unset;  /* 'max-width' をリセット */
-        margin-right: unset;  /* 'margin-right' をリセット */
-        margin-left: unset;   /* 'margin-left' をリセット */
+
+    .modal-lg,
+    .modal-xl {
+        --bs-modal-width: unset;
+        /* これで値を削除できます */
     }
 }
 
-.modal-content{
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: unset;
+        /* 'max-width' をリセット */
+        margin-right: unset;
+        /* 'margin-right' をリセット */
+        margin-left: unset;
+        /* 'margin-left' をリセット */
+    }
+}
+
+.modal-content {
     margin-right: 37vw;
     margin-left: 24vw;
 }
-.modal-header{
+
+.modal-header {
     height: 3vw;
     padding: 0;
-    >button{
+
+    >button {
         font-size: 1.25vw;
         margin-right: 1vw !important;
     }
@@ -1485,7 +1499,8 @@ ARTMAKE.html
                     text-align: center;
                 }
             }
-            &-th{
+
+            &-th {
                 font-weight: normal;
             }
 
@@ -1505,6 +1520,7 @@ ARTMAKE.html
             display: flex;
             height: 4.4vw;
             padding-bottom: 0.5vw;
+
             &-other {
                 &-1 {
                     border-right: 1px solid #fff;
@@ -1514,11 +1530,12 @@ ARTMAKE.html
                     display: flex;
                     align-items: flex-end;
                     padding-left: 3vw;
-                    >span{
+
+                    >span {
                         font-size: 1.39vw;
                         padding-left: 0.5vw;
                         padding-right: 0.5vw;
-                    
+
                     }
                 }
 
@@ -1529,10 +1546,11 @@ ARTMAKE.html
                     display: flex;
                     align-items: flex-end;
                     padding-left: 2vw;
-                    >span{
+
+                    >span {
                         font-size: 1.39vw;
                         padding-left: 0.5vw;
-                        padding-right: 1vw;                    
+                        padding-right: 1vw;
                     }
                 }
             }
