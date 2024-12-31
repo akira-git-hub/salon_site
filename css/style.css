@@ -324,6 +324,8 @@ main .block-6-imgs {
   width: 80vw;
   margin-left: 9.72vw;
   margin-right: 9.72vw;
+  display: flex;
+  overflow-x: scroll;
 }
 main .block-6-imgs img {
   width: 26vw;
@@ -1220,4 +1222,38 @@ ARTMAKE.html
   font-size: 1.39vw;
   padding-left: 0.5vw;
   padding-right: 1vw;
+}
+
+/*
+NEWS.html
+*/
+.NEWS {
+  margin-top: 7.85vw;
+  margin-bottom: 10vw;
+}
+.NEWS_dateday {
+  color: #2A1103;
+  text-align: center;
+  font-size: 1.67vw;
+}
+.NEWS_title {
+  margin-top: 3.26vw;
+  color: #2A1103;
+  text-align: center;
+  font-size: 1.94vw;
+}
+.NEWS_text {
+  margin-top: 5.56vw;
+  color: #2A1103;
+  font-size: 1.94vw;
+  padding-left: 11.67vw;
+}
+.NEWS_back {
+  margin-top: 24.79vw;
+  text-align: center;
+}
+.NEWS_back > a {
+  color: #2A1103;
+  font-size: 1.53vw;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

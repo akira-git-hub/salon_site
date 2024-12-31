@@ -1,5 +1,19 @@
 @charset "UTF-8";
+.Fixed_layout {
+  display: block;
+}
+
+.Responsive {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  .Fixed_layout {
+    display: none !important;
+  }
+  .Responsive {
+    display: block !important;
+  }
   /*　画面サイズが480px以下の場合ここの記述が適用される　*/
   main .block-1-1 {
     height: 100.39vw;
@@ -63,11 +77,401 @@
     width: 100%;
   }
   main .block-3-title {
-    font-size: 13.33vw;
-    margin-top: -8vw;
-    margin-left: 21.72vw;
+    font-size: 16.33vw;
+    margin-top: -9vw;
+    margin-left: 13.72vw;
+  }
+  main .block-3-blok {
+    background-repeat: no-repeat;
+    background-image: url(../img/img_concept.jpeg);
+    background-position: center center;
+    height: 75vw;
+  }
+  main .block-3-blok-bun {
+    font-size: 3.2vw;
+    background-color: unset;
+    display: block;
+    padding-left: 0;
+    text-align: center;
+    padding-top: 9vw;
+    color: #544136;
   }
   main .block-3-img {
     display: none;
+  }
+  main .block-4 {
+    padding-bottom: 0;
+    padding-top: 11vw;
+    padding-bottom: 11vw;
+  }
+  main .block-4-block {
+    display: block;
+  }
+  main .block-4-block-img {
+    display: block;
+    padding-top: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+  main .block-4-block-img > img {
+    width: 56.8vw;
+  }
+  main .block-4-block-daihyo {
+    width: 39.84vw;
+    height: unset;
+    position: absolute;
+    margin-top: -60vw;
+    margin-left: 0;
+    left: 45vw;
+  }
+  main .block-4-block-daihyo > img {
+    width: unset;
+  }
+  main .block-4-block-setumei {
+    padding-left: 0;
+    display: block;
+    padding-top: 0;
+    margin-top: 6vw;
+  }
+  main .block-4-block-setumei-sikaku {
+    font-size: 3.2vw;
+    text-align: center;
+    margin-top: 8vw;
+  }
+  main .block-4-block-setumei-msg {
+    font-size: 3.73vw;
+    text-align: center;
+    margin-top: 5vw;
+  }
+  main .block-5-title {
+    font-size: 7.73vw;
+    text-align: center;
+    padding-left: 0;
+  }
+  main .block-5-imgs {
+    width: 82.8vw;
+  }
+  main .block-5-imgs > img {
+    width: 39.2vw;
+  }
+  main .block-5-btn {
+    display: block;
+    text-align: center;
+  }
+  main .block-5-btn > a {
+    font-size: 2.4vw;
+    margin-right: 0;
+    padding: 2.3vw 9vw;
+  }
+  main .block-6-title {
+    font-size: 7.73vw;
+    text-align: center;
+    padding-left: 0;
+  }
+  main .block-6-imgs {
+    width: 90.4vw;
+    margin-left: 4.8vw;
+  }
+  main .block-6-imgs > img {
+    width: 43.6vw;
+  }
+  main .block-6-btn {
+    display: block;
+    text-align: center;
+  }
+  main .block-6-btn > a {
+    font-size: 2.4vw;
+    margin-right: 0;
+    padding: 2.3vw 9vw;
+  }
+  main .block-7-title {
+    font-size: 7.73vw;
+  }
+  main .block-7-subtitle-arttitle {
+    font-size: 13.33vw;
+    margin-left: 3vw;
+  }
+  main .block-7-subtitle-zeikomi {
+    margin-left: 0;
+    position: static;
+    font-size: 2.4vw;
+  }
+  main .block-7-block1 {
+    margin-left: 2.1vw;
+    margin-right: 2.1vw;
+    width: 94.67vw;
+  }
+  main .block-7-block1-triangle {
+    left: 2vw;
+    border-left: 13vw solid #9A9084;
+    border-bottom: 29vw solid transparent;
+  }
+  main .block-7-block1-title {
+    font-size: 6.4vw;
+    text-align: left;
+    padding-left: 16vw;
+  }
+  main .block-7-block1-ibrou {
+    width: 88.27vw;
+    margin-top: 3vw;
+  }
+  main .block-7-block1-ibrou-title {
+    width: 66vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+  main .block-7-block1-ibrou-title-text-1, main .block-7-block1-ibrou-title-text-2 {
+    font-size: 5.07vw;
+  }
+  main .block-7-block1-ibrou-setumei {
+    font-size: 3.73vw;
+  }
+  main .block-7-block1-money-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+  }
+  main .block-7-block1-money-table-tr-rowname, main .block-7-block1-money-table-tr-colname, main .block-7-block1-money-table-tr-cash {
+    font-size: 3.73vw;
+    height: 13vw;
+  }
+  main .block-7-block1-chui {
+    font-size: 2.67vw;
+    margin-left: 6vw;
+  }
+  main .block-7-block {
+    margin-left: 2.1vw;
+    margin-right: 2.1vw;
+    width: 94.67vw;
+  }
+  main .block-7-block-triangle {
+    left: 2vw;
+    border-left: 13vw solid #9A9084;
+    border-bottom: 29vw solid transparent;
+  }
+  main .block-7-block-title {
+    font-size: 6.4vw;
+    text-align: left;
+    padding-left: 16vw;
+  }
+  main .block-7-block-title-sub {
+    margin-left: 3vw;
+    font-size: 1.39vw;
+  }
+  main .block-7-block-img {
+    text-align: center;
+  }
+  main .block-7-block-img img {
+    width: 86.4vw;
+    margin-left: -3vw;
+    position: relative;
+    z-index: 1;
+  }
+  main .block-7-block-money-table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85vw;
+  }
+  main .block-7-block-money-table-tr-rowname, main .block-7-block-money-table-tr-colname, main .block-7-block-money-table-tr-cash {
+    font-size: 3.73vw;
+    height: 13vw;
+  }
+  main .block-7-block-money-table-tr-rowname {
+    text-align: center;
+  }
+  main .block-7-others-title {
+    margin-left: 25.33vw;
+    font-size: 13.33vw;
+  }
+  main .block-7-others-memo {
+    font-size: 2.67vw;
+    margin-left: 25.33vw;
+  }
+  main .block-7-others-menu {
+    margin-left: 7vw;
+    margin-right: 7vw;
+    display: inline-block;
+    margin-top: 0;
+  }
+  main .block-7-others-menu-medication {
+    width: 86vw;
+    margin-top: 6vw;
+  }
+  main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button {
+    width: 86vw;
+  }
+  main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button::after {
+    position: absolute;
+    right: 20vw;
+  }
+  main .block-7-others-menu-medication-dr_max {
+    margin-left: 0vw;
+  }
+  main .block-7-others-menu-medication-title {
+    font-size: 3.73vw;
+    width: 100%;
+    text-align: center;
+  }
+  main .block-7-others-menu-medication-money-table {
+    margin: 3vw auto;
+  }
+  main .block-7-others-menu-medication-money-table-tr-rowname, main .block-7-others-menu-medication-money-table-tr-cash, main .block-7-others-menu-medication-money-table-tr-subname {
+    font-size: 3.73vw;
+  }
+  main .block-7-others-menu-medication-money-table-tr-subname {
+    font-size: 3.2vw;
+  }
+  main .block-8 {
+    margin-left: 2.13vw;
+    margin-right: 2.13vw;
+    margin-bottom: 60vw;
+  }
+  main .block-8-title {
+    font-size: 7.73vw;
+  }
+  main .block-8-block {
+    display: unset;
+  }
+  main .block-8-block-Responsive1 .block-8-block-box {
+    display: unset;
+  }
+  main .block-8-block-Responsive1 .block-8-block-box-msg {
+    display: unset;
+  }
+  main .block-8-block-Responsive1 .block-8-block-box-msg > img {
+    width: 28vw;
+  }
+  main .block-8-block-Responsive1 .block-8-block-box-button {
+    margin-left: 0;
+    text-align: center;
+  }
+  main .block-8-block-Responsive1 .block-8-block-box-button > a {
+    font-size: 3.73vw;
+    padding: 1.5vw 13vw;
+    position: relative;
+    top: 44vw;
+  }
+  main .block-8-block-Responsive1 .block-8-block-box-exp {
+    font-size: 3.73vw;
+    text-align: center;
+    position: relative;
+    top: 44vw;
+  }
+  main .block-8-block-Responsive1 .block-8-block-box-exp > p {
+    margin-left: 0;
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 7vw;
+  }
+  main .block-8-block-Responsive1 .block-8-block-img {
+    width: 82.4vw;
+    float: right;
+    margin-top: -33vw;
+  }
+  main .block-8-block-Responsive2 .block-8-block-img, main .block-8-block-Responsive4 .block-8-block-img, main .block-8-block-Responsive6 .block-8-block-img, main .block-8-block-Responsive8 .block-8-block-img {
+    position: relative;
+    top: 12vw;
+    width: 82.4vw;
+  }
+  main .block-8-block-Responsive2 .block-8-block-box, main .block-8-block-Responsive4 .block-8-block-box, main .block-8-block-Responsive6 .block-8-block-box, main .block-8-block-Responsive8 .block-8-block-box {
+    display: unset;
+  }
+  main .block-8-block-Responsive2 .block-8-block-box-exp, main .block-8-block-Responsive4 .block-8-block-box-exp, main .block-8-block-Responsive6 .block-8-block-box-exp, main .block-8-block-Responsive8 .block-8-block-box-exp {
+    margin-top: 13vw;
+  }
+  main .block-8-block-Responsive2 .block-8-block-box-exp > p, main .block-8-block-Responsive4 .block-8-block-box-exp > p, main .block-8-block-Responsive6 .block-8-block-box-exp > p, main .block-8-block-Responsive8 .block-8-block-box-exp > p {
+    font-size: 3.73vw;
+    margin-left: 0;
+    white-space: nowrap;
+    padding-left: 7vw;
+  }
+  main .block-8-block-Responsive2 .block-8-block-box-msg, main .block-8-block-Responsive4 .block-8-block-box-msg, main .block-8-block-Responsive6 .block-8-block-box-msg, main .block-8-block-Responsive8 .block-8-block-box-msg {
+    display: unset;
+    float: right;
+    position: relative;
+    top: -50vw;
+  }
+  main .block-8-block-Responsive2 .block-8-block-box-msg > img, main .block-8-block-Responsive4 .block-8-block-box-msg > img, main .block-8-block-Responsive6 .block-8-block-box-msg > img, main .block-8-block-Responsive8 .block-8-block-box-msg > img {
+    width: 28vw;
+  }
+  main .block-8-block-Responsive3 .block-8-block-box, main .block-8-block-Responsive5 .block-8-block-box, main .block-8-block-Responsive7 .block-8-block-box, main .block-8-block-Responsive9 .block-8-block-box {
+    display: unset;
+  }
+  main .block-8-block-Responsive3 .block-8-block-box-msg, main .block-8-block-Responsive5 .block-8-block-box-msg, main .block-8-block-Responsive7 .block-8-block-box-msg, main .block-8-block-Responsive9 .block-8-block-box-msg {
+    display: unset;
+  }
+  main .block-8-block-Responsive3 .block-8-block-box-msg > img, main .block-8-block-Responsive5 .block-8-block-box-msg > img, main .block-8-block-Responsive7 .block-8-block-box-msg > img, main .block-8-block-Responsive9 .block-8-block-box-msg > img {
+    width: 28vw;
+  }
+  main .block-8-block-Responsive3 .block-8-block-box-exp, main .block-8-block-Responsive5 .block-8-block-box-exp, main .block-8-block-Responsive7 .block-8-block-box-exp, main .block-8-block-Responsive9 .block-8-block-box-exp {
+    font-size: 3.73vw;
+    text-align: center;
+    position: relative;
+    top: 44vw;
+  }
+  main .block-8-block-Responsive3 .block-8-block-box-exp > p, main .block-8-block-Responsive5 .block-8-block-box-exp > p, main .block-8-block-Responsive7 .block-8-block-box-exp > p, main .block-8-block-Responsive9 .block-8-block-box-exp > p {
+    margin-left: 0;
+    white-space: nowrap;
+    text-align: left;
+    padding-left: 7vw;
+  }
+  main .block-8-block-Responsive3 .block-8-block-img, main .block-8-block-Responsive5 .block-8-block-img, main .block-8-block-Responsive7 .block-8-block-img, main .block-8-block-Responsive9 .block-8-block-img {
+    width: 82.4vw;
+    float: right;
+    margin-top: -33vw;
+  }
+  main .block-8-block-Responsive3 .block-8-block-img, main .block-8-block-Responsive7 .block-8-block-img {
+    position: relative;
+    z-index: -1;
+    top: -6vw;
+  }
+  main .block-8-block-Responsive3 .block-8-block-box-exp > p, main .block-8-block-Responsive7 .block-8-block-box-exp > p {
+    position: relative;
+    top: -7vw;
+  }
+  main .block-8-block-Responsive9 .block-8-block-img {
+    position: relative;
+    z-index: -1;
+    top: -13vw;
+  }
+  main .block-8-block-Responsive9 .block-8-block-box-exp > p {
+    position: relative;
+    top: -7vw;
+  }
+  main .block-8-downicon1, main .block-8-downicon3, main .block-8-downicon5, main .block-8-downicon7, main .block-8-downicon9 {
+    margin-top: 51vw;
+  }
+  main .block-9 {
+    margin-left: 2.1vw;
+    margin-right: 2.1vw;
+  }
+  main .block-9-title {
+    font-size: 7.73vw;
+  }
+  main .block-9 .accordion-button,
+  main .block-9 .accordion-body {
+    font-size: 4vw;
+    display: grid;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 7vw;
+    padding-right: 5vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  main .block-9 .accordion-body > span {
+    left: 5vw;
+  }
+  main .block-9 .accordion-button > span {
+    position: absolute;
+    margin-left: -4vw;
+    z-index: 1;
+    left: 7vw;
+    top: 1vw;
+  }
+  main .block-9 .accordion-button::after {
+    margin-right: -3vw;
+    margin-top: -5vw;
   }
 }/*# sourceMappingURL=style.sp.css.map */

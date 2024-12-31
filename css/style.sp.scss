@@ -1,6 +1,22 @@
+.Fixed_layout {
+    display: block;
+}
+
+.Responsive {
+    display: none;
+}
+
 @media (max-width: 768px) {
-	/*　画面サイズが480px以下の場合ここの記述が適用される　*/
-    body{
+    .Fixed_layout {
+        display: none !important;
+    }
+
+    .Responsive {
+        display: block !important;
+    }
+
+    /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+    body {
         // background: rebeccapurple;
     }
 
@@ -8,44 +24,52 @@
         .block-1 {
             &-1 {
                 height: 100.39vw;
-                .title-messege{
+
+                .title-messege {
                     z-index: 1;
                     position: relative;
+
                     p {
                         &.title {
-                            >img{
+                            >img {
                                 width: 73.29vw;
                                 margin-top: 62vw;
                             }
                         }
-                        &.concept{
+
+                        &.concept {
                             margin-top: 91vw;
                             text-align: center;
                             font-size: 5vw;
                             margin-left: 17vw;
-                            >span{
+
+                            >span {
                                 font-size: 9vw;
                             }
                         }
-                        &.button{
+
+                        &.button {
                             display: none;
                         }
                     }
                 }
             }
-            &-2{
+
+            &-2 {
                 position: absolute;
                 margin-left: 0;
                 margin-top: 3vw;
                 width: 100vw;
-                >img{
+
+                >img {
                     width: 97.01vw;
                     margin-left: auto;
                     margin-right: auto;
-            
+
                 }
             }
-            &::after{
+
+            &::after {
                 content: "";
                 width: 100vw;
                 padding: 23vw 50vw;
@@ -54,33 +78,627 @@
                 background: linear-gradient(to top, rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 0) 100%);
             }
         }
-        .block-2{
+
+        .block-2 {
             margin-top: 16vw;
             margin-left: 6.665vw;
             margin-right: 6.665vw;
-            &-block{
+
+            &-block {
                 width: 100%;
                 display: block;
                 margin-left: 0;
                 margin-right: 0;
-                &-img{
+
+                &-img {
                     width: 100%;
                     margin-right: 0;
                     margin-bottom: 3vw;
-                    >img{
+
+                    >img {
                         width: 100%;
                     }
                 }
             }
         }
-        .block-3{
-            &-title{
-                font-size: 13.33vw;
-                margin-top: -8vw;
-                margin-left: 21.72vw;
+
+        .block-3 {
+            &-title {
+                font-size: 16.33vw;
+                margin-top: -9vw;
+                margin-left: 13.72vw;
             }
-            &-img{
+
+            &-blok {
+                background-repeat: no-repeat;
+                background-image: url(../img/img_concept.jpeg);
+                background-position: center center;
+                height: 75vw;
+
+                &-bun {
+                    font-size: 3.2vw;
+                    background-color: unset;
+                    display: block;
+                    padding-left: 0;
+                    text-align: center;
+                    padding-top: 9vw;
+                    color: #544136;
+                }
+            }
+
+            &-img {
                 display: none;
+            }
+
+        }
+
+        .block-4 {
+            padding-bottom: 0;
+            padding-top: 11vw;
+            padding-bottom: 11vw;
+
+            &-block {
+                display: block;
+
+                &-img {
+                    display: block;
+                    padding-top: 0;
+                    padding-left: 0;
+                    text-align: center;
+
+                    >img {
+                        width: 56.8vw;
+                    }
+                }
+
+                &-daihyo {
+                    width: 39.84vw;
+                    height: unset;
+                    position: absolute;
+                    margin-top: -60vw;
+                    margin-left: 0;
+                    left: 45vw;
+
+                    >img {
+                        width: unset;
+                    }
+                }
+
+                &-setumei {
+                    padding-left: 0;
+                    display: block;
+                    padding-top: 0;
+                    margin-top: 6vw;
+
+                    &-sikaku {
+                        font-size: 3.2vw;
+                        text-align: center;
+                        margin-top: 8vw;
+                    }
+
+                    &-msg {
+                        font-size: 3.73vw;
+                        text-align: center;
+                        margin-top: 5vw;
+                    }
+                }
+            }
+        }
+
+        .block-5 {
+            &-title {
+                font-size: 7.73vw;
+                text-align: center;
+                padding-left: 0;
+            }
+
+            &-imgs {
+                width: 82.8vw;
+
+                >img {
+                    width: 39.2vw;
+                }
+
+            }
+
+            &-btn {
+                display: block;
+                text-align: center;
+
+                >a {
+                    font-size: 2.4vw;
+                    margin-right: 0;
+                    padding: 2.3vw 9vw;
+                }
+            }
+        }
+
+        .block-6 {
+            &-title {
+                font-size: 7.73vw;
+                text-align: center;
+                padding-left: 0;
+            }
+
+            &-imgs {
+                width: 90.4vw;
+                margin-left: 4.8vw;
+
+                >img {
+                    width: 43.6vw;
+                }
+
+            }
+
+            &-btn {
+                display: block;
+                text-align: center;
+
+                >a {
+                    font-size: 2.4vw;
+                    margin-right: 0;
+                    padding: 2.3vw 9vw;
+                }
+            }
+        }
+
+        .block-7 {
+
+            &-title {
+                font-size: 7.73vw;
+            }
+
+            &-subtitle {
+                &-arttitle {
+                    font-size: 13.33vw;
+                    margin-left: 3vw;
+                }
+
+                &-zeikomi {
+                    margin-left: 0;
+                    position: static;
+                    font-size: 2.4vw;
+                }
+            }
+
+            &-block1 {
+                margin-left: 2.1vw;
+                margin-right: 2.1vw;
+                width: 94.67vw;
+
+                &-triangle {
+                    left: 2vw;
+                    border-left: 13vw solid #9A9084;
+                    border-bottom: 29vw solid transparent;
+                }
+
+                &-title {
+                    font-size: 6.4vw;
+                    text-align: left;
+                    padding-left: 16vw;
+                }
+
+                &-ibrou {
+                    width: 88.27vw;
+                    margin-top: 3vw;
+
+                    &-title {
+                        width: 66vw;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 0;
+
+                        &-text {
+
+                            &-1,
+                            &-2 {
+                                font-size: 5.07vw;
+                            }
+                        }
+                    }
+
+                    &-setumei {
+                        font-size: 3.73vw;
+                    }
+
+
+                }
+
+                &-money {
+                    &-table {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 85vw;
+
+                        &-tr {
+
+                            &-rowname,
+                            &-colname,
+                            &-cash {
+                                font-size: 3.73vw;
+                                height: 13vw;
+                            }
+
+                        }
+                    }
+                }
+
+                &-chui {
+                    font-size: 2.67vw;
+                    margin-left: 6vw;
+                }
+
+            }
+
+            &-block {
+                margin-left: 2.1vw;
+                margin-right: 2.1vw;
+                width: 94.67vw;
+
+                &-triangle {
+                    left: 2vw;
+                    border-left: 13vw solid #9A9084;
+                    border-bottom: 29vw solid transparent;
+                }
+
+                &-title {
+                    font-size: 6.4vw;
+                    text-align: left;
+                    padding-left: 16vw;
+
+                    &-sub {
+                        margin-left: 3vw;
+                        font-size: 1.39vw;
+                    }
+                }
+
+                &-img {
+                    text-align: center;
+
+                    img {
+                        width: 86.4vw;
+                        margin-left: -3vw;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+
+                &-money {
+                    &-table {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 85vw;
+
+                        &-tr {
+
+                            &-rowname,
+                            &-colname,
+                            &-cash {
+                                font-size: 3.73vw;
+                                height: 13vw;
+                            }
+
+                            &-rowname {
+                                text-align: center;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            &-others {
+                &-title {
+                    margin-left: 25.33vw;
+                    font-size: 13.33vw;
+                }
+
+                &-memo {
+                    font-size: 2.67vw;
+                    margin-left: 25.33vw;
+                }
+
+                &-menu {
+                    margin-left: 7vw;
+                    margin-right: 7vw;
+                    display: inline-block;
+                    margin-top: 0;
+
+                    &-medication {
+                        width: 86vw;
+                        margin-top: 6vw;
+
+                        &>.accordion {
+                            &>.accordion-item {
+                                &>.accordion-header {
+                                    &>.accordion-button {
+                                        width: 86vw;
+
+                                        &::after {
+                                            position: absolute;
+                                            right: 20vw;
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+
+                        &-dr_max {
+                            margin-left: 0vw;
+                        }
+
+                        &-title {
+                            font-size: 3.73vw;
+                            width: 100%;
+                            text-align: center;
+                        }
+
+                        &-money {
+
+                            &-table {
+                                margin: 3vw auto;
+
+                                &-tr {
+
+                                    &-rowname,
+                                    &-cash,
+                                    &-subname {
+                                        font-size: 3.73vw;
+                                    }
+
+                                    &-subname {
+                                        font-size: 3.2vw;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .block-8 {
+            margin-left: 2.13vw;
+            margin-right: 2.13vw;
+            margin-bottom: 60vw;
+
+            &-title {
+                font-size: 7.73vw;
+            }
+
+            &-block {
+                display: unset;
+
+                &-Responsive1 {
+                    .block-8-block {
+                        &-box {
+                            display: unset;
+
+                            &-msg {
+                                display: unset;
+
+                                >img {
+                                    width: 28vw;
+                                }
+                            }
+
+                            &-button {
+                                margin-left: 0;
+                                text-align: center;
+
+                                >a {
+                                    font-size: 3.73vw;
+                                    padding: 1.5vw 13vw;
+                                    position: relative;
+                                    top: 44vw;
+                                }
+
+                            }
+
+                            &-exp {
+                                font-size: 3.73vw;
+                                text-align: center;
+                                position: relative;
+                                top: 44vw;
+
+                                >p {
+                                    margin-left: 0;
+                                    white-space: nowrap;
+                                    text-align: center;
+                                    padding-left: 7vw;
+                                }
+                            }
+
+                        }
+
+                        &-img {
+                            width: 82.4vw;
+                            float: right;
+                            margin-top: -33vw;
+                        }
+                    }
+
+                }
+
+                &-Responsive2,
+                &-Responsive4,
+                &-Responsive6,
+                &-Responsive8 {
+                    .block-8-block {
+                        &-img {
+                            position: relative;
+                            top: 12vw;
+                            width: 82.4vw;
+                        }
+
+                        &-box {
+                            display: unset;
+
+                            &-exp {
+                                margin-top: 13vw;
+
+                                >p {
+                                    font-size: 3.73vw;
+                                    margin-left: 0;
+                                    white-space: nowrap;
+                                    padding-left: 7vw;
+                                }
+                            }
+
+                            &-msg {
+                                display: unset;
+                                float: right;
+                                position: relative;
+                                top: -50vw;
+
+                                >img {
+                                    width: 28vw;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                &-Responsive3,
+                &-Responsive5,
+                &-Responsive7,
+                &-Responsive9 {
+                    .block-8-block {
+                        &-box {
+                            display: unset;
+
+                            &-msg {
+                                display: unset;
+
+                                >img {
+                                    width: 28vw;
+                                }
+                            }
+
+                            &-exp {
+                                font-size: 3.73vw;
+                                text-align: center;
+                                position: relative;
+                                top: 44vw;
+
+                                >p {
+                                    margin-left: 0;
+                                    white-space: nowrap;
+                                    text-align: left;
+                                    padding-left: 7vw;
+                                }
+                            }
+
+                        }
+
+                        &-img {
+                            width: 82.4vw;
+                            float: right;
+                            margin-top: -33vw;
+                        }
+                    }
+                }
+
+                // 微調整
+
+                &-Responsive3,
+                &-Responsive7 {
+
+                    // 3枚目
+                    .block-8-block {
+                        &-img {
+                            position: relative;
+                            z-index: -1;
+                            top: -6vw;
+                        }
+
+                        &-box {
+                            &-exp {
+                                > p{
+                                 position: relative;
+                                 top: -7vw;
+                                }
+     
+                             }
+                        }
+                    }
+
+                }
+
+                &-Responsive9 {
+
+                    // 9枚目
+                    .block-8-block {
+                        &-img {
+                            position: relative;
+                            z-index: -1;
+                            top: -13vw;
+                        }
+
+                        &-box {
+                            &-exp {
+                                > p{
+                                 position: relative;
+                                 top: -7vw;
+                                }
+     
+                             }
+                        }
+                    }
+
+                }
+
+            }
+
+            &-downicon1,
+            &-downicon3,
+            &-downicon5,
+            &-downicon7,
+            &-downicon9 {
+                margin-top: 51vw;
+            }
+        }
+
+        .block-9 {
+            margin-left: 2.1vw;
+            margin-right: 2.1vw;
+
+            &-title {
+                font-size: 7.73vw;
+            }
+
+            .accordion-button,
+            .accordion-body {
+                font-size: 4vw;
+                display: grid;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-left: 7vw;
+                padding-right: 5vw;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+            
+            }
+            .accordion-body>span {
+                left: 5vw;
+            }
+
+            .accordion-button>span {
+                position: absolute;
+                margin-left: -4vw;
+                z-index: 1;
+                left: 7vw;
+                top: 1vw;
+            }
+            .accordion-button {
+                &::after {
+                    margin-right: -3vw;
+                    margin-top: -5vw;
+                }
             }
         }
     }
