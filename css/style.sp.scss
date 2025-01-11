@@ -3,7 +3,7 @@
 }
 
 .Responsive {
-    display: none;
+    display: none !important;
 }
 
 @media (max-width: 768px) {
@@ -15,72 +15,19 @@
         display: block !important;
     }
 
-    /*　画面サイズが480px以下の場合ここの記述が適用される　*/
-    body {
-        // background: rebeccapurple;
-    }
 
     main {
         .block-1 {
+            // display: none;
             &-1 {
-                height: 100.39vw;
-
-                .title-messege {
-                    z-index: 1;
-                    position: relative;
-
-                    p {
-                        &.title {
-                            >img {
-                                width: 73.29vw;
-                                margin-top: 62vw;
-                            }
-                        }
-
-                        &.concept {
-                            margin-top: 91vw;
-                            text-align: center;
-                            font-size: 5vw;
-                            margin-left: 17vw;
-
-                            >span {
-                                font-size: 9vw;
-                            }
-                        }
-
-                        &.button {
-                            display: none;
-                        }
-                    }
+                >img{
+                    width: 100%;
                 }
-            }
-
-            &-2 {
-                position: absolute;
-                margin-left: 0;
-                margin-top: 3vw;
-                width: 100vw;
-
-                >img {
-                    width: 97.01vw;
-                    margin-left: auto;
-                    margin-right: auto;
-
-                }
-            }
-
-            &::after {
-                content: "";
-                width: 100vw;
-                padding: 23vw 50vw;
-                margin-top: -46vw;
-                position: absolute;
-                background: linear-gradient(to top, rgba(255, 255, 255, 1) 39%, rgba(255, 255, 255, 0) 100%);
             }
         }
 
         .block-2 {
-            margin-top: 16vw;
+            margin-top: 0vw;
             margin-left: 6.665vw;
             margin-right: 6.665vw;
 
@@ -357,7 +304,7 @@
 
                     img {
                         width: 86.4vw;
-                        margin-left: -3vw;
+                        margin-left: 2vw;
                         position: relative;
                         z-index: 1;
                     }

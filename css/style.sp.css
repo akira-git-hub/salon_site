@@ -1,10 +1,9 @@
-@charset "UTF-8";
 .Fixed_layout {
   display: block;
 }
 
 .Responsive {
-  display: none;
+  display: none !important;
 }
 
 @media (max-width: 768px) {
@@ -14,51 +13,11 @@
   .Responsive {
     display: block !important;
   }
-  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
-  main .block-1-1 {
-    height: 100.39vw;
-  }
-  main .block-1-1 .title-messege {
-    z-index: 1;
-    position: relative;
-  }
-  main .block-1-1 .title-messege p.title > img {
-    width: 73.29vw;
-    margin-top: 62vw;
-  }
-  main .block-1-1 .title-messege p.concept {
-    margin-top: 91vw;
-    text-align: center;
-    font-size: 5vw;
-    margin-left: 17vw;
-  }
-  main .block-1-1 .title-messege p.concept > span {
-    font-size: 9vw;
-  }
-  main .block-1-1 .title-messege p.button {
-    display: none;
-  }
-  main .block-1-2 {
-    position: absolute;
-    margin-left: 0;
-    margin-top: 3vw;
-    width: 100vw;
-  }
-  main .block-1-2 > img {
-    width: 97.01vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  main .block-1::after {
-    content: "";
-    width: 100vw;
-    padding: 23vw 50vw;
-    margin-top: -46vw;
-    position: absolute;
-    background: linear-gradient(to top, rgb(255, 255, 255) 39%, rgba(255, 255, 255, 0) 100%);
+  main .block-1-1 > img {
+    width: 100%;
   }
   main .block-2 {
-    margin-top: 16vw;
+    margin-top: 0vw;
     margin-left: 6.665vw;
     margin-right: 6.665vw;
   }
@@ -264,7 +223,7 @@
   }
   main .block-7-block-img img {
     width: 86.4vw;
-    margin-left: -3vw;
+    margin-left: 2vw;
     position: relative;
     z-index: 1;
   }
