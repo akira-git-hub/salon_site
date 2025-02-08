@@ -842,6 +842,9 @@ main .block-11-block-block1-train {
   font-size: 1.4vw;
   color: #2A1103;
 }
+main .block-11-block-block1-train > span {
+  color: #A98A80;
+}
 main .block-11-block-block2 {
   width: 25.76vw;
   display: inline-block;
