@@ -198,16 +198,16 @@ main .block-2-block-img > img {
   width: 33.86vw;
 }
 main .block-3 {
-  padding-top: 12.5vw;
+  padding-top: 10vw;
 }
 main .block-3-title {
   color: #544037;
   opacity: 34.84%;
   margin-bottom: 0;
-  margin-left: 9.72vw;
-  font-size: 6.94vw;
+  margin-left: 20vw;
+  font-size: 5vw;
   position: absolute;
-  margin-top: -4vw;
+  margin-top: -3.5vw;
   font-family: "optima";
 }
 main .block-3-blok {
@@ -215,64 +215,65 @@ main .block-3-blok {
   z-index: -1;
 }
 main .block-3-blok-bun {
-  font-size: 1.25vw;
-  margin-bottom: 0;
-  padding-left: 15.28vw;
-  padding-top: 7.57vw;
-  padding-bottom: 3.13vw;
+  font-size: 1vw;
+  margin-bottom: 5vw;
+  padding-left: 20vw;
+  padding-top: 4.5vw;
+  padding-bottom: 10vw;
   background: #EEE4DA;
 }
 main .block-3-img {
   text-align: right;
-  margin-right: 15.28vw;
-  margin-top: -20vw;
+  margin-right: 22vw;
+  margin-top: -30vw;
   margin-left: 0vw;
 }
 main .block-3-img-concept {
   border-radius: 100% 100% 0% 0%;
-  width: 24.31vw;
+  width: 22vw;
 }
 main .block-4 {
   background-image: url(../img/img_bg.png);
   background-repeat: no-repeat;
   background-position: center bottom;
-  padding-bottom: 7vw;
+  padding-bottom: 0vw;
   margin-top: -5vw;
 }
 main .block-4-block {
   display: flex;
+  justify-content: center
 }
 main .block-4-block-img {
   display: inline-block;
-  padding-top: 12.57vw;
-  padding-left: 15.28vw;
+  padding-top: 3vw;
+  padding-right: 3vw;
 }
 main .block-4-block-img > img {
-  width: 26.85vw;
+  width: 15vw;
 }
 main .block-4-block-setumei {
   display: inline-block;
-  font-size: 1.25vw;
-  padding-left: 5vw;
-  padding-top: 22.36vw;
+  font-size: 0.5vw;
+  padding-left: 3vw;
+  padding-top: 15vw;
   color: #544136;
 }
 main .block-4-block-setumei-sikaku {
-  font-size: 1.25vw;
+  font-size: 1vw;
   margin-bottom: 0.9vw;
 }
 main .block-4-block-setumei-msg {
-  font-size: 1.67vw;
+  font-size: 1.3vw;
 }
 main .block-4-block-daihyo {
   width: 18.75vw;
-  margin-left: 26vw;
+  margin-left: 30vw;
   margin-top: -6.7vw;
   position: relative;
-  height: 8.57vw;
+  height: 10vw;
 }
 main .block-4-block-daihyo img {
-  width: 18.75vw;
+  width: 15vw;
 }
 main .block-5 {
   padding-top: 10.56vw;
@@ -311,55 +312,57 @@ main .block-5-btn a {
   font-family: "optima";
 }
 main .block-6 {
-  padding-top: 8vw;
-  padding-bottom: 17.78vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
 }
 main .block-6-title {
-  padding-left: 9.72vw;
-  font-size: 4.03vw;
+  padding-left: 20vw;
+  font-size: 3vw;
   font-family: "optima";
+  color: #544136;
 }
 main .block-6-imgs {
-  padding-top: 3vw;
+  padding-top: 0vw;
   width: 80vw;
   margin-left: 9.72vw;
   margin-right: 9.72vw;
   display: flex;
   overflow-x: scroll;
+  justify-content: center
 }
 main .block-6-imgs img {
-  width: 26vw;
+  width: 20vw;
   padding-right: 1vw;
 }
 main .block-6-btn {
   display: flex;
-  margin-top: 7vw;
+  margin-top: 3vw;
 }
 main .block-6-btn a {
   text-decoration: none;
   color: #2A1204;
   background: #EEE4DA;
-  padding: 0.5vw 4vw;
+  padding: 0.5vw 3vw;
   font-size: 1.25vw;
   text-align: right;
   margin-left: auto;
-  margin-right: 12vw;
+  margin-right: 21vw;
   font-family: "optima";
 }
 main .block-7 {
   background-color: #EEE4DA;
-  padding-top: 5.76vw;
-  padding-bottom: 6vw;
+  padding-top: 7vw;
+  padding-bottom: 7vw;
 }
 main .block-7-title {
   text-align: center;
-  font-size: 4.03vw;
-  color: #2A1103;
+  font-size: 3vw;
+  color: #544136;
   font-family: "optima";
   margin-bottom: 0;
 }
 main .block-7-subtitle {
-  padding-top: 9.58vw;
+  padding-top: 7vw;
   position: relative;
   z-index: 1;
 }
@@ -367,29 +370,29 @@ main .block-7-subtitle-arttitle {
   display: inline-block;
   color: #FFFFFF;
   opacity: 0.6039;
-  margin-left: 15vw;
-  margin-bottom: 0;
-  font-size: 6.94vw;
+  margin-left: 18vw;
+  margin-bottom: -9vw;
+  font-size: 5vw;
   font-family: "optima";
 }
 main .block-7-subtitle-zeikomi {
   display: inline-block;
   color: #2A1103;
-  margin-bottom: 0;
-  margin-left: 22.5vw;
-  font-size: 1.39vw;
+  margin-bottom: 1vw;
+  margin-left: 30vw;
+  font-size: 1vw;
   position: absolute;
-  top: 16vw;
+  top: 10.5vw;
 }
 main .block-7-block1 {
-  margin-left: 15.28vw;
-  margin-right: 15.28vw;
+  margin: 0vw 18vw;
   background: white;
   padding-top: 2vw;
   padding-bottom: 2vw;
   margin-bottom: 6em;
-  width: 69.38vw;
+  width: 65vw;
   text-align: center;
+  
 }
 main .block-7-block1-triangle {
   position: absolute;
@@ -397,59 +400,63 @@ main .block-7-block1-triangle {
   height: 0;
   border-left: 8vw solid #9A9084;
   border-bottom: 18vw solid transparent;
-  left: 15.3vw;
+  left: 18vw;
   margin-top: -2vw;
 }
 main .block-7-block1-title {
-  padding-left: 7vw;
-  font-size: 2.64vw;
+  padding-left: 0vw;
+  font-size: 2vw;
   color: #2A1103;
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
 main .block-7-block1-ibrou {
   display: inline-block;
-  width: 21vw;
-  padding-left: 0.5vw;
-  padding-right: 0.5vw;
+  width: 18vw;
 }
 main .block-7-block1-ibrou-title {
   display: flex;
   align-items: center;
   text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 main .block-7-block1-ibrou-title-line {
   flex-grow: 1;
   height: 1px;
-  background-color: #000;
+  background-color: #2A1103;
 }
 main .block-7-block1-ibrou-title-text-1 {
   margin: 0px 3vw;
   color: #2A1103;
-  font-size: 1.94vw;
+  font-size: 1vw;
 }
 main .block-7-block1-ibrou-title-text-2 {
   margin: 0px 1vw;
   color: #2A1103;
-  font-size: 1.94vw;
+  font-size: 1vw;
 }
 main .block-7-block1-ibrou-setumei1, main .block-7-block1-ibrou-setumei3 {
-  padding-bottom: 1.9vw;
+  padding-bottom: 1.2vw;
 }
+
 main .block-7-block1-ibrou-setumei {
-  font-size: 1.25vw;
+  font-size: 0.8vw;
   text-align: center;
   color: #2A1103;
 }
 main .block-7-block1-ibrou-img img {
-  width: 100%;
+  width: 80%;
 }
 main .block-7-block1-money {
-  margin-top: 2vw;
-  margin-left: 2vw;
+  margin: 1vw 5vw;
+  display: flex ;
+  justify-content:center
+  
 }
 main .block-7-block1-money-table {
-  width: 65vw;
+  width: 50vw;
 }
 main .block-7-block1-money-table-tr:nth-of-type(1), main .block-7-block1-money-table-tr:nth-of-type(2), main .block-7-block1-money-table-tr:nth-of-type(3) {
   border-top: 1px solid white;
@@ -458,28 +465,29 @@ main .block-7-block1-money-table-tr-rowname, main .block-7-block1-money-table-tr
   color: #2a1103;
   background: #EEE4DA;
   padding: 1vw;
-  font-size: 1.94vw;
-  padding-left: 3vw;
+  font-size: 1vw;
 }
 main .block-7-block1-money-table-tr-rowname {
   border-right: 1px solid white;
+  
 }
 main .block-7-block1-money-table-tr-colname {
   font-weight: normal;
 }
 main .block-7-block1-chui {
-  font-size: 1.39vw;
+  font-size: 1vw;
   color: #2A1103;
-  padding-top: 2vw;
+  padding-top: 0vw;
   text-align: left;
-  margin-left: 2vw;
+  margin-left: 8vw;
 }
 main .block-7-block {
-  margin-left: 15.28vw;
-  margin-right: 15.28vw;
+  margin: 0vw 18vw;
   background: white;
   padding: 2vw 2vw;
   margin-bottom: 4em;
+  width: 65vw;
+  text-align:center
 }
 main .block-7-block-triangle {
   position: absolute;
@@ -487,47 +495,57 @@ main .block-7-block-triangle {
   height: 0;
   border-left: 8vw solid #9A9084;
   border-bottom: 18vw solid transparent;
-  left: 15.3vw;
+  left: 18vw;
   margin-top: -2vw;
 }
 main .block-7-block-title {
-  padding-left: 7vw;
-  font-size: 2.64vw;
+  padding-left: 0vw;
+  font-size: 2vw;
   color: #2A1103;
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
 main .block-7-block-title-sub {
-  margin-left: 3vw;
-  font-size: 1.39vw;
+  margin-left: 5vw;
+  margin-right: -15vw;
+  font-size: 0.9vw;
 }
 main .block-7-block-img {
-  text-align: center;
+  display: flex ;
+  justify-content:center
 }
 main .block-7-block-img img {
-  width: 62.5vw;
+  width: 50vw;
   position: relative;
   z-index: 1;
 }
 main .block-7-block-money {
-  margin-top: 2vw;
+  margin: 1vw 5vw;
+  display: flex ;
+  justify-content:center
+
 }
 main .block-7-block-money-table {
-  width: 62.5vw;
+  width: 50vw;
 }
 main .block-7-block-money-table-tr:nth-of-type(1), main .block-7-block-money-table-tr:nth-of-type(2), main .block-7-block-money-table-tr:nth-of-type(3) {
   border-top: 1px solid white;
 }
 main .block-7-block-money-table-tr-rowname, main .block-7-block-money-table-tr-colname, main .block-7-block-money-table-tr-cash {
+  text-align: center;
   color: #2a1103;
   background: #EEE4DA;
   padding: 1vw;
-  font-size: 1.74vw;
-  padding-left: 3vw;
+  font-size: 1vw;
+  padding-left: 1vw;
 }
 main .block-7-block-money-table-tr-colname, main .block-7-block-money-table-tr-cash {
   padding-left: 0;
   text-align: center;
+  color: #2a1103;
+  background: #EEE4DA;
+  padding: 1vw;
+  font-size: 1vw;
 }
 main .block-7-block-money-table-tr-rowname {
   border-right: 1px solid white;
@@ -539,28 +557,30 @@ main .block-7-others-title {
   display: inline-block;
   color: #FFFFFF;
   opacity: 0.6039;
-  margin-left: 15.28vw;
+  margin-left: 18vw;
   margin-bottom: 0;
-  font-size: 6.94vw;
+  font-size: 5vw;
   font-family: "optima";
 }
 main .block-7-others-memo {
   color: #2A1103;
-  margin-left: 15.28vw;
-  font-size: 1.5vw;
+  margin-left: 72vw;
+  margin-top: -2.5vw;
+  font-size: 1vw;
 }
 main .block-7-others-menu {
   margin-top: 3vw;
   margin-left: 15.28vw;
   margin-right: 15.28vw;
   display: flex;
+  justify-content: center
 }
 main .block-7-others-menu-button {
   background-color: #EEE4DA;
-  width: 34.72vw;
+  width: 30vw;
 }
 main .block-7-others-menu-medication {
-  width: 34.72vw;
+  width: 30vw;
 }
 main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-header > .accordion-button {
   padding-bottom: 0;
@@ -575,12 +595,13 @@ main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion
 }
 main .block-7-others-menu-medication > .accordion > .accordion-item > .accordion-collapse {
   padding-bottom: 2vw;
+
 }
 main .block-7-others-menu-medication-dr_max {
   margin-left: 1vw;
 }
 main .block-7-others-menu-medication-title {
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   font-weight: normal;
   color: #2A1103;
   margin-top: 1vw;
@@ -597,7 +618,7 @@ main .block-7-others-menu-medication-money-table {
   margin-top: 2vw;
 }
 main .block-7-others-menu-medication-money-table-tr-rowname, main .block-7-others-menu-medication-money-table-tr-cash, main .block-7-others-menu-medication-money-table-tr-subname {
-  font-size: 1.67vw;
+  font-size: 1vw;
   color: #2A1103;
   padding: 0.5vw;
 }
@@ -611,7 +632,7 @@ main .block-7-others-menu-medication-money-table-tr-cash3 {
   padding-left: 12.08vw;
 }
 main .block-7-others-menu-medication-money-table-tr-subname {
-  font-size: 1.4vw;
+  font-size: 1vw;
   color: #2A1103;
   padding: 1vw;
 }
@@ -619,15 +640,15 @@ main .block-7-others-menu-medication-money-table-tr-blank {
   padding: 1vw;
 }
 main .block-8 {
-  margin-left: 15.28vw;
-  margin-right: 15.28vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
   padding-bottom: 3vw;
-  padding-top: 12.5vw;
+  padding-top: 12vw;
 }
 main .block-8-title {
-  font-size: 4vw;
+  font-size: 3vw;
   color: #544136;
-  margin-bottom: 13.54vw;
+  margin-bottom: 7vw;
   text-align: center;
   font-family: "optima";
 }
@@ -644,31 +665,31 @@ main .block-8-block-box-msg {
   padding-bottom: 2vw;
 }
 main .block-8-block-box-msg > img {
-  width: 12.5vw;
+  width: 9.5vw;
 }
 main .block-8-block-box-button {
-  text-align: left;
-  padding-bottom: 2vw;
-  margin-left: 7vw;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1vw;
+
 }
 main .block-8-block-box-button a {
   text-decoration: none;
   background-color: white;
   color: #2A1103;
   border: none;
-  padding: 1.1vw 6vw;
-  font-size: 1.94vw;
+  padding: 1vw 5vw;
+  font-size: 1.5vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  margin-top: 2vw;
-  margin-bottom: 2vw;
   box-shadow: 0 0.5px 1.5vw rgba(0, 0, 0, 0.1);
 }
 main .block-8-block-box-exp {
   color: #544136;
-  font-size: 1.5vw;
+  font-size: 1vw;
 }
 main .block-8-block-box-exp p {
-  margin-left: 7vw;
+  display: flex;
+  justify-content: center;
 }
 main .block-8-block-img {
   width: 34.72vw;
@@ -683,9 +704,9 @@ main .block-8-downicon {
 main .block-8-downicon-triangle {
   width: 0;
   height: 0;
-  border-left: 4vw solid transparent;
-  border-right: 4vw solid transparent;
-  border-top: 4vw solid #EEE4DA;
+  border-left: 2vw solid transparent;
+  border-right: 2vw solid transparent;
+  border-top: 2vw solid #EEE4DA;
   display: block;
   margin: -0.5vw 0;
   margin-left: auto;
@@ -693,22 +714,22 @@ main .block-8-downicon-triangle {
   opacity: 0.5961;
 }
 main .block-9 {
-  margin-left: 15.28vw;
-  margin-right: 15.28vw;
-  padding-bottom: 12.57vw;
-  padding-top: 7.76vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding-bottom: 12vw;
+  padding-top: 7vw;
 }
 main .block-9-title {
-  font-size: 4vw;
+  font-size: 3vw;
   color: #544136;
-  margin-bottom: 7.78vw;
+  margin-bottom: 5vw;
   text-align: center;
   font-family: "optima";
 }
 main .block-9 .accordion-button,
 main .block-9 .accordion-body {
   padding-left: 5vw;
-  font-size: 1.94vw;
+  font-size: 1.2vw;
 }
 main .block-9 .accordion-body {
   color: #544136;
@@ -722,7 +743,7 @@ main .block-9 .accordion-button > span {
 }
 main .block-9 .accordion-body > span {
   position: absolute;
-  left: 17vw;
+  left: 27vw;
 }
 main .block-9 .accordion-button:not(.collapsed) {
   color: #fff;
@@ -738,30 +759,31 @@ main .block-9 .accordion-header {
 }
 main .block-9 .accordion-button {
   border-bottom: 1px solid #9A9085;
-  padding-top: 3.4vw;
-  padding-bottom: 3.4vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 main .block-9 .accordion-button::after {
   background-image: url("../svg/QandAicon.svg");
 }
 main .block-10 {
-  padding-bottom: 5.49vw;
+  padding-bottom: 5vw;
   background: #ECE6E3;
-  padding-top: 3.82vw;
+  padding-top: 5vw;
 }
 main .block-10-title {
   color: #2A1103;
-  font-size: 4.03vw;
-  padding-bottom: 7.5vw;
+  font-size: 3vw;
+  padding-bottom: 5vw;
   text-align: center;
   font-family: "optima";
 }
 main .block-10-comment {
-  padding-left: 29vw;
+  display: flex ;
+  justify-content: center
 }
 main .block-10-comment-text {
   padding-bottom: 2vw;
-  font-size: 1.94vw;
+  font-size: 1.5vw;
 }
 main .block-10-comment-text a {
   color: #2A1103;
@@ -773,8 +795,8 @@ main .block-11 {
 }
 main .block-11-title {
   color: #2A1103;
-  font-size: 4.03vw;
-  padding-top: 12.15vw;
+  font-size: 3vw;
+  padding-top: 12vw;
   padding-bottom: 8.19vw;
   text-align: center;
   font-family: "optima";

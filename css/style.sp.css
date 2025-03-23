@@ -36,15 +36,13 @@
     width: 100%;
   }
   main .block-3-title {
-    font-size: 16.33vw;
+    font-size: 15vw;
     margin-top: -9vw;
-    margin-left: 13.72vw;
+    margin-left: 15vw;
+
   }
   main .block-3-blok {
-    background-repeat: no-repeat;
-    background-image: url(../img/img_concept.jpeg);
-    background-position: center center;
-    height: 75vw;
+    background: #EDE4DA;
   }
   main .block-3-blok-bun {
     font-size: 3.2vw;
@@ -84,7 +82,8 @@
     left: 45vw;
   }
   main .block-4-block-daihyo > img {
-    width: unset;
+    width: 100%;
+    margin-top: -6vw;
   }
   main .block-4-block-setumei {
     padding-left: 0;
@@ -130,6 +129,9 @@
   main .block-6-imgs {
     width: 90.4vw;
     margin-left: 4.8vw;
+  }
+  main .block-6-imgs-img1 {
+    margin-left: 41vw;
   }
   main .block-6-imgs > img {
     width: 43.6vw;
