@@ -77,7 +77,7 @@
     width: 39.84vw;
     height: unset;
     position: absolute;
-    margin-top: -60vw;
+    margin-top: -67vw;
     margin-left: 0;
     left: 45vw;
   }
@@ -90,6 +90,28 @@
     display: block;
     padding-top: 0;
     margin-top: 6vw;
+  }
+  main .block-4-block-setumei-instlink {
+    box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    width: 40vw;
+    padding: 2vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    margin-top: 4vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  main .block-4-block-setumei-instlink a {
+    text-decoration: none;
+    color: #2A1103;
+    font-size: 3.2vw;
+  }
+  
+  main .block-4-block-setumei-instlink a img {
+    width: 6vw;
+    margin-top: -1vw;
   }
   main .block-4-block-setumei-sikaku {
     font-size: 3.2vw;
@@ -153,7 +175,7 @@
     margin-left: 3vw;
   }
   main .block-7-subtitle-zeikomi {
-    margin-left: 0;
+    margin-left: 3vw;
     position: static;
     font-size: 2.4vw;
   }
@@ -174,8 +196,13 @@
   }
   main .block-7-block1-ibrou {
     width: 88.27vw;
-    margin-top: 3vw;
+    margin-top: 3vw; 
   }
+
+  main .block-7-block1-ibrou-4d {
+    margin-top: 10vw; 
+  }
+
   main .block-7-block1-ibrou-title {
     width: 66vw;
     margin-left: auto;
@@ -194,8 +221,8 @@
     width: 85vw;
   }
   main .block-7-block1-money-table-tr-rowname, main .block-7-block1-money-table-tr-colname, main .block-7-block1-money-table-tr-cash {
-    font-size: 3.73vw;
-    height: 13vw;
+    font-size: 3vw;
+    height: 12vw;
   }
   main .block-7-block1-chui {
     font-size: 2.67vw;
@@ -218,7 +245,7 @@
   }
   main .block-7-block-title-sub {
     margin-left: 3vw;
-    font-size: 1.39vw;
+    font-size: 2vw;
   }
   main .block-7-block-img {
     text-align: center;
@@ -342,10 +369,10 @@
     margin-top: 13vw;
   }
   main .block-8-block-Responsive2 .block-8-block-box-exp > p, main .block-8-block-Responsive4 .block-8-block-box-exp > p, main .block-8-block-Responsive6 .block-8-block-box-exp > p, main .block-8-block-Responsive8 .block-8-block-box-exp > p {
-    font-size: 3.73vw;
+    font-size: 3.5vw;
     margin-left: 0;
     white-space: nowrap;
-    padding-left: 7vw;
+    padding-left: 1vw;
   }
   main .block-8-block-Responsive2 .block-8-block-box-msg, main .block-8-block-Responsive4 .block-8-block-box-msg, main .block-8-block-Responsive6 .block-8-block-box-msg, main .block-8-block-Responsive8 .block-8-block-box-msg {
     display: unset;
@@ -412,7 +439,7 @@
   }
   main .block-9 .accordion-button,
   main .block-9 .accordion-body {
-    font-size: 4vw;
+    font-size: 3vw;
     display: grid;
     padding-top: 0;
     padding-bottom: 0;

@@ -17,10 +17,63 @@
 <body>
     <header id="top">
         <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid header-hight">
-                <a class="navbar-brand" href="./index.html">
-                    <img class="header-rogo" src="./img/rogo3.png" alt="" srcset="">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/rogo2.png" alt="">
                 </a>
+                <!-- ハンバーガーメニューボタン -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- ハンバーガーメニュー内部 -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#CONCEPT">CONCEPT</a>
+                            </li>
+                            <!--<li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#ARTIST">ARTIST</a>
+                            </li>-->
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#ARTMAKE">ART MAKE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#MENUPRICE">MENU
+                                    PRICE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#FLOW">FLOW</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#QandA">QandA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#NEWS">NEWS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html#CLINIC">CLINIC</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 title-yoyaku">
+                            <li class="nav-item">
+                                <div class="header_nav_title">
+                                    <p class="h1"><img src="./img/rogo3.png" alt="" srcset=""></p>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active YoyakuButon" aria-current="page"
+                                    href="https://lin.ee/IsPCNO5" target="_blank">ご予約<span>は</span>こちら</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <div class="pankuzu">
@@ -37,13 +90,20 @@
     </header>
     <main class="NEWS">
         <div class="NEWS_dateday">
-            2025/01/01
+            2024/11/05
         </div>
         <div class="NEWS_title">
-            タイトル
+            新店舗オープンのお知らせ
         </div>
         <div class="NEWS_text">
-            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+
+        平素より格別のご愛顧を賜り、誠にありがとうございます。<br>
+        このたび、2024年11月5日（火）に、Mirelle 大阪 をオープンする運びとなりました！<br><br>
+
+        皆様にご満足いただけるサービスで<br>
+        スタッフ一同、心よりおもてなしさせていただきます。<br><br>
+
+        皆様のご来店を心よりお待ちしております。
         </div>
         <div class="NEWS_back">
             <a href="./index.html">戻る</a>

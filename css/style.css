@@ -97,14 +97,14 @@ ARTIST.html、ARTMAKE.html ヘッダーロゴ、パンくずリスト
 }
 
 .pankuzu {
-  margin-top: 9em;
+  margin-top: 5em;
   background: #EDE4DA;
   padding-left: 9vw;
   padding-top: 0.5vw;
   display: flex;
 }
 .pankuzu-top, .pankuzu-bar, .pankuzu-name {
-  font-size: 1.94vw;
+  font-size: 1vw;
   font-family: "optima";
 }
 .pankuzu-top > a, .pankuzu-bar > a, .pankuzu-name > a {
@@ -239,6 +239,7 @@ main .block-4 {
   padding-bottom: 0vw;
   margin-top: -5vw;
 }
+
 main .block-4-block {
   display: flex;
   justify-content: center
@@ -258,6 +259,25 @@ main .block-4-block-setumei {
   padding-top: 15vw;
   color: #544136;
 }
+main .block-4-block-setumei-instlink {
+  box-shadow: -3px 4px 8px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  width: 19vw;
+  padding: 0.5vw;
+  text-align: center;
+  margin-top: 0.97vw;
+}
+
+main .block-4-block-setumei-instlink a {
+  text-decoration: none;
+  color: #2A1103;
+  font-size: 1.5vw;
+}
+
+main .block-4-block-setumei-instlink a img {
+  width: 2.5vw;
+}
+
 main .block-4-block-setumei-sikaku {
   font-size: 1vw;
   margin-bottom: 0.9vw;
@@ -379,7 +399,7 @@ main .block-7-subtitle-zeikomi {
   display: inline-block;
   color: #2A1103;
   margin-bottom: 1vw;
-  margin-left: 30vw;
+  margin-left: 24vw;
   font-size: 1vw;
   position: absolute;
   top: 10.5vw;
@@ -412,7 +432,7 @@ main .block-7-block1-title {
 }
 main .block-7-block1-ibrou {
   display: inline-block;
-  width: 18vw;
+  width: 17vw;
 }
 main .block-7-block1-ibrou-title {
   display: flex;
@@ -447,7 +467,7 @@ main .block-7-block1-ibrou-setumei {
   color: #2A1103;
 }
 main .block-7-block1-ibrou-img img {
-  width: 80%;
+  width: 85%;
 }
 main .block-7-block1-money {
   margin: 1vw 5vw;
@@ -1252,32 +1272,32 @@ ARTMAKE.html
 NEWS.html
 */
 .NEWS {
-  margin-top: 7.85vw;
+  margin-top: 7vw;
   margin-bottom: 10vw;
 }
 .NEWS_dateday {
   color: #2A1103;
   text-align: center;
-  font-size: 1.67vw;
+  font-size: 1vw;
 }
 .NEWS_title {
   margin-top: 3.26vw;
   color: #2A1103;
   text-align: center;
-  font-size: 1.94vw;
+  font-size: 1.3vw;
 }
 .NEWS_text {
   margin-top: 5.56vw;
   color: #2A1103;
-  font-size: 1.94vw;
-  padding-left: 11.67vw;
+  text-align: center;
+  font-size: 1vw;
 }
 .NEWS_back {
-  margin-top: 24.79vw;
+  margin-top: 10vw;
   text-align: center;
 }
 .NEWS_back > a {
   color: #2A1103;
-  font-size: 1.53vw;
+  font-size: 1vw;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
