@@ -143,7 +143,7 @@ main .block-1-1 p.title {
   color: #333333;
   font-family: "optima";
   position: absolute;
-  margin-top: 4vw;
+  margin-top: 6vw;
 }
 main .block-1-1 p.title > img {
   width: 15.83vw;
@@ -152,7 +152,7 @@ main .block-1-1 p.concept {
   font-size: 2.22vw;
   margin-left: 14.58vw;
   color: #2A1103;
-  margin-top: 14vw;
+  margin-top: 16vw;
 }
 main .block-1-1 p.concept > span {
   font-size: 2.64vw;
@@ -828,7 +828,6 @@ main .block-11-block {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-
 }
 main .block-11-block p {
   margin-bottom: 0;
@@ -889,7 +888,7 @@ main .block-11-block-block3-car > span {
   color: #A98A80;
 }
 
-.footer {
+.footer-pc {
   background-image: url(../img/img_footer.png);
   background-repeat: repeat;
   background-size: 100% auto;
@@ -976,6 +975,14 @@ main .block-11-block-block3-car > span {
   text-decoration: none;
   color: #2A1103;
 }
+.footertxt {
+  font-size: 1vw;
+  padding: 1vw;
+  color: #333333;
+  text-align: center;
+}
+
+
 
 /*
 ARTIST.html
@@ -1255,6 +1262,10 @@ ARTMAKE.html
 /*
 osaka.html
 */
+
+.osaka_block-1 img {
+width: 100%;
+}
 .osaka_block-6 {
   padding-top: 5vw;
 }
@@ -1292,9 +1303,11 @@ osaka.html
   margin-right: 21vw;
   font-family: "optima";
 }
-.osaka_block-1 img {
-width: 100%;
+.osaka_block-10 a {
+  font-size: 1vw;
+  color: #2A1103;
 }
+
 .osaka_block-11 {
   margin-left: 15.28vw;
   margin-right: 15.28vw;
@@ -1302,36 +1315,46 @@ width: 100%;
 }
 .osaka_block-11-title {
   color: #2A1103;
-  font-size: 2.5vw;
+  font-size: 3vw;
   padding-top: 12vw;
   padding-bottom: 5vw;
   text-align: center;
   font-family: "optima";
 }
+.osaka_block-11-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .osaka_block-11-block p {
   margin-bottom: 0;
-  font-size: 1vw;
 }
 .osaka_block-11-block-block1 {
+  width: 40.2vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
-.osaka_block-11-block-block1-txt {
-  width: 30vw;
-  font-size: 1vw;
+.osaka_block-11-block-block1-txt1 {
+  width: 25vw;
+  font-size: 1.25vw;
   display: inline-block;
   color: #2A1103;
 }
-.osaka_block-11-block-block1-txt > span {
+.osaka_block-11-block-block1-txt1 > span {
   color: #A98A80;
 }
-.osaka_block-11-block-block2 {
-  width: 44vw;
+.osaka_block-11-block-block1-txt2 {
+  width: 25vw;
+  font-size: 1.25vw;
   display: inline-block;
-  vertical-align: top;
+  color: #2A1103;
+}
+.osaka_block-11-block-block1-txt2 > span {
+  color: #A98A80;
 }
 .osaka_block-11-block-block2-iframe {
-  width: 44vw;
+  width: 50vw;
   height: 30vw;
   vertical-align: top;
 }
@@ -1345,7 +1368,7 @@ width: 100%;
   background-color: white;
   color: #2A1103;
   border: none;
-  padding: 1.1vw 6vw;
+  padding: 1.5vw 6vw;
   font-size: 1.8vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 2vw;
@@ -1409,6 +1432,10 @@ width: 100%;
   font-family: "optima";
 }
 
+.nara_block-10 a {
+  font-size: 1vw;
+  color: #2A1103;
+}
 .nara_block-11 {
   margin-left: 15.28vw;
   margin-right: 15.28vw;
@@ -1416,36 +1443,46 @@ width: 100%;
 }
 .nara_block-11-title {
   color: #2A1103;
-  font-size: 2.5vw;
+  font-size: 3vw;
   padding-top: 12vw;
   padding-bottom: 5vw;
   text-align: center;
   font-family: "optima";
 }
+.nara_block-11-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .nara_block-11-block p {
   margin-bottom: 0;
-  font-size: 1vw;
 }
 .nara_block-11-block-block1 {
+  width: 40.2vw;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
-.nara_block-11-block-block1-txt {
-  width: 30vw;
-  font-size: 1vw;
+.nara_block-11-block-block1-txt1 {
+  width: 25vw;
+  font-size: 1.25vw;
   display: inline-block;
   color: #2A1103;
 }
-.nara_block-11-block-block1-txt > span {
+.nara_block-11-block-block1-txt1 > span {
   color: #A98A80;
 }
-.nara_block-11-block-block2 {
-  width: 44vw;
+.nara_block-11-block-block1-txt2 {
+  width: 25vw;
+  font-size: 1.25vw;
   display: inline-block;
-  vertical-align: top;
+  color: #2A1103;
+}
+.nara_block-11-block-block1-txt2 > span {
+  color: #A98A80;
 }
 .nara_block-11-block-block2-iframe {
-  width: 44vw;
+  width: 50vw;
   height: 30vw;
   vertical-align: top;
 }
@@ -1459,7 +1496,7 @@ width: 100%;
   background-color: white;
   color: #2A1103;
   border: none;
-  padding: 1.1vw 6vw;
+  padding: 1.5vw 6vw;
   font-size: 1.8vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-top: 2vw;
@@ -1589,4 +1626,7 @@ NEWS.html
   color: #2A1103;
   font-size: 1vw;
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+
+/*# sourceMappingURL=style.css.map */
