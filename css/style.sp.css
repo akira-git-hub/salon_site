@@ -193,9 +193,21 @@
     margin-left: 3vw;
   }
   main .block-7-subtitle-zeikomi {
-    margin-left: 3vw;
+    margin-left: 57vw;
     position: static;
     font-size: 2.4vw;
+  }
+  main .block-7-subtitle-nara {
+  display: inline-block;
+  color: #2A1103;
+  margin-left: -48vw;
+  font-size: 3.5vw;
+  position: absolute;
+  top: 15vw;
+  }
+  main .block-7-subtitle-nara a {
+  color: #544136;
+  text-decoration: underline; 
   }
   main .block-7-block1 {
     margin-left: 2.1vw;
@@ -333,6 +345,7 @@
   main .block-7-others-menu-medication-money-table-tr-subname {
     font-size: 3.2vw;
   }
+
   main .block-8 {
     margin-left: 2.13vw;
     margin-right: 2.13vw;

@@ -394,11 +394,25 @@ main .block-7-subtitle-arttitle {
   font-size: 5vw;
   font-family: "optima";
 }
+main .block-7-subtitle-nara {
+  display: inline-block;
+  color: #2A1103;
+  margin-bottom: 1vw;
+  margin-left: 20vw;
+  font-size: 1.5vw;
+  position: absolute;
+  top: 3vw;
+}
+main .block-7-subtitle-nara a {
+  color: #544136;
+  text-decoration: underline; 
+}
+
 main .block-7-subtitle-zeikomi {
   display: inline-block;
   color: #2A1103;
   margin-bottom: 1vw;
-  margin-left: 24vw;
+  margin-left: 25vw;
   font-size: 1vw;
   position: absolute;
   top: 5.5vw;
