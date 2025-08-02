@@ -193,10 +193,18 @@
     margin-left: 3vw;
   }
   main .block-7-subtitle-zeikomi {
-    margin-left: 57vw;
-    position: static;
-    font-size: 2.4vw;
+    display: inline-block;
+    margin-left: 7vw;
+    margin-top: 11vw;
+    position: absolute;
+    font-size: 2.4vw;  
   }
+  main .block-7-subtitle {
+  padding-top: 10vw;
+  margin-bottom: -0.5vw;
+  position: relative;
+  z-index: 1;
+}
   main .block-7-subtitle-nara {
   display: inline-block;
   color: #2A1103;
@@ -209,6 +217,19 @@
   color: #544136;
   text-decoration: underline; 
   }
+  .nara-simple-button {
+    display: inline-block;
+    background-color: #544136; /* 上品なブラウン */
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+  .nara-simple-button:hover {
+    background-color: #9A9084;
+}
   main .block-7-block1 {
     margin-left: 2.1vw;
     margin-right: 2.1vw;
@@ -308,8 +329,9 @@
     font-size: 13.33vw;
   }
   main .block-7-others-memo {
-    font-size: 2.67vw;
-    margin-left: 25.33vw;
+    font-size: 2vw;
+    margin-left: 30vw;
+    margin-top: 1vw;
   }
   main .block-7-others-menu {
     margin-left: 7vw;

@@ -394,28 +394,42 @@ main .block-7-subtitle-arttitle {
   font-size: 5vw;
   font-family: "optima";
 }
-main .block-7-subtitle-nara {
-  display: inline-block;
-  color: #2A1103;
-  margin-bottom: 1vw;
-  margin-left: 20vw;
-  font-size: 1.5vw;
-  position: absolute;
-  top: 3vw;
+main .block-7-subtitle1{
+display: flex;
+justify-content: space-evenly;
 }
+
 main .block-7-subtitle-nara a {
   color: #544136;
   text-decoration: underline; 
+}
+.nara-simple-button {
+    display: inline-block;
+    background-color: #544136; /* 上品なブラウン */
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nara-simple-button:hover {
+    background-color: #9A9084;
+}
+
+.block-7-subtitle-zeikomi {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #666;
 }
 
 main .block-7-subtitle-zeikomi {
   display: inline-block;
   color: #2A1103;
-  margin-bottom: 1vw;
-  margin-left: 25vw;
+  margin-left: 24vw;
   font-size: 1vw;
   position: absolute;
-  top: 5.5vw;
+  top: 5vw;
 }
 main .block-7-block1 {
   margin: 0vw 18vw;
