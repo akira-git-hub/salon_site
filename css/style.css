@@ -17,6 +17,8 @@
 
 header .fixed-top {
   background-color: white;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 header .navbar-toggler {
@@ -26,7 +28,7 @@ header .navbar-toggler {
 }
 header .container-fluid {
   background: white;
-  padding-top: 0.62em;
+  padding-top: 1em;
   padding-bottom: 0.62em;
 }
 header .navbar-toggler-icon {

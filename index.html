@@ -8,9 +8,11 @@
     <link rel="icon" href="./img/rogo2.png" type="image/x-icon">
     <link href="./css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="./js/jquery-3.7.1.slim.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style.sp.css">
 </head>
@@ -58,11 +60,11 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./index.html#CLINIC">CLINIC</a>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./osaka.html">_Osaka</a>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="./nara.html">_Nara</a>
                             </li>
@@ -97,7 +99,7 @@
                 <img src="./img/FV_SP.png" alt="">
             </div>
         </div>
-        <!-- バナー配置 --> 
+        <!-- バナー配置 -->
         <!-- <div class="block-2">
             <div class="block-2-block">
                 <div class="block-2-block-img">
@@ -157,11 +159,11 @@
                         アートメイク教育事業<br>
                         mocci認定講師・認定アーティスト
                         <br>
-                        <p class="block-4-block-setumei-instlink">
+                    <p class="block-4-block-setumei-instlink">
                         <a href="https://www.instagram.com/mikako_artmake" target="_blank">
                             <span>@mikako_artmake</span>
                         </a>
-                        </p>
+                    </p>
                     </p>
                     <p class="block-4-block-setumei-msg Fixed_layout">
                         Mirelleで受けるアートメイクは<br>
@@ -181,8 +183,9 @@
         <div class="block-7" id="MENUPRICE">
             <p class="block-7-title h2">MENU PRICE</p>
             <div class="block-7-subtitle1">
-                <a href="https://www.instagram.com/p/DGz6nN1yyLj/?img_index=1&igsh=b3UwaXQ2MTd3amRs" target="_blank" class="nara-simple-button">
-                奈良院の料金メニューはこちら
+                <a href="https://www.instagram.com/p/DGz6nN1yyLj/?img_index=1&igsh=b3UwaXQ2MTd3amRs" target="_blank"
+                    class="nara-simple-button">
+                    奈良院の料金メニューはこちら
                 </a>
             </div>
             <div class="block-7-subtitle">
@@ -389,170 +392,25 @@
                     </table>
                 </div>
             </div>
-            
+
             <div class="block-7-others">
                 <p class="block-7-others-title h2">OTHERS</p>
                 <p class="block-7-others-memo h3">※全て税込価格　※ボトックス・マッサージピールは大阪院のみです</p>
-                <!--<div class="block-2">
-                    <div class="block-2-block">
-                        <div class="block-2-block-img">
-                            <img src="./img/img_other1.png" alt="" srcset="">
-                        </div>
-                        <div class="block-2-block-img">
-                            <img src="./img/img_other2.png" alt="" srcset="">
-                        </div>
-                        <div class="block-2-block-img">
-                            <img src="./img/img_other3.png" alt="" srcset="">
-                        </div>
-                        <div class="block-2-block-img">
-                            <img src="./img/img_other4.png" alt="" srcset="">
-                        </div>
-                        <div class="block-2-block-img">
-                            <img src="./img/img_other5.png" alt="" srcset="">
-                        </div>
-                        
-                    </div>
-                </div>-->
                 <div class="block-2">
                     <div class="block-2-block">
-                            <div class="block-2-block-img">
-                                <img src="./img/img_naifuku.png" alt="" srcset="">
-                            </div>
-                            <div class="block-2-block-img">
-                                <img src="./img/img_botox.png" alt="" srcset="">
-                            </div>
-                            <div class="block-2-block-img">
-                                <img src="./img/img_mp.png" alt="" srcset="">
-                            </div>
-                    </div>
-                </div> 
-        </div>   
-                <!--<div class="block-7-others-menu">
-                    <div class="block-7-others-menu-medication">
-                        <div class="accordion accordion-flush" id="accordionFlushExample1">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed block-7-others-menu-button" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne1"
-                                        aria-expanded="false" aria-controls="flush-collapseOne1">
-                                        <p class="block-7-others-menu-medication-title h4">
-                                            内服　Oral medication
-                                        </p>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne1" class="accordion-collapse collapse"
-                                    data-bs-parent="#accordionFlushExample1">
-                                    
-                                    <img style="width: 100%;" src="./img/oralmedication.png">
-
-                                </div>
-                            </div>
+                        <div class="block-2-block-img">
+                            <img src="./img/img_naifuku.png" alt="" srcset="">
+                        </div>
+                        <div class="block-2-block-img">
+                            <img src="./img/img_botox.png" alt="" srcset="">
+                        </div>
+                        <div class="block-2-block-img">
+                            <img src="./img/img_mp.png" alt="" srcset="">
                         </div>
                     </div>
-                    <div class="block-7-others-menu-medication-dr_max">
-                        <div class="block-7-others-menu-medication">
-                            <div class="accordion accordion-flush" id="accordionFlushExample2">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed block-7-others-menu-button"
-                                            type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2"
-                                            aria-expanded="false" aria-controls="flush-collapseOne2">
-                                            <p class="block-7-others-menu-medication-title h4">
-                                                ボトックス Botox
-                                            </p>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseOne2" class="accordion-collapse collapse"
-                                        data-bs-parent="#accordionFlushExample2">
-                                        <table class="block-7-others-menu-medication-money-table">
-                                            <tbody>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        額</td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥3,300
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        眉間
-                                                    </td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥3,300
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        目尻
-                                                    </td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥3,300
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        バニー</td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥3,300
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        口角</td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥3,300
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        顎
-                                                    </td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥3,300
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        エラ
-                                                    </td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥8,800
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        首
-                                                    </td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥15,400
-                                                    </td>
-                                                </tr>
-                                                <tr class="block-7-others-menu-medication-money-table-tr">
-                                                    <td class="block-7-others-menu-medication-money-table-tr-rowname">
-                                                        脇
-                                                    </td>
-                                                    <td
-                                                        class="block-7-others-menu-medication-money-table-tr-cash block-7-others-menu-medication-money-table-tr-cash2">
-                                                        ¥15,400
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>-->
+                </div>
             </div>
+        </div>
 
 
         <!-- フロー -->
@@ -563,16 +421,16 @@
                     <div class="block-8-block-box-msg">
                         <img src="./img/01.png" alt="" srcset="">
                     </div>
-                        <div class="block-8-block-box-exp">
-                            <div class="block-8-block-box-button">
+                    <div class="block-8-block-box-exp">
+                        <div class="block-8-block-box-button">
                             <a href="https://lin.ee/IsPCNO5" target="_blank">大阪院</a>
-                            </div>
-                            <div class="block-8-block-box-button">
-                            <a href="https://lin.ee/86CMiXP" target="_blank">奈良院</a>
-                            </div><br>
-                    
-                            <p>こちらより予約をお願いいたします。</p>
                         </div>
+                        <div class="block-8-block-box-button">
+                            <a href="https://lin.ee/86CMiXP" target="_blank">奈良院</a>
+                        </div><br>
+
+                        <p>こちらより予約をお願いいたします。</p>
+                    </div>
                 </div>
                 <div class="block-8-block-img">
                     <img src="./img/flow1.png" alt="" srcset="">
@@ -947,37 +805,36 @@
             <div class="block-11-title">Mirelle Clinic</div>
             <div class="block-11-block">
                 <div class="block-11-block-block1">
-                        <p class="block-11-block-block1-txt1">
-                            <span>所在地</span><br>
-                            〒530-0047 <br>
-                            大阪府大阪市北区西天満6-1-12<br>
-                            エル・ミズホビル 6階<br><br>
-                            
-                            <span>営業時間</span>
-                            10:00-19:00<br><br>
+                    <p class="block-11-block-block1-txt1">
+                        <span>所在地</span><br>
+                        〒530-0047 <br>
+                        大阪府大阪市北区西天満6-1-12<br>
+                        エル・ミズホビル 6階<br><br>
 
-                            <span>定休日</span>
-                            不定休<br><br>
-                        </p>
-                        <p class="block-11-block-block1-txt2">
+                        <span>営業時間</span>
+                        10:00-19:00<br><br>
 
-                            <span>連絡先</span>
-                            080-4698-9401<br><br>
+                        <span>定休日</span>
+                        不定休<br><br>
+                    </p>
+                    <p class="block-11-block-block1-txt2">
 
-                            <span>最寄駅</span><br>
-                            東西線「大阪天満宮」から徒歩8分<br>
-                            谷町線「南森町」から徒歩6分<br>
-                            堺筋線「南森町」から徒歩6分
-                        </p><br>
-                    </div>
-                    <div class="block-11-block-block2">
-                    <iframe class="block-11-block-block2-iframe"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13795.089098561677!2d135.49218859433185!3d34.698737162668095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72a34d3e165%3A0x47fc5faf4ad5e6a3!2sMirelle!5e0!3m2!1sja!2sjp!4v1750496398350!5m2!1sja!2sjp
-                        "style="border:0;" allowfullscreen="" loading="lazy"
+                        <span>連絡先</span>
+                        080-4698-9401<br><br>
+
+                        <span>最寄駅</span><br>
+                        東西線「大阪天満宮」から徒歩8分<br>
+                        谷町線「南森町」から徒歩6分<br>
+                        堺筋線「南森町」から徒歩6分
+                    </p><br>
+                </div>
+                <div class="block-11-block-block2">
+                    <iframe class="block-11-block-block2-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13795.089098561677!2d135.49218859433185!3d34.698737162668095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72a34d3e165%3A0x47fc5faf4ad5e6a3!2sMirelle!5e0!3m2!1sja!2sjp!4v1750496398350!5m2!1sja!2sjp
+                        " style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <footer class="footer-pc Fixed_layout">
@@ -985,10 +842,10 @@
             <div class="footer-block-block1">
                 <div class="footer-block-block1-title"><img src="./img/rogofull.png" alt="" srcset=""></div>
                 <div class="footer-block-block1-snsicon">
-                    <a href="https://lin.ee/IsPCNO5" class="footer-block-block1-snsicon-line" target="_blank"><img src="./svg/img_line.svg" alt=""
-                            srcset=""></a>
-                    <a href="https://www.instagram.com/mirelle__artmake/" class="footer-block-block1-snsicon-insta" target="_blank"><img src="./svg/img_instagram.svg" alt=""
-                            srcset=""></a>
+                    <a href="https://lin.ee/IsPCNO5" class="footer-block-block1-snsicon-line" target="_blank"><img
+                            src="./svg/img_line.svg" alt="" srcset=""></a>
+                    <a href="https://www.instagram.com/mirelle__artmake/" class="footer-block-block1-snsicon-insta"
+                        target="_blank"><img src="./svg/img_instagram.svg" alt="" srcset=""></a>
                 </div>
             </div>
             <div class="footer-block-block2">
@@ -996,11 +853,11 @@
                     <p class="footer-block-block2-lick1-p"><a href="./index.html#TOP">TOP</a></p>
                     <p class="footer-block-block2-lick1-p"><a href="./index.html#CONCEPT">CONCEPT</a></p>
                     <p class="footer-block-block2-lick1-p"><a href="./index.html#MENUPRICE">MENU PRICE</a></p>
-                    
+
                 </div>
                 <div class="footer-block-block2-lick2">
                     <p class="footer-block-block2-lick1-p"><a href="./index.html#FLOW">FLOW</a></p>
-                    <p class="footer-block-block2-lick1-p"><a href="./index.html#QandA">QandA</a></p> 
+                    <p class="footer-block-block2-lick1-p"><a href="./index.html#QandA">QandA</a></p>
                     <p class="footer-block-block2-lick1-p"><a href="./index.html#NEWS">NEWS</a></p>
 
                 </div>
@@ -1012,13 +869,13 @@
                 </div>
             </div>
         </div>
-    <div class="footertxt">
-    © 2025 Mirelle Clinic. All rights reserved.
-    </div>
+        <div class="footertxt">
+            © 2025 Mirelle Clinic. All rights reserved.
+        </div>
     </footer>
 
     <footer class="footer-sp Responsive">
-    © 2025 Mirelle Clinic. All rights reserved.
+        © 2025 Mirelle Clinic. All rights reserved.
     </footer>
 
 </body>
